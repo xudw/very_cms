@@ -1,0 +1,61 @@
+<include file="Public::header"/>
+
+</head>
+<body>
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu"/>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/addAdv">添加广告</a>
+        <table>
+            <tr>
+                <th>
+                    广告名称
+                </th>
+                <th>
+                    所属页面
+                </th>
+                <th>
+                    开始时间
+                </th>
+                <th>
+                    结束时间
+                </th>
+                <th>
+                    创建日期
+                </th>
+                <th>
+                    操作
+                </th>
+            </tr>
+            <foreach name="app_list" item="list">
+
+                <tr>
+                    <td>{$list.advname}</td>
+                    <td>{$list.showpage}</td>
+                    <td>{$list.stime}</td>
+                    <td>{$list.etime}</td>
+                    <td>{$list.mtime}</td>
+                    <td>
+                        <a onClick="return confirm('您确定要删除此内容？');"
+                           href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/delnews/table/adv/nid/<?php echo $list['id']; ?>">删除</a>
+                        <a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/editadv/nid/<?php echo $list['id']; ?>">修改</a>
+                    </td>
+                </tr>
+
+
+            </foreach>
+        </table>
+
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer"/>
+</div>
+</body>
+</html>

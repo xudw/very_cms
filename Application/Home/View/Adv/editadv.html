@@ -1,0 +1,83 @@
+<include file="Public::header"/>
+<link rel="stylesheet" type="text/css" href="<?php echo WEB_NAME; ?>/Public/jquery.custom/css/ui-lightness/jquery-ui-1.8.11.custom.css" />
+<script src="<?php echo WEB_NAME; ?>/Public/jquery.custom/js/jquery-ui-1.8.11.custom.min.js" /></script>
+<script src="<?php echo WEB_NAME; ?>/Public/jquery.custom/js/ui.datepicker-zh.js" /></script>
+<script>
+$(document).ready(function() {
+    $.datepicker.setDefaults($.datepicker.regional['zh-CN']);
+    $('#stime').datepicker({
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: 'yy-mm-dd',
+        showButtonPanel: true,
+    });
+    $('#etime').datepicker({
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: 'yy-mm-dd',
+        showButtonPanel: true,
+    });
+});
+        </script>
+</head>
+<body>
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu"/>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        {$error}
+        <form enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME; ?>/index.php/Home/Adv/editadv">
+            <input type="hidden" name="id" value="{$list.id}">
+            <table>
+                <tr>
+                    <td>广告名</td>
+                    <td><input type='text' name='advname' value='{$list.advname}'></td>
+                </tr>
+
+                <tr>
+                    <td>所属页面</td>
+                    <td>
+                        <select name='showpage'>
+                            <option value='首页' <?php if($list['showpage']=='首页'){ ?>  selected="selected"  <?php  } ?>>首页</option>
+                            <option value='二级页' <?php if($list['showpage']=='二级页'){ ?>  selected="selected"  <?php  } ?>>二级页</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>广告图</td>
+                    <td>
+                        <img src="{$list.advimage}" width="100px" height="100px">
+                        <input type="hidden" name="advimages" value="{$list.advimage}">
+                        <input type="file" name="advimage"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>开始时间</td>
+                    <td>
+                        <input style='height:25px;' type='text' name='stime' id='stime' value='{$list.stime}'>
+                    </td>
+                </tr>
+                <tr>
+                    <td>结束时间</td>
+                    <td>
+                        <input style='height:25px;' type='text' name='etime' id='etime' value='{$list.etime}'>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" name="subapp" value="提交"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer"/>
+</div>
+</body>
+</html>

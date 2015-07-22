@@ -1,0 +1,65 @@
+<include file="Public::header"/>
+
+</head>
+<body>
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu"/>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/makeJob">添加应用</a>
+        <table>
+            <tr>
+                <th>
+                    应用名
+                </th>
+                <th>
+                    应用类型
+                </th>
+                <th>
+                    系统
+                </th>
+                <th>
+                    语言
+                </th>
+                <th>
+                    收费方式
+                </th>
+                <th>
+                    创建日期
+                </th>
+                <th>
+                    操作
+                </th>
+            </tr>
+            <foreach name="app_list" item="list">
+
+                <tr>
+                    <td>{$list.appname}</td>
+                    <td>{$list.apptype}</td>
+                    <td>{$list.appsystem}</td>
+                    <td>{$list.applanguage}</td>
+                    <td>{$list.money}</td>
+                    <td>{$list.time}</td>
+                    <td>
+                        <a onClick="return confirm('您确定要删除此内容？');"
+                           href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/delnews/table/app/nid/<?php echo $list['id']; ?>">删除</a>
+                        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editapp/nid/<?php echo $list['id']; ?>">修改</a>
+                    </td>
+                </tr>
+
+
+            </foreach>
+        </table>
+
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?php
+
+function appkey()
+{	
+	$appname = 'Ó¦ÓÃ';
+	$appname = iconv('GB2312', 'UTF-8', $appname);    
+    return $appname;
+}

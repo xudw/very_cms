@@ -1,0 +1,48 @@
+<include file="Public::header" />
+
+</head>
+<body>
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu" />
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        {$error}
+        <form method="post" action="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newIndex">
+            <table>
+                 <tr>
+                     <td>标题</td>
+                     <td><input type="text" name="title" value="{$title}"></td>
+                 </tr>
+                <tr>
+                    <td>作者</td>
+                    <td><input type="text" name="author" value="{$author}"></td>
+                </tr>
+                <tr>
+                    <td>来源</td>
+                    <td><input type="text" name="come" value="{$come}"></td>
+                </tr>
+                <tr>
+                    <td>内容</td>
+                    <td>
+                        <textarea name="content" row="5" col="10">
+                            {$content}
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="subnew" value="提交"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer" />
+</div>
+</body>
+</html>

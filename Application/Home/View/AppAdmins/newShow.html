@@ -1,0 +1,61 @@
+<include file="Public::header"/>
+
+</head>
+<body>
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu"/>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newIndex">添加资讯</a>
+        <table>
+            <tr>
+                <th>
+                    标题
+                </th>
+                <th>
+                    内容
+                </th>
+                <th>
+                    来源
+                </th>
+                <th>
+                    作者
+                </th>
+                <th>
+                    创建日期
+                </th>
+                <th>
+                    操作
+                </th>
+            </tr>
+            <foreach name="new_list" item="list">
+
+                <tr>
+                    <td>{$list.title}</td>
+                    <td><?php  echo substr($list['content'],0,20).'......'; ?></td>
+                    <td>{$list.come}</td>
+                    <td>{$list.author}</td>
+                    <td>{$list.time}</td>
+                    <td>
+                        <a onClick="return confirm('您确定要删除此内容？');"
+                           href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/delnews/table/new/nid/<?php echo $list['id']; ?>">删除</a>
+                        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editnews/nid/<?php echo $list['id']; ?>">修改</a>
+                    </td>
+                </tr>
+
+
+            </foreach>
+        </table>
+
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer"/>
+</div>
+</body>
+</html>

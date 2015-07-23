@@ -25,61 +25,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AppAdminsController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AppAdminsController.class.php">
+      <file leaf-file-name="IndexController.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-54.451614" vertical-offset="3284" max-vertical-offset="8514">
-              <caret line="226" column="33" selection-start-line="226" selection-start-column="33" selection-end-line="226" selection-end-column="33" />
+            <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="286">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
-                <marker date="1437549215966" expanded="true" signature="277:368" placeholder="select id,ap..." />
-                <marker date="1437549215966" expanded="true" signature="647:686" placeholder="SELECT type_..very_type..." />
-                <marker date="1437549215966" expanded="true" signature="3313:3508" placeholder="insert into ..." />
-                <marker date="1437549215966" expanded="true" signature="3878:3917" placeholder="SELECT type_..very_type..." />
-                <marker date="1437549215966" expanded="true" signature="4120:4158" placeholder="select * fro..very_app..." />
-                <marker date="1437549215966" expanded="true" signature="5219:5281" placeholder="select id fr..very_app..." />
-                <marker date="1437549215966" expanded="true" signature="7083:7402" placeholder="update very_..." />
-                <marker date="1437549215966" expanded="true" signature="7850:7892" placeholder="select * fro..very_news..." />
-                <marker date="1437549215966" expanded="true" signature="9100:9179" placeholder="insert into ..." />
-                <marker date="1437549215966" expanded="true" signature="9968:10000" placeholder="delete from ..." />
-                <marker date="1437549215966" expanded="true" signature="10330:10369" placeholder="select * fro..very_news..." />
-                <marker date="1437549215966" expanded="true" signature="10826:10887" placeholder="select id fr..very_news..." />
-                <marker date="1437549215966" expanded="true" signature="11695:11797" placeholder="update very_..." />
+                <marker date="1437616651065" expanded="true" signature="97:159" placeholder="..." />
+                <marker date="1437616651065" expanded="true" signature="126:157" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editapp.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/editapp.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.064516" vertical-offset="1452" max-vertical-offset="2750">
-              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="84" selection-end-column="79" />
+            <state vertical-scroll-proportion="-5.0655737" vertical-offset="2947" max-vertical-offset="11814">
+              <caret line="148" column="45" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#1;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_flash.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Public/js/index_flash.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1936">
+              <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdvController.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AdvController.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16101696" vertical-offset="2460" max-vertical-offset="4312">
-              <caret line="117" column="46" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
-              <folding>
-                <marker date="1437550708465" expanded="true" signature="250:292" placeholder="select * fro..very_adv..." />
-                <marker date="1437550708465" expanded="true" signature="1840:1933" placeholder="insert into ..." />
-                <marker date="1437550708465" expanded="true" signature="2277:2315" placeholder="select * fro..very_adv..." />
-                <marker date="1437550708465" expanded="true" signature="2844:2906" placeholder="select id fr..very_adv..." />
-                <marker date="1437550708465" expanded="true" signature="4148:4291" placeholder="update very_..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editadv.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="editadv.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/editadv.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.354838" vertical-offset="898" max-vertical-offset="1936">
-              <caret line="54" column="60" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.44067797" vertical-offset="766" max-vertical-offset="1980">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,38 +77,8 @@
       <file leaf-file-name="addAdv.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/addAdv.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="1848">
-              <caret line="3" column="93" selection-start-line="3" selection-start-column="93" selection-end-line="3" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.64516" vertical-offset="0" max-vertical-offset="1452">
-              <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.129032" vertical-offset="678" max-vertical-offset="1540">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="makeJob.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/makeJob.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.967742" vertical-offset="176" max-vertical-offset="2662">
-              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state vertical-scroll-proportion="-9.225806" vertical-offset="814" max-vertical-offset="1892">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -140,12 +99,14 @@
         <option value="$PROJECT_DIR$/ThinkPHP/Library/Think/UploadFile.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Adv/index.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/Adv/editapp.html" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Adv/addAdv.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/AppAdmins/makeJob.html" />
         <option value="$PROJECT_DIR$/Application/Home/View/AppAdmins/editapp.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/AppAdminsController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Adv/editadv.html" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/AdvController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Adv/addAdv.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Adv/editadv.html" />
       </list>
     </option>
   </component>
@@ -188,6 +149,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,7 +164,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
+              <option name="myItemId" value="very_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -212,7 +174,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="very_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="appcms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="very_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appcms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="very_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -226,7 +220,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
+              <option name="myItemId" value="very_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -241,10 +235,6 @@
               <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -252,33 +242,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppAdmins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
+              <option name="myItemId" value="very_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -304,7 +268,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
+              <option name="myItemId" value="very_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -322,7 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
+              <option name="myItemId" value="very_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -338,76 +302,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="appcms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../starschina" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -467,15 +369,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -499,24 +401,132 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1012" max-vertical-offset="1452">
+          <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="678" max-vertical-offset="1540">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/makeJob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="2662">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AppAdminsController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3284" max-vertical-offset="8514">
+          <caret line="226" column="33" selection-start-line="226" selection-start-column="33" selection-end-line="226" selection-end-column="33" />
+          <folding>
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id,ap..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/editapp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1452" max-vertical-offset="2750">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="84" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AdvController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4312">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="select * fro..very_adv..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="select * fro..very_adv..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="select id fr..very_adv..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="update very_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/editadv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="898" max-vertical-offset="1936">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/addAdv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1848">
+          <caret line="3" column="93" selection-start-line="3" selection-start-column="93" selection-end-line="3" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1012" max-vertical-offset="1452">
+          <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="678" max-vertical-offset="1540">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/makeJob.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="2662">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AppAdminsController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8206">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1437549215966" expanded="true" signature="277:368" placeholder="select id,ap..." />
-            <marker date="1437549215966" expanded="true" signature="647:686" placeholder="SELECT type_..very_type..." />
-            <marker date="1437549215966" expanded="true" signature="3313:3508" placeholder="insert into ..." />
-            <marker date="1437549215966" expanded="true" signature="3878:3917" placeholder="SELECT type_..very_type..." />
-            <marker date="1437549215966" expanded="true" signature="4120:4158" placeholder="select * fro..very_app..." />
-            <marker date="1437549215966" expanded="true" signature="5219:5281" placeholder="select id fr..very_app..." />
-            <marker date="1437549215966" expanded="true" signature="7083:7402" placeholder="update very_..." />
-            <marker date="1437549215966" expanded="true" signature="7850:7892" placeholder="select * fro..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="9100:9179" placeholder="insert into ..." />
-            <marker date="1437549215966" expanded="true" signature="9968:10000" placeholder="delete from ..." />
-            <marker date="1437549215966" expanded="true" signature="10330:10369" placeholder="select * fro..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="10826:10887" placeholder="select id fr..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="11695:11797" placeholder="update very_..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id,ap..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
           </folding>
         </state>
       </provider>
@@ -533,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="65" max-vertical-offset="13794">
           <caret line="154" column="68" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="242">
           <caret line="1" column="87" selection-start-line="1" selection-start-column="87" selection-end-line="1" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -557,7 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1188">
           <caret line="14" column="93" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="1452">
           <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -573,7 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1166">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,19 +595,19 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3036">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1437549215966" expanded="true" signature="277:368" placeholder="select id,ap..." />
-            <marker date="1437549215966" expanded="true" signature="647:686" placeholder="SELECT type_..very_type..." />
-            <marker date="1437549215966" expanded="true" signature="3313:3508" placeholder="insert into ..." />
-            <marker date="1437549215966" expanded="true" signature="3878:3917" placeholder="SELECT type_..very_type..." />
-            <marker date="1437549215966" expanded="true" signature="4120:4158" placeholder="select * fro..very_app..." />
-            <marker date="1437549215966" expanded="true" signature="5219:5281" placeholder="select id fr..very_app..." />
-            <marker date="1437549215966" expanded="true" signature="7083:7402" placeholder="update very_..." />
-            <marker date="1437549215966" expanded="true" signature="7850:7892" placeholder="select * fro..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="9100:9179" placeholder="insert into ..." />
-            <marker date="1437549215966" expanded="true" signature="9968:10000" placeholder="delete from ..." />
-            <marker date="1437549215966" expanded="true" signature="10330:10369" placeholder="select * fro..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="10826:10887" placeholder="select id fr..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="11695:11797" placeholder="update very_..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id,ap..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
           </folding>
         </state>
       </provider>
@@ -619,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="242">
           <caret line="1" column="87" selection-start-line="1" selection-start-column="87" selection-end-line="1" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -627,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1188">
           <caret line="14" column="93" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="1452">
           <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -643,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1166">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -673,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1166">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="88" max-vertical-offset="1452">
           <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1188">
           <caret line="14" column="93" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="93" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,21 +731,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.4964027" vertical-offset="65" max-vertical-offset="13794">
           <caret line="154" column="68" selection-start-line="154" selection-start-column="55" selection-end-line="154" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.64516" vertical-offset="0" max-vertical-offset="1452">
-          <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.129032" vertical-offset="678" max-vertical-offset="1540">
+        <state vertical-scroll-proportion="0.0" vertical-offset="678" max-vertical-offset="1540">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding />
         </state>
@@ -765,13 +754,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06214689" vertical-offset="0" max-vertical-offset="708">
           <caret line="2" column="87" selection-start-line="2" selection-start-column="87" selection-end-line="2" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/makeJob.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.967742" vertical-offset="176" max-vertical-offset="2662">
+        <state vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="2662">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
@@ -779,61 +767,102 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/AppAdmins/editapp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.064516" vertical-offset="1452" max-vertical-offset="2750">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1452" max-vertical-offset="2750">
           <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="84" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/addAdv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="1848">
-          <caret line="3" column="93" selection-start-line="3" selection-start-column="93" selection-end-line="3" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AppAdminsController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-54.451614" vertical-offset="3284" max-vertical-offset="8514">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3284" max-vertical-offset="8514">
           <caret line="226" column="33" selection-start-line="226" selection-start-column="33" selection-end-line="226" selection-end-column="33" />
           <folding>
-            <marker date="1437549215966" expanded="true" signature="277:368" placeholder="select id,ap..." />
-            <marker date="1437549215966" expanded="true" signature="647:686" placeholder="SELECT type_..very_type..." />
-            <marker date="1437549215966" expanded="true" signature="3313:3508" placeholder="insert into ..." />
-            <marker date="1437549215966" expanded="true" signature="3878:3917" placeholder="SELECT type_..very_type..." />
-            <marker date="1437549215966" expanded="true" signature="4120:4158" placeholder="select * fro..very_app..." />
-            <marker date="1437549215966" expanded="true" signature="5219:5281" placeholder="select id fr..very_app..." />
-            <marker date="1437549215966" expanded="true" signature="7083:7402" placeholder="update very_..." />
-            <marker date="1437549215966" expanded="true" signature="7850:7892" placeholder="select * fro..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="9100:9179" placeholder="insert into ..." />
-            <marker date="1437549215966" expanded="true" signature="9968:10000" placeholder="delete from ..." />
-            <marker date="1437549215966" expanded="true" signature="10330:10369" placeholder="select * fro..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="10826:10887" placeholder="select id fr..very_news..." />
-            <marker date="1437549215966" expanded="true" signature="11695:11797" placeholder="update very_..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id,ap..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="SELECT type_..very_type..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_app..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select * fro..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="select id fr..very_news..." />
+            <marker date="1437549215966" expanded="true" signature="-1:-1" placeholder="update very_..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/editadv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.354838" vertical-offset="898" max-vertical-offset="1936">
-          <caret line="54" column="60" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/AdvController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16101696" vertical-offset="2460" max-vertical-offset="4312">
-          <caret line="117" column="46" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="46" />
+        <state vertical-scroll-proportion="-19.290323" vertical-offset="1206" max-vertical-offset="4312">
+          <caret line="82" column="48" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="48" />
           <folding>
-            <marker date="1437550708465" expanded="true" signature="250:292" placeholder="select * fro..very_adv..." />
-            <marker date="1437550708465" expanded="true" signature="1840:1933" placeholder="insert into ..." />
-            <marker date="1437550708465" expanded="true" signature="2277:2315" placeholder="select * fro..very_adv..." />
-            <marker date="1437550708465" expanded="true" signature="2844:2906" placeholder="select id fr..very_adv..." />
-            <marker date="1437550708465" expanded="true" signature="4148:4291" placeholder="update very_..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="select * fro..very_adv..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="select * fro..very_adv..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="select id fr..very_adv..." />
+            <marker date="1437550708465" expanded="true" signature="-1:-1" placeholder="update very_..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.967742" vertical-offset="0" max-vertical-offset="286">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <marker date="1437616651065" expanded="true" signature="97:159" placeholder="..." />
+            <marker date="1437616651065" expanded="true" signature="126:157" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37853107" vertical-offset="744" max-vertical-offset="1452">
+          <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/js/index_flash.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1936">
+          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0655737" vertical-offset="2947" max-vertical-offset="11814">
+          <caret line="148" column="45" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#2;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/addAdv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.225806" vertical-offset="814" max-vertical-offset="1892">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Adv/editadv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44067797" vertical-offset="766" max-vertical-offset="1980">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

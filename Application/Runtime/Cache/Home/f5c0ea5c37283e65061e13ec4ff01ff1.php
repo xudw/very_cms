@@ -20,6 +20,7 @@
                 <ul>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
 </ul>
 
 
@@ -28,7 +29,7 @@
     </div>
     <div id="right">
         <?php echo ($error); ?>
-        <form method="post" action="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editapp">
+        <form method="post" action="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editnews">
             <input type="hidden" name="nids" value="<?php echo ($nids); ?>">
             <table>
                  <tr>
@@ -52,7 +53,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="submit" name="subapp" value="提交"></td>
+                    <td colspan="2"><input type="submit" name="subnew" value="提交"></td>
                 </tr>
             </table>
         </form>

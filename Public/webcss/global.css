@@ -1,0 +1,45 @@
+/*Í¶Æ±*/
+.help-fs{ padding:10px 10px 0px 10px;display:inline-block; width:698px;}.help-fs img{ margin-left:8px;}.help-fs dl dt{ float:left;}.help-fs dl dd{ float:left; width:80px; padding-bottom:10px;}.help-fs dl dd span{ width:80px; display:block; text-align:center; padding-top:6px;}.help-fs dl{ width:87px; display:inline-block; float:left;}
+
+/*ÆÀÂÛ*/
+.game_comment { color:#555; line-height:150%; padding-top:10px; padding-bottom:10px;}
+.game_comment h4{width:200px; height:30px;  float: left; font-size:16px;}
+.game_comment h3 a{width:500px; height:30px; text-align:right;  float: right;}
+/*.game_comment h3{padding:12px 0 4px 30px; font-size:14px; background:url("../img/icon.gif") no-repeat 0 -278px}*/
+.game_comment .page { text-align:center; padding-top:10px;}
+
+#comment_lst {margin:0px; padding:10px 0 0 0; list-style:none; display:inline-block; width:720px; border-top:1px solid #e6e5e5; overflow:hidden;}
+#comment_lst .op {text-align:right; width:180px; float:right; padding-right:10px;}
+#comment_lst .op .pu {color:red;}
+#comment_lst .op .pd {color:green}
+#comment_lst li {padding:8px 0; border-bottom:1px #E7E7E7 solid;}
+#comment_lst .info {display:block; padding:0; color:#3151A2; width:370px; float:left; padding-left:20px;}
+#comment_lst .ctn {padding:5px 20px; color:#666; display:block; clear:both; width:650px; font-size:14px;}
+
+.postbutton{ margin-left:25px; margin-top:10px; font-size:16px; cursor:pointer;width:150px; height:36px; line-height:36px; text-align:center; background:#81b103; display:block; color:#FFF; border:none;}
+.postbutton:hover{background:#75a101;}
+
+.comment_frm {padding:10px 0 0 30px;}
+.comment_frm textarea {display:block; margin:5px 0}
+
+.reply_frm {position:absolute; display:none; z-index:999; width:400px; background-color:white; border:1px solid #aaa; padding-bottom:5px}
+.reply_frm h5 {padding-bottom:5px; background:url("../images/page_elements.jpg")/*tpa=http://wy.155.cn/file/default/img/page_elements.jpg*/ no-repeat -125px -192px; padding:4px 5px; font-weight:normal; font-size:12px; border-bottom:1px solid #ddd}
+.reply_frm h5 span {float:right; cursor:pointer;}
+.reply_frm h5 strong {padding-left:1em; color:#666}
+.reply_frm p {padding:10px;}
+.reply_frm textarea {margin:5px 0; display:block; width:380px; overflow:auto;}
+.reply_frm .warn_msg {color:red}
+
+.reply {border:1px dotted #ddd; margin:0 10px; width:680px;}
+.pl{ width:708px; float:left; border:#76C63E 1px solid; overflow:hidden; clear:both; padding-bottom:10px; margin-top:10px;}
+.pl-h{ background:url("../images/pl-h.jpg")/*tpa=http://wy.155.cn/file/default/images/pl-h.jpg*/ repeat-x 0 -10px scroll; height:32px; overflow:hidden; width:707px;}
+.pl-h h1{ font-size:14px; font-weight:bold; float:left; height:30px; line-height:30px; padding-left:10px; width:150px;}
+.pl-h h2{ font-size:14px; font-weight:bold; float:right; height:30px; line-height:30px; padding-right:10px; width:200px; text-align:right;}
+.pl-h h2 span{ color:#FF0000;}.help-anniu{ margin-left:10px; display:inline-block;}
+/**page **/
+.page .page_sum, .page .page_info, .page select, .page .page_input { display:none }
+.page { color:gray }
+.page span, .page em, .page a { display:inline-block; padding:2px 5px; font-style:normal; margin:0 1px }
+.page .page_prev, .page .page_last, .page .page_first, .page .page_next, .page .page_num a { border:1px solid #eee; }
+
+.pl{ width:693px; float:left; border:#f00 1px solid; overflow:hidden; clear:both; padding-bottom:10px; background:#fff;}.top05 img{ float:left;margin-left:6px;}

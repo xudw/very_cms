@@ -20,6 +20,7 @@
                 <ul>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
 </ul>
 
 

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* 第一大版块 */
+.and_cent1{width:1000px; height:400px; margin:12px auto 0 auto; position:relative;}
+.c1_news_jiao{width:30px; height:30px; background-position:-20px -124px; position:absolute; left:0; top:0;}
+.c1_news{width:300px; float:left;}
+.c1_news_t{width:248px; height:85px; padding:10px 25px; background:#fcfcfc; border:1px solid #E9E9E9; float:left;}
+.c1_news_t h1{width:248px; height:35px; line-height:35px; font-size:20px;  text-align:center; font-weight:normal; overflow:hidden;}
+.c1_news_t h1 a{color:#333;}.c1_news_t h1 a:hover{color:#d13939;}
+.c1_news_t p{width:248px; height:44px; line-height:22px;color:#999; overflow:hidden;}
+.c1_news ul{width:298px; height:138px; padding-top:10px; float:left;}
+.c1_news ul li{width:298px; height:32px; line-height:32px; color:#999; overflow:hidden;}
+
+.c1_banner{width:420px; height:200px; position:absolute; left:315px; top:0; overflow:hidden;}
+
+.c1_game{width:450px; position:absolute; left:315px; top:215px;}
+.c1_game ul{width:450px; float:left;}
+.pic_list ul li{width:90px;margin:15px 20px 0 0;  float:left; overflow:hidden;}
+.pic_list ul li a img{width:90px; height:90px; float:left;}
+.pic_list ul li p{width:90px; height:30px; line-height:30px; color:#333; text-align:center; overflow:hidden; float:left;}
+.zhu_genxin,.zhu_new{ position:absolute; top:0; left:0;width:44px; height:40px; background-image:url("../images/news_bg.png")/*tpa=http://ios.155.cn/file/default/images/news_bg.png*/;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/news_bg.png');
+}
+.zhu_new{ background-position:-109px 0;}
+
+.c1_zhuanti{width:755px; position:absolute; left:0; top:415px;}
+.c1_zhuanti ul{width:755px; float:left;}
+.c1_zhuanti ul li{width:160px; margin:15px 28px 0 0; float:left; overflow:hidden;}
+.c1_zhuanti ul li a img{width:160px; height:120px; float:left;}
+.c1_zhuanti ul li p{width:160px; height:30px; line-height:30px; color:#333; text-align:center; overflow:hidden; float:left;}
+
+.c1_yugao{width:250px; position:absolute; top:125px; right:0;}
+.zhuanji_pic{width:250px; height:100px;}
+.zhuanji_pic img{width:250px; height:100px;}
+.zhuanji_zi{width:250px; height:30px; line-height:30px; text-align:center;}
+
+.c1_changshang{width:268px; position:absolute; top:415px; right:-20px;}
+.c1_changshang ul{width:268px; float:left;}
+.c1_changshang ul li{width:115px; margin:15px 15px 0 0; float:left;}
+.c1_changshang ul li img{width:115px; height:60px;}
+
+/* 第二大版块 */
+.and_cent2{width:1000px; height:500px; margin:12px auto 0 auto; position:relative;}
+.phb_t{height:34px; line-height:26px; border-bottom:3px solid #575E72; padding:0 20px; font-size:20px; position:absolute; left:750px;  top:0px; color:#333}
+
+.c2_game{width:750px; overflow:hidden;  float:left;}
+.c2_guangao{width:215px; margin:15px 35px 0 0; float:left; position:relative;}
+.c2_guangao img {width:215px; height:120px;}
+.c2_guangao p{width:215px; height:30px; line-height:30px; text-align:center; overflow:hidden; position:absolute; top:90px; left:0; color:#fff;background:#222;z-index:1001;-moz-opacity: 0.8;opacity:.80;filter: alpha(opacity=80);}
+.game_list ul li{width:90px;margin:15px 35px 0 0;  float:left; position:relative;overflow:hidden; }
+.game_list ul li a img{width:90px; height:90px; float:left;}
+.game_list ul li p{width:90px; height:30px; line-height:30px; color:#333; text-align:center; overflow:hidden; float:left;}
+.c2_biaoqian{width:720px; height:40px; margin-top:10px; float:left; background:#f7f7f7; border-top:1px solid #E9E9E9;border-right:1px solid #E9E9E9;border-bottom:1px solid #E9E9E9;}
+.c2_biaoqian li{ padding:0 28px; line-height:40px; border-left:1px solid #E9E9E9; float:left;}
+.c2_ul_tit{width:400px; position:absolute; top:7px; left:280px;}
+.c2_ul_tit li{width:60px; height:30px; line-height:30px; float:left;}
+.c2_ul_tit li a{width:60px; height:30px; display:block;  text-align:center;}
+.on{background:#575E72; color:#fff;}
+
+/* 第三大版块 */
+.and_cent3{width:1000px; height:510px; margin:12px auto 0 auto; position:relative;}
+
+/* 标签 */
+.biaoqian_cent{width:1000px; height:170px; margin:15px auto 0 auto; overflow:hidden;}
+.biaoqian_pic{width:1040px; float:left; }
+.biaoqian ul li{width:140px;margin:15px 32px 0 0;  float:left; overflow:hidden;}
+.biaoqian ul li a img{width:140px; height:80px; float:left;}
+.biaoqian ul li p{width:140px; height:30px; line-height:30px; color:#333; text-align:center; overflow:hidden; float:left;}
+
+/* 链接版块 */
+.link_cent{width:958px; height:70px; padding:10px 20px; line-height:24px; font-size:14px; margin:0 auto; background:#f3f3f3; border:1px solid #E9E9E9; position:relative;}
+.link_jiao{ width:52px; height:51px; background:url("../images/link_bg.gif")/*tpa=http://ios.155.cn/file/default/images/link_bg.gif*/;position:absolute; top:0; left:0; }
+.link_cent a{ height:24px; line-height:24px; padding:0 15px; float:left; display:block;white-space:nowrap }
+/*flash样式*/
+.lundan{ width:1200px; clear:both; height:230px;}
+.container, .container *{margin:0; padding:0;}
+.container ul li{ list-style:none;}
+
+.container{width:420px; height:200px; overflow:hidden;position:relative; float:left;}
+
+.slider{position:absolute;}
+.slider ul{ width:553px;}
+.slider ul li{ width:546px;}
+.slider li{ list-style:none;display:inline;background-color:#ddd;}
+.slider img{ width:420px; height:200px; display:block; }
+
+.slider2{width:2000px;}
+.slider2 li{float:left;}
+
+.num{
+	position:absolute;
+	right:10px;
+	bottom:5px;
+}
+.num li{
+	border:#000 1px solid;
+	list-style:none;
+	float: left;
+	opacity:0.8;
+	color:#FFF;
+	text-align: center;
+	border-radius:50px;
+	background:#000;
+	line-height: 16px;
+	width: 5px;
+	height: 5px;
+	font-family: Arial;
+	font-size: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 3px 1px;
+}
+.num li.on{
+	opacity:1;
+	border:#007500 1px solid;
+	list-style:none;
+	float: left;
+	color:#FFF;
+	text-align: center;
+	border-radius:50px;
+	background:#007500;
+	line-height: 16px;
+	width: 5px;
+	height: 5px;
+	font-family: Arial;
+	font-size: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 3px 1px;}

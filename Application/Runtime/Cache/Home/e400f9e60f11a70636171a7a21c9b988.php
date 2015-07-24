@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -49,7 +49,7 @@
 <div class="box_mulu">
      <ul>
          <li><span class="mulu_bg1">安卓</span>
-		        {appname}
+		        <a href="asdf"  target="_blank">adfc</a><a href="asdf"  target="_blank">asdsdf</a><a href="asdf"  target="_blank">adf</a>
 				</li>
          <li><span class="mulu_bg2">苹果</span>
 		         <a  href=""  target="_blank">开心泡泡龙1000关 </a>

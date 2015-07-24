@@ -2,7 +2,7 @@
 
 function appkey()
 {	
-	$appname = 'Ó¦ÓÃ';
+	$appname = 'åº”ç”¨';
 	$appname = iconv('GB2312', 'UTF-8', $appname);    
     return $appname;
 }

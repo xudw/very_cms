@@ -21,6 +21,10 @@
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
+    <li></li>
+    <li></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/MakeHtml/index/">生成页面</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Index/index/">前台首页</a></li>
 </ul>
 
 
@@ -30,7 +34,7 @@
 	
     <div id="right" >
 	<?php echo ($error); ?>
-	<form enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/Home/AppAdmins/makeJob">  
+	<form  enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/Home/AppAdmins/makeJob">
         <table>
 		<tr>
 			<td>应用名</td>

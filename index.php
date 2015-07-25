@@ -20,11 +20,13 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
 
+define('BIND_MODULE', 'Home');
 //定义网站根目录
 define('WEB_PATH',dirname(__FILE__));
 
 define('WEB_NAME','/very_cms');
 
+define('WEB_ADMIN_TITLE','应用');
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

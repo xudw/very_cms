@@ -49,14 +49,16 @@
 <div class="box_mulu">
      <ul>
          <li><span class="mulu_bg1">安卓</span>
-		        {appname}
+		        {androidapp}
 				</li>
          <li><span class="mulu_bg2">苹果</span>
-		         <a  href=""  target="_blank">开心泡泡龙1000关 </a>
+		         {iosapp}
 				</li>
          <li><span class="mulu_bg3">wp</span>
+            {wpapp}
 				</li>
          <li><span class="mulu_bg4">HTML5</span>
+            {htmlapp}
 				</li>
      </ul>
 </div>
@@ -70,7 +72,7 @@
 	 </form>
      </div>
      <div class="sou_zi"><span>热门搜索</span>
-	       <a target="_blank" href="" >大战美人鱼</a>
+         {hotsearch}
 		</div>
 </div>
 <!--bamner -->
@@ -120,11 +122,11 @@
 	 </div>
      <div class="c1_news">
           <div class="wy_news_tit">
-             <h1><a target="_blank" href="" title="" class="red">过圣诞赢iPhone6 《时空猎人》豪礼等你抢</a></h1>
-             <p><a href="" title=""  target='_blank'>[剑仙缘]</a><ahref="" title=""  target='_blank'>[诛神online-五岳争霸]</a><a href="" title=""  target='_blank'>[时空猎人]</a></p>
+             <h1>{wellone}</h1>
+             <!-- <p><a href="" title=""  target='_blank'>[剑仙缘]</a><ahref="" title=""  target='_blank'>[诛神online-五岳争霸]</a><a href="" title=""  target='_blank'>[时空猎人]</a></p> -->
           </div>
           <ul>
-		          <li><a target="_blank" href=""  title="">《天天挂机》圣诞大放送！</a></li>
+		          <li>{welltwo}</li>
 		          </ul>
      </div>
 </div>
@@ -135,9 +137,11 @@
           <div class="c2_c_t"><h2>新游测试表</h2></div>
           <ul class="c2_cs_ul">
 
-				             <li><span class="c2li_s1">09-12</span>
-             <a href=""  target="_blank" class="c2li_s2">刀塔风暴</a>
-             <a href=""  target="_blank" target="_blank" class="c2li_s3"></a>
+				             <li>
+                     <!-- <span class="c2li_s1">09-12</span> -->
+                     {testgame}
+          <!--    <a href=""  target="_blank" class="c2li_s2">刀塔风暴</a>
+             <a href=""  target="_blank" target="_blank" class="c2li_s3"></a> -->
              <span class="c2li_s4"></span>
              </li>
 
@@ -150,23 +154,22 @@
               <p class="tit_left">新游评测</p><p class="tit_right"><a href=""  target="_blank">more</a></p>
           </div>
            <ul style="border-bottom:1px dashed #efefef;">
-              <div><a target="_blank" href=""><img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_8441417656420.jpg"  alt=""/>《我是圣斗士》童年梦想 今日启程</a></div>
-			              <li><a target="_blank" href="" title="">《女神大联盟》评测：女神&女神&女神..</a></li>
+              <div>{newtest_tagone}
+              </div>
+                    {newtestone}
 			          </ul>
            <ul>
-              <div><a target="_blank"  href="" ><img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_9351417059309.jpg"  alt=""/>《焚寂》和我一起享受快乐修仙</a></div>
-			              <li><a target="_blank"  href="" title="">《战神》手游版！《战魂西游》横空出世..</a></li>
+              <div>{newtest_tagtwo}
+              </div>
+                    {newtesttwo}
 			          </ul>
      </div>
      <!--二维码-->
-     <div class="c1_weixin">
-          <p><span style=" font-size:20px; color:#278c04; line-height:32px;">手游乐园</span><br />单机游戏免费下
-<br />海量应用任你选</p>
-          <p style=" padding-top:24px;"><span style=" font-size:20px; color:#333; line-height:32px;">微信公众账号</span><br />订阅手游天下
-<br />每日精品游戏推送</p>
-     </div>
+     <!-- <div class="c1_weixin"> -->
+     <div class="c1_gg">{advone}</a></div>
+     <!-- </div> -->
      <!--广告图-->
-     <div class="c1_gg"><a  href="" target="_blank"><img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_3441416380280.jpg" alt=""/></a></div>
+     <div class="c1_gg" style="margin-top:40px;">{advtwo}</div>
 </div>
 
 <div class="box_cent4">
@@ -176,14 +179,10 @@
             <h2>安卓排行榜</h2></div>
           <ul class="c2_phb">
             <li class="phb_top_one">
-                <div class="phb_top_bot1">1</div>
-               <img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_3531411874238.png"  />
-              <div class="phb_top_zi"><a href="" class="hei333">真实赛车3 全机型</a></div>
-                <p class="phb_top_zi2">><a target="_blank" href="">体育竞速</a></p>
+            {andtopone}
+                
             </li>
-                         <li class="phb_top_two"><div class="phb_top_bot1">2</div><a target="_blank" href="">找你妹2014mi</a><span>休闲养成</span></li>
-
-   
+            {andtoplist}
 
         </ul>
      </div>
@@ -211,9 +210,10 @@
           <div class="hd_tit">
           <p class="tit_left">安卓资讯</p><p class="tit_right"><a href="#">more</a></p>
           </div>
-          <div class="hd_pic"><a href="" target="_blank"><img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_391403143353.jpg"   alt=""/></a></div>
+          <div class="hd_pic">{advthree}</div>
           <ul class="hd_ul">
-		  	              <li><a href="" target="_blank">Chillingo新作《海盗帮派》更名为《荣耀突袭》</a></li>
+                      {index_newlist}
+		  	              
 		  	          </ul>
      </div>
 </div>
@@ -222,7 +222,8 @@
 <div class="box_cent5">
      <div class="hd_tit"><p class="tit_left">安卓游戏</p><p class="tit_right"><a href="">more</a></p></div>
      <ul class="game_list">
-           			 <li><a target="_blank" href=""><img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_751418113072.png" /></a><p><a target="_blank" href="">全民大乱斗 v1.</a></p></li>
+      {index_all_and}
+           			
 					<!--24	-->
 			     </ul>
 </div>

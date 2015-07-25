@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
 	
-        <title><?php echo (appkey($appname)); ?></title>
+        <title><?php echo WEB_ADMIN_TITLE; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="pragma" content="no-cache" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
@@ -18,13 +18,13 @@
         <div id="menu_sty">
             <div id="munu_sty_s">
                 <ul>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/index/">后台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newShow/">资讯管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Adv/index/">广告管理</a></li>
     <li></li>
     <li></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/MakeHtml/index/">生成页面</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Index/index/">前台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
 </ul>
 
 
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div id="right">
-        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newIndex">添加资讯</a>
+        <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newIndex">添加资讯</a>
         <table>
             <tr>
                 <th>
@@ -48,6 +48,9 @@
                     作者
                 </th>
                 <th>
+                    新闻类型
+                </th>
+                <th>
                     创建日期
                 </th>
                 <th>
@@ -55,15 +58,16 @@
                 </th>
             </tr>
             <?php if(is_array($new_list)): foreach($new_list as $key=>$list): ?><tr>
-                    <td><?php echo ($list["title"]); ?></td>
-                    <td><?php  echo substr($list['content'],0,20).'......'; ?></td>
+                    <td><?php  echo mb_substr($list['title'],0,10).'......'; ?></td>
+                    <td><?php  echo mb_substr($list['content'],0,20).'......'; ?></td>
                     <td><?php echo ($list["come"]); ?></td>
                     <td><?php echo ($list["author"]); ?></td>
+                    <td><?php echo ($list["newtype"]); ?></td>
                     <td><?php echo ($list["time"]); ?></td>
                     <td>
                         <a onClick="return confirm('您确定要删除此内容？');"
-                           href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/delnews/table/new/nid/<?php echo $list['id']; ?>">删除</a>
-                        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editnews/nid/<?php echo $list['id']; ?>">修改</a>
+                           href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/delnews/table/new/nid/<?php echo $list['id']; ?>">删除</a>
+                        <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/editnews/nid/<?php echo $list['id']; ?>">修改</a>
                     </td>
                 </tr><?php endforeach; endif; ?>
         </table>

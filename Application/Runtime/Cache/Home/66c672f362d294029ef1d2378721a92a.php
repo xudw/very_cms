@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
 	
-        <title><?php echo (appkey($appname)); ?></title>
+        <title><?php echo WEB_ADMIN_TITLE; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="pragma" content="no-cache" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
@@ -18,9 +18,13 @@
         <div id="menu_sty">
             <div id="munu_sty_s">
                 <ul>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/index/">后台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newShow/">资讯管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Adv/index/">广告管理</a></li>
+    <li></li>
+    <li></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
 </ul>
 
 
@@ -28,7 +32,7 @@
         </div>
     </div>
     <div id="right">
-        <a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/addAdv">添加广告</a>
+        <a href="<?php echo WEB_NAME; ?>/index.php/Adv/addAdv">添加广告</a>
         <table>
             <tr>
                 <th>
@@ -58,8 +62,8 @@
                     <td><?php echo ($list["mtime"]); ?></td>
                     <td>
                         <a onClick="return confirm('您确定要删除此内容？');"
-                           href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/delnews/table/adv/nid/<?php echo $list['id']; ?>">删除</a>
-                        <a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/editadv/nid/<?php echo $list['id']; ?>">修改</a>
+                           href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/delnews/table/adv/nid/<?php echo $list['id']; ?>">删除</a>
+                        <a href="<?php echo WEB_NAME; ?>/index.php/Adv/editadv/nid/<?php echo $list['id']; ?>">修改</a>
                     </td>
                 </tr><?php endforeach; endif; ?>
         </table>

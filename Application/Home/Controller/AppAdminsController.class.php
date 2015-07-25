@@ -89,7 +89,7 @@ class AppAdminsController extends Controller
                 $apptable->tableName = 'very_app';
                 $time = date('Y-m-d H:i:s');
                 $insert_sql = "insert into very_app values ('','$appname','$appshowname','$apptype','$appversion','$appsystem','$applanguage','',
-					'$apphome','$appimage','$time','$come','$money','$summary','$upsummary','')";
+					'$apphome','$appimage','$time','$come','$money','$summary','$upsummary','','')";
                 $apptable->execute($insert_sql);
                 $this->success('操作成功', 'index', 3);
 
@@ -185,7 +185,7 @@ class AppAdminsController extends Controller
                 ,appversion='$appversion',applanguage='$applanguage',appsystem='$appsystem',apphome='$apphome',appimage='$appimage',come='$come'
                 ,summary='$summary',upsummary='$upsummary'  where id='$id'";
                 $new_table->execute($upate_sql);
-                redirect(WEB_NAME . "/index.php/Home/AppAdmins/index");
+                redirect(WEB_NAME . "/index.php/AppAdmins/index");
             }
         }
 
@@ -215,18 +215,22 @@ class AppAdminsController extends Controller
             $title = htmlspecialchars(addslashes($_POST['title']));
             $author = htmlspecialchars(addslashes($_POST['author']));
             $come = htmlspecialchars(addslashes($_POST['come']));
+            $newtype = htmlspecialchars(addslashes($_POST['newtype']));
             $content = htmlspecialchars(addslashes(trim($_POST['content'])));
 
             if (empty($title)) {
                 $error = '请填写标题';
             } elseif (empty($author)) {
                 $error = '请填写作者';
+            } elseif (empty($newtype)) {
+                $error = '请选择类型';
             } else if (empty($content)) {
                 $error = '请填写内容';
             }
             if (!empty($error)) {
                 $this->assign('title', $title);
                 $this->assign('author', $author);
+                $this->assign('newtype', $newtype);
                 $this->assign('content', $content);
                 $this->assign('come', $come);
                 $this->assign('error', $error);
@@ -236,7 +240,7 @@ class AppAdminsController extends Controller
                 $new_table = D("very_news");
                 $new_table->tableName = "very_news";
                 $time = date('Y-m-d H:i:s');
-                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author')";
+                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author','$newtype')";
                 $new_table->execute($insert_sql);
 
                 $this->success('操作成功', 'newShow', 3);
@@ -252,13 +256,13 @@ class AppAdminsController extends Controller
         $table = htmlspecialchars(addslashes($_GET['table']));
         if ($table == 'app') {
             $dbt = 'very_app';
-            $url = "/index.php/Home/AppAdmins/index";
+            $url = "/index.php/AppAdmins/index";
         } elseif ($table == 'new') {
             $dbt = 'very_news';
-            $url = "/index.php/Home/AppAdmins/newShow";
+            $url = "/index.php/AppAdmins/newShow";
         }elseif ($table == 'adv') {
             $dbt = 'very_adv';
-            $url = "/index.php/Home/Adv/index";
+            $url = "/index.php/Adv/index";
         }
         $nid = htmlspecialchars(addslashes($_GET['nid']));
         $new_table = D($dbt);
@@ -272,7 +276,6 @@ class AppAdminsController extends Controller
     public function editnews()
     {
         $nid = htmlspecialchars(addslashes($_GET['nid']));
-        $this->assign('nids', $nid);
         $new_table = D("very_news");
         $new_table->tableName = "very_news";
         $get_sql = "select * from very_news where id='$nid'";
@@ -283,6 +286,7 @@ class AppAdminsController extends Controller
             $title = htmlspecialchars(addslashes($_POST['title']));
             $author = htmlspecialchars(addslashes($_POST['author']));
             $come = htmlspecialchars(addslashes($_POST['come']));
+            $newtype = htmlspecialchars(addslashes($_POST['newtype']));
             $content = htmlspecialchars(addslashes(trim($_POST['content'])));
 
             $old_sql = "select id from very_news where title='$title' and id!='$nids'";
@@ -291,6 +295,8 @@ class AppAdminsController extends Controller
                 $error = '该标题已经存在';
             } else if (empty($title)) {
                 $error = '请填写标题';
+            } elseif (empty($newtype)) {
+                $error = '请选择类型';
             } elseif (empty($author)) {
                 $error = '请填写作者';
             } elseif (empty($content)) {
@@ -298,9 +304,10 @@ class AppAdminsController extends Controller
             }
 
             if (!empty($error)) {
-                $lists['nids'] = $nids;
+                $lists['id'] = $nids;
                 $lists['title'] = $title;
                 $lists['author'] = $author;
+                $lists['newtype'] = $newtype;
                 $lists['content'] = $content;
                 $lists['come'] = $come;
                 $this->assign('error', $error);
@@ -309,9 +316,9 @@ class AppAdminsController extends Controller
                 $this->display();
                 exit;
             } else {
-                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come'  where id='$nids'";
+                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come' ,newtype='$newtype'  where id='$nids'";
                 $new_table->execute($upate_sql);
-                redirect(WEB_NAME . "/index.php/Home/AppAdmins/newShow");
+                redirect(WEB_NAME . "/index.php/AppAdmins/newShow");
             }
         }
 

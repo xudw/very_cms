@@ -21,6 +21,10 @@
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
+    <li></li>
+    <li></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/MakeHtml/index/">生成页面</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Index/index/">前台首页</a></li>
 </ul>
 
 
@@ -42,6 +46,17 @@
                 <tr>
                     <td>来源</td>
                     <td><input type="text" name="come" value="<?php echo ($come); ?>"></td>
+                </tr>
+                <tr>
+                    <td>咨询类型</td>
+                    <td>
+                    <select name='newtype'>
+                        <option value=''>选择类型</option>
+                        <option value='新游评测' <?php if($newtype=='新游评测'){ ?>  selected="selected"  <?php  } ?> >新游评测</option>
+                        <option value='游戏新闻' <?php if($newtype=='游戏新闻'){ ?>  selected="selected"  <?php  } ?> >游戏新闻</option>
+                        <option value='福利新闻' <?php if($newtype=='福利新闻'){ ?>  selected="selected"  <?php  } ?> >福利新闻</option>
+                    </select>
+                    </td>
                 </tr>
                 <tr>
                     <td>内容</td>

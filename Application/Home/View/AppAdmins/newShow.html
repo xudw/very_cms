@@ -11,7 +11,7 @@
         </div>
     </div>
     <div id="right">
-        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newIndex">添加资讯</a>
+        <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newIndex">添加资讯</a>
         <table>
             <tr>
                 <th>
@@ -27,6 +27,9 @@
                     作者
                 </th>
                 <th>
+                    新闻类型
+                </th>
+                <th>
                     创建日期
                 </th>
                 <th>
@@ -36,15 +39,16 @@
             <foreach name="new_list" item="list">
 
                 <tr>
-                    <td>{$list.title}</td>
-                    <td><?php  echo substr($list['content'],0,20).'......'; ?></td>
+                    <td><?php  echo mb_substr($list['title'],0,10).'......'; ?></td>
+                    <td><?php  echo mb_substr($list['content'],0,20).'......'; ?></td>
                     <td>{$list.come}</td>
                     <td>{$list.author}</td>
+                    <td>{$list.newtype}</td>
                     <td>{$list.time}</td>
                     <td>
                         <a onClick="return confirm('您确定要删除此内容？');"
-                           href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/delnews/table/new/nid/<?php echo $list['id']; ?>">删除</a>
-                        <a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editnews/nid/<?php echo $list['id']; ?>">修改</a>
+                           href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/delnews/table/new/nid/<?php echo $list['id']; ?>">删除</a>
+                        <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/editnews/nid/<?php echo $list['id']; ?>">修改</a>
                     </td>
                 </tr>
 

@@ -21,6 +21,10 @@
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
+    <li></li>
+    <li></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/MakeHtml/index/">生成页面</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Index/index/">前台首页</a></li>
 </ul>
 
 
@@ -30,7 +34,7 @@
     <div id="right">
         <?php echo ($error); ?>
         <form method="post" action="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editnews">
-            <input type="hidden" name="nids" value="<?php echo ($nids); ?>">
+            <input type="hidden" name="nids" value="<?php echo ($list["id"]); ?>">
             <table>
                  <tr>
                      <td>标题</td>
@@ -45,6 +49,17 @@
                     <td><input type="text" name="come" value="<?php echo ($list["come"]); ?>"></td>
                 </tr>
                 <tr>
+                    <td>咨询类型</td>
+                    <td>
+                    <select name='newtype'>
+                        <option value=''>选择类型</option>
+                        <option value='新游评测' <?php if($list['newtype']=='新游评测'){ ?>  selected="selected"  <?php  } ?> >新游评测</option>
+                        <option value='游戏新闻' <?php if($list['newtype']=='游戏新闻'){ ?>  selected="selected"  <?php  } ?> >游戏新闻</option>
+                        <option value='福利新闻' <?php if($list['newtype']=='福利新闻'){ ?>  selected="selected"  <?php  } ?> >福利新闻</option>
+                    </select>
+                    </td>
+                </tr>
+                 <tr>
                     <td>内容</td>
                     <td>
                         <textarea name="content" row="5" col="10">

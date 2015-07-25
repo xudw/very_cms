@@ -122,7 +122,7 @@ class AdvController extends Controller
                 $upate_sql = "update very_adv set advname='$advname',showpage='$showpage',stime='$stime',etime='$etime'
                 ,advimage='$appimage'  where id='$id'";
                 $new_table->execute($upate_sql);
-                redirect(WEB_NAME . "/index.php/Home/Adv/index");
+                redirect(WEB_NAME . "/index.php/Adv/index");
             }
         }
 
@@ -138,8 +138,8 @@ class AdvController extends Controller
         $max_size = '5000000';      // 最大文件限制（单位：byte）
         $date = date('Ymd');
         $datetime = date('YmdHis');
-        $upfilel = WEB_NAME . '/adv/' . $date; //图片目录路径
-        $upfile = './adv/' . $date;
+        $upfilel = WEB_NAME . '/adv'; //图片目录路径
+        $upfile = './adv';
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { //判断提交方式是否为POST
             if (!file_exists($upfile)) {  // 判断存放文件目录是否存在

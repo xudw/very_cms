@@ -64,6 +64,23 @@ class MakeHtmlController extends Controller
         $str = str_replace("{hotsearch}", $search_html, $str);
         /*搜索栏部分结束*/
 
+        /*首页幻灯*/
+        $index_slide = "";
+        $get_islide_sql = "select id,advname,advimage from very_adv where showpage='首页幻灯' and stime<='$date' and etime>='$date' order by mtime desc limit 5";
+        $islide_list = $advtable->query($get_islide_sql);
+        foreach ($islide_list as $islidekey=>$islidel) {
+            $isimage = $islidekey+1;
+            $id = $islidel['id'];
+            $index_slide .= "img".$isimage."=new Image();
+            img".$isimage.".src='".$islidel['advimage']."';
+            img".$isimage.".alt='".$islidel['advname']."';
+            url".$isimage."=new Image();
+            url".$isimage.".src='<?php echo WEB_NAME; ?>/index.php/Index/product/pid/".$id."';
+            url".$isimage.".title='".$islidel['advname']."';";
+        }
+        $str = str_replace("{index_slide}", $index_slide, $str);    
+
+        /*首页幻灯结束*/
         /*福利新闻*/    
         $wellone_html = "";
         $welltwo_html = "";
@@ -212,7 +229,7 @@ class MakeHtmlController extends Controller
         
         $del_html_sql ="delete from very_html where nick_name='首页'";
         $htmltable->execute($del_html_sql);  
-        
+
         $insert_html_sql ="insert into very_html values ('','$htmlpage','首页','$htmltime')";          
         $htmltable->execute($insert_html_sql);
 

@@ -66,7 +66,7 @@ $(document).ready(function() {
                         <select name='showpage'>
                             <option value='首页' <?php if($list['showpage']=='首页'){ ?>  selected="selected"  <?php  } ?>>首页</option>
                             <option value='首页幻灯' <?php if($list['showpage']=='首页幻灯'){ ?>  selected="selected"  <?php  } ?>>首页幻灯</option>
-                            <option value='二级页' <?php if($list['showpage']=='首页'){ ?>  selected="selected"  <?php  } ?>>首页</option>
+                            <option value='二级页' <?php if($list['showpage']=='二级页'){ ?>  selected="selected"  <?php  } ?>>二级页</option>
                             <option value='二级页幻灯' <?php if($list['showpage']=='二级页幻灯'){ ?>  selected="selected"  <?php  } ?>>二级页幻灯</option>
                         </select>
                     </td>

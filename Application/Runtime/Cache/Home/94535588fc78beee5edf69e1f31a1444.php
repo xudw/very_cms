@@ -68,6 +68,12 @@
                         <a onClick="return confirm('您确定要删除此内容？');"
                            href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/delnews/table/app/nid/<?php echo $list['id']; ?>">删除</a>
                         <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/editapp/nid/<?php echo $list['id']; ?>">修改</a>
+                        <?php if($list['tag']=='1'){ ?>
+                            <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/maketag/nid/<?php echo $list['id']; ?>/type/2">取消标记</a>
+                        <?php  }else{ ?>
+                            <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/maketag/nid/<?php echo $list['id']; ?>/type/1">标记</a>
+                        <?php }　?>
+
                     </td>
                 </tr><?php endforeach; endif; ?>
         </table>

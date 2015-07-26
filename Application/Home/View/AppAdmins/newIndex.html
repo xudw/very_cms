@@ -12,7 +12,7 @@
     </div>
     <div id="right">
         {$error}
-        <form method="post" action="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newIndex">
+        <form enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newIndex">
             <table>
                  <tr>
                      <td>标题</td>
@@ -35,6 +35,12 @@
                         <option value='游戏新闻' <?php if($newtype=='游戏新闻'){ ?>  selected="selected"  <?php  } ?> >游戏新闻</option>
                         <option value='福利新闻' <?php if($newtype=='福利新闻'){ ?>  selected="selected"  <?php  } ?> >福利新闻</option>
                     </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>图片</td>
+                    <td>
+                        <input type="file" name="newimage" />
                     </td>
                 </tr>
                 <tr>

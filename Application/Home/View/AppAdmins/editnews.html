@@ -12,7 +12,7 @@
     </div>
     <div id="right">
         {$error}
-        <form method="post" action="<?php echo WEB_NAME; ?>/index.php/AppAdmins/editnews">
+        <form enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME; ?>/index.php/AppAdmins/editnews">
             <input type="hidden" name="nids" value="{$list.id}">
             <table>
                  <tr>
@@ -36,6 +36,14 @@
                         <option value='游戏新闻' <?php if($list['newtype']=='游戏新闻'){ ?>  selected="selected"  <?php  } ?> >游戏新闻</option>
                         <option value='福利新闻' <?php if($list['newtype']=='福利新闻'){ ?>  selected="selected"  <?php  } ?> >福利新闻</option>
                     </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>图片</td>
+                    <td>
+                        <img src="{$list.newimage}" width="100px" height="100px">
+                        <input type="hidden" name="newimages" value="{$list.newimage}">
+                        <input type="file" name="newimage"/>
                     </td>
                 </tr>
                  <tr>

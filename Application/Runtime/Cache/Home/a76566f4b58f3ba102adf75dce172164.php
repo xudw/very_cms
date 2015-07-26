@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
 	
-        <title><?php echo (appkey($appname)); ?></title>
+        <title><?php echo WEB_ADMIN_TITLE; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="pragma" content="no-cache" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
@@ -37,9 +37,13 @@
         <div id="menu_sty">
             <div id="munu_sty_s">
                 <ul>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/index/">后台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newShow/">资讯管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Adv/index/">广告管理</a></li>
+    <li></li>
+    <li></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
 </ul>
 
 
@@ -49,7 +53,7 @@
 	
     <div id="right" >
 	<?php echo ($error); ?>
-	<form enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/Home/Adv/addAdv">  
+	<form enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/Adv/addAdv">  
         <table>
 		<tr>
 			<td>广告名称</td>
@@ -61,7 +65,9 @@
 				<select name='showpage'>
 					<option value=''>选择页面</option>
 					<option value='首页'  <?php if($showpage=='首页'){ ?>  selected="selected"  <?php  } ?>>首页</option>
+                    <option value='首页幻灯'  <?php if($showpage=='首页幻灯'){ ?>  selected="selected"  <?php  } ?>>首页幻灯</option>
 					<option value='二级页'  <?php if($showpage=='二级页'){ ?>  selected="selected"  <?php  } ?>>二级页</option>
+                    <option value='二级页幻灯'  <?php if($showpage=='二级页幻灯'){ ?>  selected="selected"  <?php  } ?>>二级页幻灯</option>
 				</select>
 			</td>
 		</tr>

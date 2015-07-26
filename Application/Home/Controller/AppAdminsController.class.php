@@ -15,7 +15,7 @@ class AppAdminsController extends Controller
         $apptable = D('very_app');
         $apptable->tableName = 'very_app';
 
-        $get_sql = "select id,appname,apptype,appsystem,applanguage,money,time from very_app order by time desc";
+        $get_sql = "select id,appname,apptype,appsystem,applanguage,money,time,tag from very_app order by time desc";
         $app_list = $apptable->query($get_sql);
 
 
@@ -226,12 +226,18 @@ class AppAdminsController extends Controller
                 $error = '请选择类型';
             } else if (empty($content)) {
                 $error = '请填写内容';
+            } else if (!empty($_FILES)) {
+                $appimage = $this->_uploadnew();
+                if (is_array($appimage)) {
+                    $error = $appimage['mess'];
+                }
             }
             if (!empty($error)) {
                 $this->assign('title', $title);
                 $this->assign('author', $author);
                 $this->assign('newtype', $newtype);
                 $this->assign('content', $content);
+                $this->assign('newimage', $appimage);
                 $this->assign('come', $come);
                 $this->assign('error', $error);
                 $this->display();
@@ -240,7 +246,7 @@ class AppAdminsController extends Controller
                 $new_table = D("very_news");
                 $new_table->tableName = "very_news";
                 $time = date('Y-m-d H:i:s');
-                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author','$newtype')";
+                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author','$newtype','$appimage')";
                 $new_table->execute($insert_sql);
 
                 $this->success('操作成功', 'newShow', 3);
@@ -288,6 +294,7 @@ class AppAdminsController extends Controller
             $come = htmlspecialchars(addslashes($_POST['come']));
             $newtype = htmlspecialchars(addslashes($_POST['newtype']));
             $content = htmlspecialchars(addslashes(trim($_POST['content'])));
+            $newimages = htmlspecialchars(addslashes($_POST['newimages']));
 
             $old_sql = "select id from very_news where title='$title' and id!='$nids'";
             $hive = $new_table->query($old_sql);
@@ -302,13 +309,22 @@ class AppAdminsController extends Controller
             } elseif (empty($content)) {
                 $error = '请填写内容';
             }
-
+            if($newimages){
+                $newimage = $newimages;
+            }
+            if(!empty($_FILES['newimage']['name'])) {
+                $newimage = $this->_uploadnew();
+                if (is_array($newimage)) {
+                    $error = $newimage['mess'];
+                }
+            }
             if (!empty($error)) {
                 $lists['id'] = $nids;
                 $lists['title'] = $title;
                 $lists['author'] = $author;
                 $lists['newtype'] = $newtype;
                 $lists['content'] = $content;
+                $lists['newimage'] = $newimage;
                 $lists['come'] = $come;
                 $this->assign('error', $error);
 
@@ -316,7 +332,7 @@ class AppAdminsController extends Controller
                 $this->display();
                 exit;
             } else {
-                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come' ,newtype='$newtype'  where id='$nids'";
+                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come' ,newtype='$newtype',newimage='$newimage'  where id='$nids'";
                 $new_table->execute($upate_sql);
                 redirect(WEB_NAME . "/index.php/AppAdmins/newShow");
             }
@@ -326,7 +342,73 @@ class AppAdminsController extends Controller
         $this->display();
     }
 
+    public function maketag(){
+        $nid = htmlspecialchars(addslashes($_GET['nid']));
+        $type = htmlspecialchars(addslashes($_GET['type']));
+        $htmltable = D("very_app");
+        $up_sql = "update very_app set tag='$type' where id='$nid'";
+        $htmltable->execute($up_sql);
+        redirect(WEB_NAME . "/index.php/AppAdmins/index");    
+    }
 
+    public function _uploadnew()
+    {
+        $file = $_FILES['newimage'];
+
+        $arrType = array('image/jpg', 'image/gif', 'image/png', 'image/bmp', 'image/pjpeg');
+        $max_size = '500000';      // 最大文件限制（单位：byte）
+        $date = date('Ymd');
+        $datetime = date('YmdHis');
+        $upfilel = WEB_NAME . '/newimage/' . $date; //图片目录路径
+        $upfile = './newimage/' . $date;
+
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') { //判断提交方式是否为POST
+            if (!file_exists($upfile)) {  // 判断存放文件目录是否存在
+                mkdir($upfile, 0777, true);
+            }
+            $imageSize = getimagesize($file['tmp_name']);
+//            list($width, $height) = getimagesize($filename);
+//            $new_width = $width * $percent;
+//            $new_height = $height * $percent;
+//
+//// 重新取样
+//            $image_p = imagecreatetruecolor($new_width, $new_height);
+//            $image = imagecreatefromjpeg($filename);
+//            imagecopyresampled($image_p, $image, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
+
+            $img = $imageSize[0] . '*' . $imageSize[1];
+            $fname = $file['name'];
+            $ftype = explode('.', $fname);
+            $picName = $upfile . "/$datetime" . $fname;
+            $picNamel = $upfilel . "/$datetime" . $fname;
+            if (!is_uploaded_file($file['tmp_name'])) { //判断上传文件是否存在
+                $error = "请选择文件！";
+            } else if ($file['size'] > $max_size) {  //判断文件大小是否大于500000字节
+                $error = "上传文件太大！";
+            } else if (!in_array($file['type'], $arrType)) {  //判断图片文件的格式
+                $error = "上传文件格式不对！";
+            } else if (file_exists($picName)) {
+                $error = "同文件名已存在！";
+            } elseif (!move_uploaded_file($file['tmp_name'], $picName)) {
+                $error = "移动文件出错！";
+            }
+
+            if (!empty($error)) {
+                $errors['mess'] = $error;
+                return $errors;
+                exit;
+            } else {
+
+//                echo "<font color='#FF0000'>图片文件上传成功！</font><br/>";
+//                echo "<font color='#0000FF'>图片大小：$img</font><br/>";
+//                echo "图片预览：<br><div style='border:#F00 1px solid; width:200px;height:200px'>
+//                <img src=\"" . $picNamel . "\" width=200px height=200px>" . $fname . "</div>";
+                return $picNamel;
+
+            }
+        }
+    }
     public function _upload()
     {
         $file = $_FILES['appimage'];
@@ -335,8 +417,8 @@ class AppAdminsController extends Controller
         $max_size = '500000';      // 最大文件限制（单位：byte）
         $date = date('Ymd');
         $datetime = date('YmdHis');
-        $upfilel = WEB_NAME . '/image/' . $date; //图片目录路径
-        $upfile = './image/' . $date;
+        $upfilel = WEB_NAME . '/appimage/' . $date; //图片目录路径
+        $upfile = './appimage/' . $date;
 
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { //判断提交方式是否为POST

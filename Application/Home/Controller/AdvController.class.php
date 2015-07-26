@@ -138,8 +138,8 @@ class AdvController extends Controller
         $max_size = '5000000';      // 最大文件限制（单位：byte）
         $date = date('Ymd');
         $datetime = date('YmdHis');
-        $upfilel = WEB_NAME . '/adv'; //图片目录路径
-        $upfile = './adv';
+        $upfilel = WEB_NAME . '/advimage/'.$date; //图片目录路径
+        $upfile = './advimage/'.$date;
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { //判断提交方式是否为POST
             if (!file_exists($upfile)) {  // 判断存放文件目录是否存在

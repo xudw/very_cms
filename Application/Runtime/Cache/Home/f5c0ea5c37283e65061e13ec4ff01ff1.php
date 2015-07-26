@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
 	
-        <title><?php echo (appkey($appname)); ?></title>
+        <title><?php echo WEB_ADMIN_TITLE; ?></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="pragma" content="no-cache" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
@@ -18,13 +18,13 @@
         <div id="menu_sty">
             <div id="munu_sty_s">
                 <ul>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/index/">后台首页</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/newShow/">资讯管理</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Adv/index/">广告管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/index/">后台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newShow/">资讯管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Adv/index/">广告管理</a></li>
     <li></li>
     <li></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/MakeHtml/index/">生成页面</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Home/Index/index/">前台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
 </ul>
 
 
@@ -33,7 +33,7 @@
     </div>
     <div id="right">
         <?php echo ($error); ?>
-        <form method="post" action="<?php echo WEB_NAME; ?>/index.php/Home/AppAdmins/editnews">
+        <form enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME; ?>/index.php/AppAdmins/editnews">
             <input type="hidden" name="nids" value="<?php echo ($list["id"]); ?>">
             <table>
                  <tr>
@@ -57,6 +57,14 @@
                         <option value='游戏新闻' <?php if($list['newtype']=='游戏新闻'){ ?>  selected="selected"  <?php  } ?> >游戏新闻</option>
                         <option value='福利新闻' <?php if($list['newtype']=='福利新闻'){ ?>  selected="selected"  <?php  } ?> >福利新闻</option>
                     </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>图片</td>
+                    <td>
+                        <img src="<?php echo ($list["newimage"]); ?>" width="100px" height="100px">
+                        <input type="hidden" name="newimages" value="<?php echo ($list["newimage"]); ?>">
+                        <input type="file" name="newimage"/>
                     </td>
                 </tr>
                  <tr>

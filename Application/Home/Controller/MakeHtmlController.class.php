@@ -11,13 +11,11 @@ class MakeHtmlController extends Controller
         $date = date("Y-m-d H:i:s");
 
         $apptable = D('very_app');//应用
-        // $apptable->tableName = 'very_app';
-
         $newtable = D('very_news');//新闻
         $advtable = D('very_adv');//广告
-        // $apptable->tableName = 'very_app';
+        $htmltable = D('very_html');//静态页面
 
-        $path = "./Application/View/Index/";
+        $path = "./Application/Home/View/Index/";
         $fp = fopen($path . "index.html", "r"); //只读打开模板
         $str = fread($fp, filesize($path . "index.html"));//读取模板中内容
 
@@ -207,6 +205,17 @@ class MakeHtmlController extends Controller
         $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径
         fwrite($handle, $str); //把刚才替换的内容写进生成的HTML文件
         fclose($handle);
-        echo '123';
+
+        /*处理文件名入库*/
+        $htmltime = time();
+        $htmlpage = basename($newpage,".html");
+        
+        $del_html_sql ="delete from very_html where nick_name='首页'";
+        $htmltable->execute($del_html_sql);  
+        
+        $insert_html_sql ="insert into very_html values ('','$htmlpage','首页','$htmltime')";          
+        $htmltable->execute($insert_html_sql);
+
+
     }
 }

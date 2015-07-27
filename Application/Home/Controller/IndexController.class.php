@@ -36,4 +36,25 @@ class IndexController extends Controller {
         $newpage = $htmltable->query($sql);
         $this->display($newpage[0]['page_name']);
     }
+
+    //分类应用首页(iphone;android)
+    public function appshow(){
+
+        $type = htmlspecialchars(addslashes($_GET['type']));
+
+        $htmltable = D('very_html');
+        if($type=='android'){
+            $page = 'Android';
+        }else if($type=='ios'){
+            $page = 'iphone';
+        }else if($type=='wp'){
+            $page = 'wp_index';
+        }else if($type=='html5'){
+            $page = 'HTML5';
+        }     
+        
+        $sql = "select page_name from very_html where page_name='$page' and nick_name='应用分类' order by mtime desc limit 1";
+        $newpage = $htmltable->query($sql);
+        $this->display('Android');
+    }
 }

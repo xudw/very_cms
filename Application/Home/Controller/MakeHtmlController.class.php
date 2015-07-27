@@ -25,5 +25,9 @@ class MakeHtmlController extends Controller
 
         //生成新闻页
         $d->news_page($date,$apptable,$newtable,$advtable,$htmltable);
+
+        //生成应用分类页
+        $d->app_type_page($date,$apptable,$newtable,$advtable,$htmltable);
+
     }
 }

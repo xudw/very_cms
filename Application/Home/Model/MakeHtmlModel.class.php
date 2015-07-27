@@ -258,22 +258,15 @@ class MakeHtmlModel extends Model
               <div class="gx_tit">版本更新</div>
               <p>'.$allist['upsummary'].'</p>
           </div>
+       
 		            <!--排行榜 -->
           <div class="c2_phb" style=" margin-top:15px;">
+            <div class="qie_tit"><p class="qie_left">排行榜</p></div>
             <ul>
             '.$desc.'
 			            </ul>
           </div>
 
-          <!--排行榜 -->
-          <div class="c2_phb" style=" margin-top:15px;">
-             <div class="qie_tit"><p class="qie_left">排行榜</p></div>
-            <ul>
-
-
-
-            </ul>
-          </div>
 
      </div>
      <!--游戏 -->
@@ -396,6 +389,48 @@ mso-font-kerning:0pt">
 
             $insert_html_sql = "insert into very_html values ('','$htmlpage','新闻','$htmltime')";
             $htmltable->execute($insert_html_sql);
+        }
+    }
+
+    //大应用分类(android,iphone)
+    public function app_type_page($date,$apptable,$newtable,$advtable,$htmltable){
+
+        $path = "./Application/Home/View/Index/";
+
+        $get_much_type = "select appsystem from very_app group by appsystem";//查询有几种类型
+        $much_type = $apptable->query($get_much_type);
+
+        foreach($much_type as $much_ty){
+            $fp = fopen($path . "iphone.html", "r"); //只读打开模板
+            $str = fread($fp, filesize($path . "iphone.html"));//读取模板中内容
+
+            $newpage = $much_ty['appsystem'].'.html';
+            $newsystem_type = $much_ty['appsystem'];
+            $get_this_appnew_sql = "select * from very_news where newsystem='$newsystem_type' order by time desc limit 9";
+            $this_appnew_list = $newtable->query($get_this_appnew_sql);
+
+            $left_new_one = "";
+            $left_new_two = "";
+            $left_new_three = "";
+            foreach($this_appnew_list as $tappnewkey=>$tappnewl){
+                if($tappnewkey=='0'){
+                    $left_new_one .= '<h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></h1>
+                        <p>'.mb_substr($tappnewl['content'],0,15).'..</p>';
+                }elseif($tappnewkey>'0' && $tappnewkey<='4'){
+                    $left_new_two .= '<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></li>';
+                }elseif($tappnewkey>'4'){
+                    $left_new_three .= '<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></li>';
+                }
+            }
+            $str = str_replace("{left_new_one}", $left_new_one, $str);
+            $str = str_replace("{left_new_two}", $left_new_two, $str);
+            $str = str_replace("{left_new_three}", $left_new_three, $str);
+            unset($left_new_one,$left_new_two,$left_new_three);
+            fclose($fp);
+            $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径
+            fwrite($handle, $str); //把刚才替换的内容写进生成的HTML文件
+            fclose($handle);
+            unset($str,$fp);
         }
     }
 }

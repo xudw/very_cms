@@ -59,6 +59,23 @@ $(document).ready(function() {
                     </td>
                 </tr>
                 <tr>
+                    <td>系统</td>
+                    <td>
+                        <select name='system'>
+                            <option  value='Android' <?php if($list['system']=='Android'){ ?>  selected="selected"  <?php  } ?> >Android</option>
+                            <option  value='IOS' <?php if($list['system']=='IOS'){ ?>  selected="selected"  <?php  } ?> >IOS</option>
+                            <option  value='WP' <?php if($list['system']=='WP'){ ?>  selected="selected"  <?php  } ?> >WP</option>
+                            <option  value='HTML5' <?php if($list['system']=='HTML5'){ ?>  selected="selected"  <?php  } ?> >HTML5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>应用下载地址</td>
+                    <td>
+                        <input type='text' name='apphome' value='{$list.apphome}'>
+                    </td>
+                </tr>
+                <tr>
                     <td>开始时间</td>
                     <td>
                         <input style='height:25px;' type='text' name='stime' id='stime' value='{$list.stime}'>

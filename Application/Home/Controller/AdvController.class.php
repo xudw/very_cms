@@ -8,7 +8,8 @@ use Think\Controller;
 class AdvController extends Controller
 {
 
-	public function index(){
+    public function index()
+    {
 
         $apptable = D('very_adv');
         $apptable->tableName = 'very_adv';
@@ -18,14 +19,17 @@ class AdvController extends Controller
 
         $this->assign('app_list', $app_list);
 
-		$this->display();
-	}
+        $this->display();
+    }
 
-	public function addAdv(){
+    public function addAdv()
+    {
 
-		if($_POST['subapp']){
-			$advname = htmlspecialchars(addslashes($_POST['advname']));
+        if ($_POST['subapp']) {
+            $advname = htmlspecialchars(addslashes($_POST['advname']));
             $showpage = htmlspecialchars(addslashes($_POST['showpage']));
+            $system = htmlspecialchars(addslashes($_POST['system']));
+            $apphome = htmlspecialchars(addslashes($_POST['apphome']));
             $stime = htmlspecialchars(addslashes($_POST['stime']));
             $etime = htmlspecialchars(addslashes($_POST['etime']));
 
@@ -33,20 +37,24 @@ class AdvController extends Controller
                 $error = "请输入广告名称";
             } else if (empty($showpage)) {
                 $error = "请选择显示页面";
-            }  else if (!empty($_FILES)) {
+            } else if (!empty($_FILES)) {
                 $advimage = $this->_upload();
                 if (is_array($advimage)) {
                     $error = $advimage['mess'];
                 }
-            }else if (empty($stime)) {
+            } else if (empty($stime)) {
                 $error = "请选择开始时间";
             } else if (empty($etime)) {
                 $error = "请选择结束时间";
+            } else if (empty($apphome)) {
+                $error = "请填写应用下载地址";
             }
 
             if (!empty($error)) {
                 $this->assign('advname', $advname);
                 $this->assign('showpage', $showpage);
+                $this->assign('system', $system);
+                $this->assign('apphome', $apphome);
                 $this->assign('stime', $stime);
                 $this->assign('etime', $etime);
                 $this->assign('advimage', $advimage);
@@ -57,14 +65,14 @@ class AdvController extends Controller
                 $apptable = D('very_adv');
                 $apptable->tableName = 'very_adv';
                 $time = date('Y-m-d H:i:s');
-                $insert_sql = "insert into very_adv values ('','$advname','$showpage','$advimage','$stime','$etime','$time')";
+                $insert_sql = "insert into very_adv values ('','$advname','$showpage','$advimage','$stime','$etime','$time','$system','$apphome')";
                 $apptable->execute($insert_sql);
                 $this->success('操作成功', 'index', 3);
 
             }
-		}
-		$this->display();
-	}
+        }
+        $this->display();
+    }
 
     public function editadv()
     {
@@ -80,28 +88,32 @@ class AdvController extends Controller
             $id = htmlspecialchars(addslashes($_POST['id']));
             $advname = htmlspecialchars(addslashes($_POST['advname']));
             $showpage = htmlspecialchars(addslashes($_POST['showpage']));
+            $system = htmlspecialchars(addslashes($_POST['system']));
+            $apphome = htmlspecialchars(addslashes($_POST['apphome']));
             $stime = htmlspecialchars(addslashes($_POST['stime']));
             $etime = htmlspecialchars(addslashes($_POST['etime']));
             $appimages = htmlspecialchars(addslashes($_POST['advimages']));
 
             $old_sql = "select id from very_adv where advname='$advname' and id!='$id'";
             $hive = $new_table->query($old_sql);
-            if(!empty($hive)){
+            if (!empty($hive)) {
                 $error = "广告名已存在";
-            }else if (empty($advname)) {
+            } else if (empty($advname)) {
                 $error = "请输入广告名称";
             } elseif (empty($showpage)) {
                 $error = "请选择所属页面";
+            } else if (empty($apphome)) {
+                $error = "请填写应用下载地址";
             } elseif (empty($stime)) {
                 $error = "请设置开始时间";
             } else if (empty($etime)) {
                 $error = "请设置结束时间";
             }
 
-            if($appimages){
+            if ($appimages) {
                 $appimage = $appimages;
             }
-            if(!empty($_FILES['advimage']['name'])) {
+            if (!empty($_FILES['advimage']['name'])) {
                 $appimage = $this->_upload();
                 if (is_array($appimage)) {
                     $error = $appimage['mess'];
@@ -113,13 +125,15 @@ class AdvController extends Controller
                 $lists['showpage'] = $showpage;
                 $lists['stime'] = $stime;
                 $lists['etime'] = $etime;
+                $this->assign('system', $system);
+                $this->assign('apphome', $apphome);
                 $lists['advimage'] = $appimage;
                 $this->assign('error', $error);
                 $this->assign('list', $lists);
                 $this->display();
                 exit;
             } else {
-                $upate_sql = "update very_adv set advname='$advname',showpage='$showpage',stime='$stime',etime='$etime'
+                $upate_sql = "update very_adv set advname='$advname',showpage='$showpage',stime='$stime',etime='$etime',system='$system',apphome='$apphome'
                 ,advimage='$appimage'  where id='$id'";
                 $new_table->execute($upate_sql);
                 redirect(WEB_NAME . "/index.php/Adv/index");
@@ -130,7 +144,7 @@ class AdvController extends Controller
         $this->display();
     }
 
-	 public function _upload()
+    public function _upload()
     {
         $file = $_FILES['advimage'];
 
@@ -138,8 +152,8 @@ class AdvController extends Controller
         $max_size = '5000000';      // 最大文件限制（单位：byte）
         $date = date('Ymd');
         $datetime = date('YmdHis');
-        $upfilel = WEB_NAME . '/advimage/'.$date; //图片目录路径
-        $upfile = './advimage/'.$date;
+        $upfilel = WEB_NAME . '/advimage/' . $date; //图片目录路径
+        $upfile = './advimage/' . $date;
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { //判断提交方式是否为POST
             if (!file_exists($upfile)) {  // 判断存放文件目录是否存在

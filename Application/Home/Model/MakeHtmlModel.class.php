@@ -404,8 +404,10 @@ mso-font-kerning:0pt">
             $fp = fopen($path . "iphone.html", "r"); //只读打开模板
             $str = fread($fp, filesize($path . "iphone.html"));//读取模板中内容
 
-            $newpage = $much_ty['appsystem'].'.html';
-            $newsystem_type = $much_ty['appsystem'];
+            $newpage = strtolower($much_ty['appsystem']).'.html';
+            $newsystem_type = strtolower($much_ty['appsystem']);
+            $show_type = $much_ty['appsystem'];
+            /*左侧新闻*/
             $get_this_appnew_sql = "select * from very_news where newsystem='$newsystem_type' order by time desc limit 9";
             $this_appnew_list = $newtable->query($get_this_appnew_sql);
 
@@ -415,7 +417,7 @@ mso-font-kerning:0pt">
             foreach($this_appnew_list as $tappnewkey=>$tappnewl){
                 if($tappnewkey=='0'){
                     $left_new_one .= '<h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></h1>
-                        <p>'.mb_substr($tappnewl['content'],0,15).'..</p>';
+                        <p>'.mb_substr($tappnewl['content'],0,25).'..</p>';
                 }elseif($tappnewkey>'0' && $tappnewkey<='4'){
                     $left_new_two .= '<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></li>';
                 }elseif($tappnewkey>'4'){
@@ -425,12 +427,66 @@ mso-font-kerning:0pt">
             $str = str_replace("{left_new_one}", $left_new_one, $str);
             $str = str_replace("{left_new_two}", $left_new_two, $str);
             $str = str_replace("{left_new_three}", $left_new_three, $str);
-            unset($left_new_one,$left_new_two,$left_new_three);
+//            unset($left_new_one,$left_new_two,$left_new_three,$this_appnew_list);
+            /*左侧新闻结束*/
+
+            /*幻灯*/
+            $change_image = "";
+            $get_this_image_sql = "select id,advimage from very_adv where showpage='二级页幻灯' and system='$show_type' and stime<='$date' and etime>='$date' order by mtime desc limit 3";
+            $this_image_list = $advtable->query($get_this_image_sql);
+
+            foreach($this_image_list as $timl){
+                $id = $timl['id'];
+                $change_image .='<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" target="_blank" title=""><img src="'.$timl['advimage'].'"  width="543" height="220" alt="大侠传"/></a></li>';
+            }
+            $str = str_replace("{change_image}", $change_image, $str);
+            /*幻灯结束*/
+
+            /*新游推荐*/
+            $new_game_push = "";
+            $get_pgame_sql = "select * from very_app where appsystem='$show_type' and apptype in ('14','15') order by time desc limit 4";
+            $this_pganme_list = $advtable->query($get_pgame_sql);
+            foreach($this_pganme_list  as $pgame){
+                $id = $pgame['id'];
+                $new_game_push .='<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" target="_blank">
+                <img src="'.$pgame['appimage'].'"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">'.$pgame['appname'].'</a></p></li>';
+            }
+            $str = str_replace("{new_game_push}", $new_game_push, $str);
+            /*新游推荐结束*/
+
+            /*右侧广告*/
+            $right_adv_one = "";
+            $right_adv_two = "";
+            $get_this_adv_sql = "select id,advimage from very_adv where showpage='二级页' and system='$show_type' and stime<='$date' and etime>='$date' order by mtime desc limit 3";
+            $this_adv_list = $advtable->query($get_this_adv_sql);
+
+            foreach($this_adv_list as $advkey=>$advl){
+                $id = $advl['id'];
+                if($advkey=='0'){
+                    $right_adv_one .='<div class="zhuanji_pic"><a href="" title=""><img src="'.$advl['advimage'].'"  title="" alt="" width="235" height="110" /></a></div>
+         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="">'.$advl['advname'].'</a></div>';
+                }else{
+                    $right_adv_two .='<div class="zhuanji_pic"><a href="" title=""><img src="'.$advl['advimage'].'"  title="" alt="" width="235" height="110" /></a></div>
+         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="">'.$advl['advname'].'</a></div>';
+                }
+            }
+            $str = str_replace("{right_adv_one}", $right_adv_one, $str);
+            $str = str_replace("{right_adv_two}", $right_adv_two, $str);
+            /*右侧广告结束*/
             fclose($fp);
             $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径
             fwrite($handle, $str); //把刚才替换的内容写进生成的HTML文件
             fclose($handle);
             unset($str,$fp);
+            /*处理文件名入库*/
+            $htmltime = time();
+            $htmlpage = basename($newpage, ".html");
+
+            $del_html_sql = "delete from very_html where nick_name='应用分类' and page_name='$htmlpage'";
+            $htmltable->execute($del_html_sql);
+
+            $insert_html_sql = "insert into very_html values ('','$htmlpage','应用分类','$htmltime')";
+            $htmltable->execute($insert_html_sql);
         }
     }
 }

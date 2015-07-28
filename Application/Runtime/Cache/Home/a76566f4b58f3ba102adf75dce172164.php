@@ -77,6 +77,23 @@
 				<input type="file" name="advimage" />
 			</td>
 		</tr>
+            <tr>
+                <td>系统</td>
+                <td>
+                    <select name='system'>
+                        <option  value='Android' <?php if($system=='Android'){ ?>  selected="selected"  <?php  } ?> >Android</option>
+                        <option  value='IOS' <?php if($system=='IOS'){ ?>  selected="selected"  <?php  } ?> >IOS</option>
+                        <option  value='WP' <?php if($system=='WP'){ ?>  selected="selected"  <?php  } ?> >WP</option>
+                        <option  value='HTML5' <?php if($system=='HTML5'){ ?>  selected="selected"  <?php  } ?> >HTML5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>应用下载地址</td>
+                <td>
+                    <input type='text' name='apphome' value='<?php echo ($apphome); ?>'>
+                </td>
+            </tr>
 		<tr>
 			<td>开始时间</td>
 			<td>

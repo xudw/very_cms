@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -78,8 +78,8 @@
           
           <div class="c1_news_t">
                
-               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/2" title="">assd</a></h1>
-                        <p>sdfdsf..</p>
+               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" title="">测试</a></h1>
+                        <p>asdf..</p>
           </div>
           <ul style="border-bottom:1px dashed #e9e9e9;">
           
@@ -92,7 +92,7 @@
     <div class="c1_banner">
         <div class="container" id="idTransformView">
             <ul class="slider" id="idSlider">
-                <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank" title=""><img src="/very_cms/advimage/20150728/20150728144022aa.png"  width="543" height="220" alt="大侠传"/></a></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/7" target="_blank" title=""><img src="/very_cms/advimage/20150728/20150728142736aa.png"  width="543" height="220" alt="大侠传"/></a></li>
+                <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank" title=""><img src="/very_cms/advimage/20150728/20150728143744aa.png"  width="543" height="220" alt="大侠传"/></a></li>
 
 
             </ul>
@@ -106,8 +106,8 @@
     </div>
      <!--二维码-->
      <div class="c1_weixin">
-         <div class="zhuanji_pic"><a href="" title=""><img src="/very_cms/advimage/20150728/20150728161405aa.png"  title="" alt="" width="235" height="110" /></a></div>
-         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" title=""></a></div>
+         <div class="zhuanji_pic"><a href="" title=""><img src="/very_cms/advimage/20150728/20150728161421aa.png"  title="" alt="" width="235" height="110" /></a></div>
+         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/12" title=""></a></div>
 
      </div>
      <!--推荐-->
@@ -116,19 +116,14 @@
               <p class="t_left">新游推荐</p><p class="t_right"><a href="#">more</a></p>
           </div>
           <ul>
-              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" target="_blank">
-                <img src="/very_cms/appimage/20150727/20150727112758aa.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" target="_blank">
-                <img src="/very_cms/appimage/20150727/20150727152729aa.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试应用</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank">
-                <img src="/appcms/image/20150722/20150722151352aa.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">adfc</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank">
-                <img src=""  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">adf</a></p></li>
+              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank">
+                <img src=""  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">asdsdf</a></p></li>
 
 		          </ul>
      </div>
      <!--专题--><!--预告-->
 <div class="c1_yugao">
-    <div class="zhuanji_pic"><a href="" title=""><img src="/very_cms/advimage/20150728/20150728160948aa.png"  title="" alt="" width="235" height="110" /></a></div>
-         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" title=""></a></div><div class="zhuanji_pic"><a href="" title=""><img src="/appcms/adv/20150722/20150722153900aa.png"  title="" alt="" width="235" height="110" /></a></div>
-         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title=""></a></div>
+    
 		          <!--<div class="zhuanji_pic"><a href="" title=""><img src="images/155_cn_9061354263032.jpg"  title="" alt="" width="235" height="110" /></a></div>-->
           <!--<div class="zhuanji_zi"><a href="" title="">最新iPhone5游戏合辑</a></div>-->
 		           <!--<div class="zhuanji_pic"><a href="" title=""><img src="images/155_cn_8651354263032.jpg" alt="" width="235" height="110" /></a></div>-->

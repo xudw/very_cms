@@ -44,6 +44,18 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>所属系统</td>
+                    <td>
+                        <select name='newsystem'>
+                            <option value=''>选择</option>
+                            <option  value='Android' <?php if($newsystem=='Android'){ ?>  selected="selected"  <?php  } ?> >Android</option>
+                            <option  value='IOS' <?php if($newsystem=='IOS'){ ?>  selected="selected"  <?php  } ?> >IOS</option>
+                            <option  value='WP' <?php if($newsystem=='WP'){ ?>  selected="selected"  <?php  } ?> >WP</option>
+                            <option  value='HTML5' <?php if($newsystem=='HTML5'){ ?>  selected="selected"  <?php  } ?> >HTML5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <td>内容</td>
                     <td>
                         <textarea name="content" row="5" col="10">

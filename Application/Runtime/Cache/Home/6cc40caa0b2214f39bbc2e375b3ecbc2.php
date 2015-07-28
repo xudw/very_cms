@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>苹果专区产品页</title>
+<title>应用页</title>
 <meta name="description" content="" />
 <link href="<?php echo WEB_NAME; ?>/Public/webcss/common.css" rel="stylesheet" type="text/css" />
 <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/jquery-1.4.min.js"></script>
@@ -78,10 +78,12 @@
      <div class="ios_d_r">
           <div class="genxing">
               <div class="gx_tit">版本更新</div>
-              <p>					asdf		</p>
+              <p>            					asdf		                </p>
           </div>
+       
 		            <!--排行榜 -->
           <div class="c2_phb" style=" margin-top:15px;">
+            <div class="qie_tit"><p class="qie_left">排行榜</p></div>
             <ul>
              <li class="phb_top_one">
                     <div class="phb_top_bot1">1</div>
@@ -112,15 +114,6 @@
 			            </ul>
           </div>
 
-          <!--排行榜 -->
-          <div class="c2_phb" style=" margin-top:15px;">
-             <div class="qie_tit"><p class="qie_left">排行榜</p></div>
-            <ul>
-
-
-
-            </ul>
-          </div>
 
      </div>
      <!--游戏 -->
@@ -139,7 +132,7 @@
          </div>
          <div class="jianjie_cent">
               <p>产品主要功能<br />
-							asdf	
+                                
 <br /></p>
          </div>
      </div>
@@ -151,7 +144,7 @@
          </div>
          <div class="k_down" id="k_down">
                <ul>
-				<li><a href="www.baidu.com" title="" class="downL-btn ml10" >点击下载</a></li>
+				<li><a href="http://www.baidu.com" title="" class="downL-btn ml10" >点击下载</a></li>
 
 		               </ul>
           </div>

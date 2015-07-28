@@ -44,17 +44,17 @@ class IndexController extends Controller {
 
         $htmltable = D('very_html');
         if($type=='android'){
-            $page = 'Android';
+            $page = 'android';
         }else if($type=='ios'){
-            $page = 'iphone';
+            $page = 'ios';
         }else if($type=='wp'){
-            $page = 'wp_index';
+            $page = 'wp';
         }else if($type=='html5'){
-            $page = 'HTML5';
+            $page = 'html';
         }     
         
         $sql = "select page_name from very_html where page_name='$page' and nick_name='应用分类' order by mtime desc limit 1";
         $newpage = $htmltable->query($sql);
-        $this->display('Android');
+        $this->display($newpage[0]['page_name']);
     }
 }

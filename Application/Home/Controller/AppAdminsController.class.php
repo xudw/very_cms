@@ -136,9 +136,9 @@ class AppAdminsController extends Controller
 
             $old_sql = "select id from very_app where appname='$appname' and id!='$id'";
             $hive = $new_table->query($old_sql);
-            if(!empty($hive)){
+            if (!empty($hive)) {
                 $error = "次应用名已存在";
-            }else if (empty($appname)) {
+            } else if (empty($appname)) {
                 $error = "请输入应用名";
             } elseif (empty($apptype)) {
                 $error = "请选择类型";
@@ -151,10 +151,10 @@ class AppAdminsController extends Controller
             } else if (empty($summary)) {
                 $error = "输入简介";
             }
-            if($appimages){
+            if ($appimages) {
                 $appimage = $appimages;
             }
-            if(!empty($_FILES['appimage']['name'])) {
+            if (!empty($_FILES['appimage']['name'])) {
                 $appimage = $this->_upload();
                 if (is_array($appimage)) {
                     $error = $appimage['mess'];
@@ -216,6 +216,7 @@ class AppAdminsController extends Controller
             $author = htmlspecialchars(addslashes($_POST['author']));
             $come = htmlspecialchars(addslashes($_POST['come']));
             $newtype = htmlspecialchars(addslashes($_POST['newtype']));
+            $newsystem = htmlspecialchars(addslashes($_POST['newsystem']));
             $content = htmlspecialchars(addslashes(trim($_POST['content'])));
 
             if (empty($title)) {
@@ -224,6 +225,8 @@ class AppAdminsController extends Controller
                 $error = '请填写作者';
             } elseif (empty($newtype)) {
                 $error = '请选择类型';
+            } else if (empty($newsystem)) {
+                $error = '请选择系统';
             } else if (empty($content)) {
                 $error = '请填写内容';
             } else if (!empty($_FILES)) {
@@ -236,6 +239,7 @@ class AppAdminsController extends Controller
                 $this->assign('title', $title);
                 $this->assign('author', $author);
                 $this->assign('newtype', $newtype);
+                $this->assign('newsystem', $newsystem);
                 $this->assign('content', $content);
                 $this->assign('newimage', $appimage);
                 $this->assign('come', $come);
@@ -246,7 +250,7 @@ class AppAdminsController extends Controller
                 $new_table = D("very_news");
                 $new_table->tableName = "very_news";
                 $time = date('Y-m-d H:i:s');
-                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author','$newtype','$appimage')";
+                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author','$newtype','$appimage','$newsystem')";
                 $new_table->execute($insert_sql);
 
                 $this->success('操作成功', 'newShow', 3);
@@ -266,7 +270,7 @@ class AppAdminsController extends Controller
         } elseif ($table == 'new') {
             $dbt = 'very_news';
             $url = "/index.php/AppAdmins/newShow";
-        }elseif ($table == 'adv') {
+        } elseif ($table == 'adv') {
             $dbt = 'very_adv';
             $url = "/index.php/Adv/index";
         }
@@ -293,6 +297,7 @@ class AppAdminsController extends Controller
             $author = htmlspecialchars(addslashes($_POST['author']));
             $come = htmlspecialchars(addslashes($_POST['come']));
             $newtype = htmlspecialchars(addslashes($_POST['newtype']));
+            $newsystem = htmlspecialchars(addslashes($_POST['newsystem']));
             $content = htmlspecialchars(addslashes(trim($_POST['content'])));
             $newimages = htmlspecialchars(addslashes($_POST['newimages']));
 
@@ -304,15 +309,17 @@ class AppAdminsController extends Controller
                 $error = '请填写标题';
             } elseif (empty($newtype)) {
                 $error = '请选择类型';
+            } elseif (empty($newsystem)) {
+                $error = '请选择系统';
             } elseif (empty($author)) {
                 $error = '请填写作者';
             } elseif (empty($content)) {
                 $error = '请填写内容';
             }
-            if($newimages){
+            if ($newimages) {
                 $newimage = $newimages;
             }
-            if(!empty($_FILES['newimage']['name'])) {
+            if (!empty($_FILES['newimage']['name'])) {
                 $newimage = $this->_uploadnew();
                 if (is_array($newimage)) {
                     $error = $newimage['mess'];
@@ -323,6 +330,7 @@ class AppAdminsController extends Controller
                 $lists['title'] = $title;
                 $lists['author'] = $author;
                 $lists['newtype'] = $newtype;
+                $lists['newsystem'] = $newsystem;
                 $lists['content'] = $content;
                 $lists['newimage'] = $newimage;
                 $lists['come'] = $come;
@@ -332,7 +340,7 @@ class AppAdminsController extends Controller
                 $this->display();
                 exit;
             } else {
-                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come' ,newtype='$newtype',newimage='$newimage'  where id='$nids'";
+                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come' ,newtype='$newtype',newimage='$newimage',newsystem='$newsystem'  where id='$nids'";
                 $new_table->execute($upate_sql);
                 redirect(WEB_NAME . "/index.php/AppAdmins/newShow");
             }
@@ -342,13 +350,14 @@ class AppAdminsController extends Controller
         $this->display();
     }
 
-    public function maketag(){
+    public function maketag()
+    {
         $nid = htmlspecialchars(addslashes($_GET['nid']));
         $type = htmlspecialchars(addslashes($_GET['type']));
         $htmltable = D("very_app");
         $up_sql = "update very_app set tag='$type' where id='$nid'";
         $htmltable->execute($up_sql);
-        redirect(WEB_NAME . "/index.php/AppAdmins/index");    
+        redirect(WEB_NAME . "/index.php/AppAdmins/index");
     }
 
     public function _uploadnew()
@@ -409,6 +418,7 @@ class AppAdminsController extends Controller
             }
         }
     }
+
     public function _upload()
     {
         $file = $_FILES['appimage'];

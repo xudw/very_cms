@@ -78,11 +78,11 @@
           
           <div class="c1_news_t">
                
-               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" title="">测试新闻测1试新闻测试新闻测试新闻</a></h1>
-                        <p>sdf..</p>
+               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/2" title="">assd</a></h1>
+                        <p>sdfdsf..</p>
           </div>
           <ul style="border-bottom:1px dashed #e9e9e9;">
-          <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/2" title="">测试新闻测试新闻测试新闻测试新闻</a></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/3" title="">测试新闻测试新闻测试新闻测试新闻</a></li>
+          
 			          </ul>
           <ul>
 			              

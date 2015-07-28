@@ -67,6 +67,17 @@
                         <input type="file" name="newimage"/>
                     </td>
                 </tr>
+                <tr>
+                    <td>所属系统</td>
+                    <td>
+                        <select name='newsystem'>
+                            <option  value='Android' <?php if($list['newsystem']=='Android'){ ?>  selected="selected"  <?php  } ?> >Android</option>
+                            <option  value='IOS' <?php if($list['newsystem']=='IOS'){ ?>  selected="selected"  <?php  } ?> >IOS</option>
+                            <option  value='WP' <?php if($list['newsystem']=='WP'){ ?>  selected="selected"  <?php  } ?> >WP</option>
+                            <option  value='HTMP5' <?php if($list['newsystem']=='HTMP5'){ ?>  selected="selected"  <?php  } ?> >HTMP5</option>
+                        </select>
+                    </td>
+                </tr>
                  <tr>
                     <td>内容</td>
                     <td>

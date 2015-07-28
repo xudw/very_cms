@@ -51,6 +51,9 @@
                     新闻类型
                 </th>
                 <th>
+                   系统
+                </th>
+                <th>
                     创建日期
                 </th>
                 <th>
@@ -63,6 +66,7 @@
                     <td><?php echo ($list["come"]); ?></td>
                     <td><?php echo ($list["author"]); ?></td>
                     <td><?php echo ($list["newtype"]); ?></td>
+                    <td><?php echo ($list["newsystem"]); ?></td>
                     <td><?php echo ($list["time"]); ?></td>
                     <td>
                         <a onClick="return confirm('您确定要删除此内容？');"

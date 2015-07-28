@@ -473,6 +473,87 @@ mso-font-kerning:0pt">
             $str = str_replace("{right_adv_one}", $right_adv_one, $str);
             $str = str_replace("{right_adv_two}", $right_adv_two, $str);
             /*右侧广告结束*/
+
+            /*最新单机游戏*/
+            $newgame_list = "";
+            $get_this_newgame_sql = "select id,appname,appimage from very_app where appsystem='$show_type' and apptype in ('14','15') order by time
+            desc limit 18";
+            $this_newgame_list = $apptable->query($get_this_newgame_sql);
+            
+            foreach($this_newgame_list as $newgamel){
+                $id = $newgamel['id'];
+                $newgame_list .= '<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="" target="_blank">
+                <img src="'.$newgamel['appimage'].'" title="" target="_blank">'.$newgamel['appname'].'</a></p><div ></div></li>';
+            }
+            $str = str_replace("{newgame_list}", $newgame_list, $str);
+            /*最新单机结束*/
+
+            /*游戏排行榜*/
+            $gtopone = "";
+            $gtoptwo = "";
+            $get_this_gtop_sql = "select id,appimage,appname from very_app where appsystem='$show_type' and apptype in ('14','15') order by downloadnum desc
+            limit 12";
+            $this_gtop_list = $apptable->query($get_this_gtop_sql);
+            foreach($this_gtop_list as $gtopkey=>$gtopl){
+                $id = $gtopl['id'];
+                $topone = $gtopkey+1;
+                if($gtopkey=='0'){
+                    $gtopone .= '<li class="phb_top_one">
+                <div class="phb_top_bot1">'.$topone.'</div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="" target="_blank"><img src="'.$gtopl['appimage'].'" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="" target="_blank"  class="hei333">'.$gtopl['appname'].' </a></div>
+                <p class="phb_top_zi2"></p>
+            </li>';
+                }else{
+                    $gtoptwo .= '<li class="phb_top_two"><div class="phb_top_bot1">'.$topone.'</div><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '">'.$gtopl['appname'].' </a><span>'.$gtopl['appshowname'].' </span></li>';    
+                }
+                
+            }
+            $str = str_replace("{gtopone}", $gtopone, $str);
+            $str = str_replace("{gtoptwo}", $gtoptwo, $str);
+
+            /*游戏排行榜结束*/
+
+            /*应用列表*/    
+            $applist = "";
+            $get_this_applist_sql = "select id,appname,appimage from very_app where appsystem='$show_type' and apptype not in ('14','15','16') order by time
+            desc limit 18";
+            $this_applist_list = $apptable->query($get_this_applist_sql);
+            foreach($this_applist_list as $applistl){
+                $id = $applistl['id'];
+                $applist .= '<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="" target="_blank">
+                <img src="'.$applistl['appimage'].'"  title="" alt="" width="74" height="74" /></a>
+                <p><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="" target="_blank">'.$applistl['appname'].'</a></p></li>';
+            }
+            $str = str_replace("{applist}", $applist, $str);
+            /*应用列表结束*/    
+
+            /*应用排行榜*/
+            $apptopone = "";
+            $apptoptwo = "";
+            $get_this_apptop_sql = "select id,appimage,appname from very_app where appsystem='$show_type' and apptype not in ('14','15','16') order by downloadnum desc
+            limit 12";
+            $this_apptop_list = $apptable->query($get_this_apptop_sql);
+            foreach($this_apptop_list as $apptopkey=>$apptopl){
+                $id = $apptopl['id'];
+                $toptwo = $apptopkey+1;
+                if($apptopkey=='0'){
+                    $apptopone .= '<li class="phb_top_one">
+                <div class="phb_top_bot1">'.$toptwo.'</div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="" target="_blank"><img src="'.$apptopl['appimage'].'" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" title="" target="_blank"  class="hei333">'.$apptopl['appname'].' </a></div>
+                <p class="phb_top_zi2"></p>
+            </li>';
+                }else{
+                    $apptoptwo .= '<li class="phb_top_two"><div class="phb_top_bot1">'.$toptwo.'</div><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '">'.$apptopl['appname'].' </a><span>'.$gtopl['appshowname'].' </span></li>';    
+                }
+                
+            } 
+            $str = str_replace("{apptopone}", $apptopone, $str);
+            $str = str_replace("{apptoptwo}", $apptoptwo, $str);
+
+            /*应用排行榜结束*/
+
             fclose($fp);
             $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径
             fwrite($handle, $str); //把刚才替换的内容写进生成的HTML文件

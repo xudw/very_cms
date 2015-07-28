@@ -78,11 +78,11 @@
           
           <div class="c1_news_t">
                
-               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/2" title="">assd</a></h1>
-                        <p>sdfdsf..</p>
+               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" title="">测试新闻测1试新闻测试新闻测试新闻</a></h1>
+                        <p>sdf..</p>
           </div>
           <ul style="border-bottom:1px dashed #e9e9e9;">
-          
+          <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/2" title="">测试新闻测试新闻测试新闻测试新闻</a></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/3" title="">测试新闻测试新闻测试新闻测试新闻</a></li>
 			          </ul>
           <ul>
 			              
@@ -92,7 +92,7 @@
     <div class="c1_banner">
         <div class="container" id="idTransformView">
             <ul class="slider" id="idSlider">
-                <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank" title=""><img src="/very_cms/advimage/20150728/20150728144022aa.png"  width="543" height="220" alt="大侠传"/></a></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/7" target="_blank" title=""><img src="/very_cms/advimage/20150728/20150728142736aa.png"  width="543" height="220" alt="大侠传"/></a></li>
+                <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/6" target="_blank" title=""><img src="/very_cms/advimage/20150728/201507282040442.png"  width="543" height="220" alt="大侠传"/></a></li>
 
 
             </ul>
@@ -106,8 +106,8 @@
     </div>
      <!--二维码-->
      <div class="c1_weixin">
-         <div class="zhuanji_pic"><a href="" title=""><img src="/very_cms/advimage/20150728/20150728161405aa.png"  title="" alt="" width="235" height="110" /></a></div>
-         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" title=""></a></div>
+         <div class="zhuanji_pic"><a href="" title=""><img src="/very_cms/advimage/20150728/201507282041102.png"  title="" alt="" width="235" height="110" /></a></div>
+         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/7" title=""></a></div>
 
      </div>
      <!--推荐-->
@@ -116,19 +116,15 @@
               <p class="t_left">新游推荐</p><p class="t_right"><a href="#">more</a></p>
           </div>
           <ul>
-              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" target="_blank">
-                <img src="/very_cms/appimage/20150727/20150727112758aa.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" target="_blank">
-                <img src="/very_cms/appimage/20150727/20150727152729aa.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试应用</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank">
-                <img src="/appcms/image/20150722/20150722151352aa.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">adfc</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank">
-                <img src=""  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">adf</a></p></li>
+              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank">
+                <img src="/very_cms/appimage/20150728/201507282107182.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试游戏应用</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank">
+                <img src="/very_cms/image/20150725/201507251819582.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试游戏应用一</a></p></li>
 
 		          </ul>
      </div>
      <!--专题--><!--预告-->
 <div class="c1_yugao">
-    <div class="zhuanji_pic"><a href="" title=""><img src="/very_cms/advimage/20150728/20150728160948aa.png"  title="" alt="" width="235" height="110" /></a></div>
-         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" title=""></a></div><div class="zhuanji_pic"><a href="" title=""><img src="/appcms/adv/20150722/20150722153900aa.png"  title="" alt="" width="235" height="110" /></a></div>
-         <div class="zhuanji_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title=""></a></div>
+    
 		          <!--<div class="zhuanji_pic"><a href="" title=""><img src="images/155_cn_9061354263032.jpg"  title="" alt="" width="235" height="110" /></a></div>-->
           <!--<div class="zhuanji_zi"><a href="" title="">最新iPhone5游戏合辑</a></div>-->
 		           <!--<div class="zhuanji_pic"><a href="" title=""><img src="images/155_cn_8651354263032.jpg" alt="" width="235" height="110" /></a></div>-->
@@ -156,8 +152,10 @@
     <div class="c2_game game_list" id="gamelist">
         <ul>
 		<!-- <div class="zhu_genxin"> <div class="zhu_new">-->
-		              <li><a href="" title="" target="_blank"><img src="images/155_cn_3311400728197.png.jpg" title="" target="_blank">最强塔防</a></p><div ></div></li>
-		              
+		
+		              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank">
+                <img src="/very_cms/appimage/20150728/201507282107182.png" title="" target="_blank">测试游戏应用</a></p><div ></div></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" title="" target="_blank">
+                <img src="/very_cms/image/20150725/201507251819582.png" title="" target="_blank">测试游戏应用一</a></p><div ></div></li>
 		              
 		
           </ul>
@@ -166,13 +164,14 @@
     <!--排行榜 -->
     <div class="c2_phb">
         <ul>
-            <li class="phb_top_one">
+                        <li class="phb_top_one">
                 <div class="phb_top_bot1">1</div>
-                <a href="" title="" target="_blank"><img src="images/155_cn_4231358413227.jpg" /></a>
-                <div class="phb_top_zi"><a href="" title="" target="_blank"  class="hei333">神庙逃亡 </a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank"><img src="/very_cms/appimage/20150728/201507282107182.png" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank"  class="hei333">测试游戏应用 </a></div>
                 <p class="phb_top_zi2"></p>
             </li>
-			            <li class="phb_top_two"><div class="phb_top_bot1">2</div><a href="">魔兽战纪</a><span>角色扮演</span></li>
+            <li class="phb_top_two"><div class="phb_top_bot1">2</div><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8">测试游戏应用一 </a><span> </span></li>
+			            
 			        </ul>
     </div>
     
@@ -191,7 +190,13 @@
     </div>
     <div class="c2_game game_list" id="softlist">  
 <ul>
-		               <li><a href="" title="" target="_blank"><img src="images/155_cn_1451392104521.png"  title="" alt="" width="74" height="74" /></a><p><a href="" title="" target="_blank">医生预约</a></p></li>
+		               
+<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" title="" target="_blank">
+                <img src="/very_cms/appimage/20150728/201507282148072.png"  title="" alt="" width="74" height="74" /></a>
+                <p><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" title="" target="_blank">打工</a></p></li><li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">
+                <img src="/very_cms/appimage/20150728/201507282139152.png"  title="" alt="" width="74" height="74" /></a>
+                <p><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">应用测试</a></p></li>
+                   
 		              
 		          </ul>
     </div>
@@ -199,13 +204,14 @@
     <!--排行榜 -->
     <div class="c2_phb">
         <ul>
-            <li class="phb_top_one">
+        <li class="phb_top_one">
                 <div class="phb_top_bot1">1</div>
-                <a href=""><img src="images/155_cn_6611358329477.jpg" /></a>
-                <div class="phb_top_zi hei333"><a href="">手机 QQ</a></div>
-                <p class="wy_top_zi2">聊天交友</p>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"><img src="/very_cms/appimage/20150728/201507282139152.png" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"  class="hei333">应用测试 </a></div>
+                <p class="phb_top_zi2"></p>
             </li>
-			            <li class="phb_top_two"><div class="phb_top_bot1">2</div><a href="">UC浏览器</a><span>常用工具</span></li>
+           <li class="phb_top_two"><div class="phb_top_bot1">2</div><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14">打工 </a><span> </span></li>
+			           
 			        </ul>
         </ul>
     </div>

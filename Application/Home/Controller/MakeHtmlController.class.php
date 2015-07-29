@@ -29,5 +29,8 @@ class MakeHtmlController extends Controller
         //生成应用分类页
         $d->app_type_page($date,$apptable,$newtable,$advtable,$htmltable);
 
+        //排行分类页
+        $d->app_paihang_page($date,$apptable,$newtable,$advtable,$htmltable);
+
     }
 }

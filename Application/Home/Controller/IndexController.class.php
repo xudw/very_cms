@@ -74,7 +74,7 @@ class IndexController extends Controller
         $typelist = $typetable->query($type_sql);
 
         $pid = htmlspecialchars(addslashes($_GET['pid']));
-        if (!isset($pid)) {
+        if (isset($pid)) {
             $type = " and apptype='$pid'";
         } else {
             $type = " and apptype not in('14','15','16')";
@@ -105,5 +105,33 @@ class IndexController extends Controller
         $this->display();
     }
 
+    //排行榜
+    public function paihang(){
+
+        $type = htmlspecialchars(addslashes($_GET['type']));
+
+        $htmltable = D('very_html');
+        if ($type == 'android') {
+            $page = 'androidd';
+        } else if ($type == 'ios') {
+            $page = 'iosd';
+        } else if ($type == 'wp') {
+            $page = 'wpd';
+        } else if ($type == 'html5') {
+            $page = 'htmld';
+        }elseif ($type == 'androidn') {
+            $page = 'androidn';
+        } else if ($type == 'iosn') {
+            $page = 'iosn';
+        } else if ($type == 'wpn') {
+            $page = 'wpn';
+        } else if ($type == 'html5n') {
+            $page = 'html5n';
+        }
+
+        $sql = "select page_name from very_html where page_name='$page' and nick_name='排行榜' order by mtime desc limit 1";
+        $newpage = $htmltable->query($sql);
+        $this->display($newpage[0]['page_name']);
+    }
 
 }

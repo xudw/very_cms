@@ -570,4 +570,89 @@ mso-font-kerning:0pt">
             $htmltable->execute($insert_html_sql);
         }
     }
+
+    //排行榜
+    public function app_paihang_page($date,$apptable,$newtable,$advtable,$htmltable){
+
+        $path = "./Application/Home/View/Index/";
+
+        $get_much_type = "select appsystem from very_app group by appsystem";//查询有几种类型
+        $much_type = $apptable->query($get_much_type);
+
+        foreach($much_type as $much_ty){            
+            // $newpage = strtolower($much_ty['appsystem']).'.html';
+            $newsystem_type = strtolower($much_ty['appsystem']);
+            $show_type = $much_ty['appsystem'];
+
+            // if($newsystem_type == 'android' || $newsystem_type=='ios'){
+                $newpages[0] = $newsystem_type.'d.html';
+                $newpages[1] = $newsystem_type.'n.html';
+            // }else{
+            //     $newpages[] = $newsystem_type.'d.html';
+            // }
+            foreach($newpages as $k=>$newpage){
+                $paihang = "";
+                if($k=='0'){
+                    $apptypenum = '14';
+                    $paihang .='
+                              <div class="t_tit" id="t_tit">
+                                  <ul class="t_left_ul">
+                                      <li class="t_tit_li">游戏下载排行榜</li>
+                                      <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/paihang/type/androidn">网游下载排行榜</a></li>
+                                  </ul>
+                              </div>';
+                }else{
+                    $apptypenum = '15';
+                    $paihang .='
+                          <div class="t_tit" id="t_tit">
+                              <ul class="t_left_ul">
+                                  <li ><a href="<?php echo WEB_NAME; ?>/index.php/Index/paihang/type/android">游戏下载排行榜</a></li>
+                                  <li class="t_tit_li">网游下载排行榜</li>
+                              </ul>
+                          </div>';
+                }
+
+                $fp = fopen($path . "paihang.html", "r"); //只读打开模板
+                $str = fread($fp, filesize($path . "paihang.html"));//读取模板中内容
+                
+                $get_app_ph_sql = "select id,appname,appimage,time,downloadnum from very_app where apptype='$apptypenum' and appsystem='$show_type' order by downloadnum desc";
+                $showlist = $apptable->query($get_app_ph_sql);
+                
+                
+                foreach($showlist as $listkey=>$shl){
+                    $topp = $listkey+1;
+                    $paihang .='
+                          <div class="jietus showNow">
+                                      <dl>
+                                 <div class="rank_nab">'.$topp.'</div>
+                                 <a href="" target="_blank"><img src="'.$shl['appimage'].'"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" target="_blank">'.$shl['appname'].'</a></dt>
+                                 <dd>下载:'.$shl['downloadnum'].' </dd>
+                                 <dd>'.$shl['time'].'</dd>
+                              </dl>
+                                 </div>
+                        ';
+                }
+                
+                $str = str_replace("{paihang}", $paihang, $str);
+                unset($paihang);
+                fclose($fp);
+                $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径
+                fwrite($handle, $str); //把刚才替换的内容写进生成的HTML文件
+                fclose($handle);
+                unset($str,$fp);
+                /*处理文件名入库*/
+                $htmltime = time();
+                $htmlpage = basename($newpage, ".html");
+
+                $del_html_sql = "delete from very_html where nick_name='排行榜' and page_name='$htmlpage'";
+                $htmltable->execute($del_html_sql);
+
+                $insert_html_sql = "insert into very_html values ('','$htmlpage','排行榜','$htmltime')";
+                $htmltable->execute($insert_html_sql);
+            }
+            
+        }unset($paihang);
+    }
+    
 }

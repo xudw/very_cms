@@ -158,7 +158,7 @@
           <ul class="c2_phb">
             <li class="phb_top_one">
             <div class="phb_top_bot1">1</div>
-               <img src="/very_cms/image/20150725/201507251819492.png"  />
+               <img src="/very_cms/appimage/20150728/201507282107182.png"  />
               <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" class="hei333">测试游戏应用</a></div>
                 <p class="phb_top_zi2"><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5">w</a></p>
                 
@@ -203,7 +203,7 @@
 <div class="box_cent5">
      <div class="hd_tit"><p class="tit_left">安卓游戏</p><p class="tit_right"><a href="">more</a></p></div>
      <ul class="game_list">
-      <li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5"><img src="/very_cms/image/20150725/201507251819492.png"</a>
+      <li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5"><img src="/very_cms/appimage/20150728/201507282107182.png"</a>
             <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5">测试游戏应用</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8"><img src="/very_cms/image/20150725/201507251819582.png"</a>
             <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8">测试游戏应用一</a></p></li>
            			

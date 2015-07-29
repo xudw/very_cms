@@ -1,0 +1,2769 @@
+[ 2015-07-29T09:56:02+08:00 ] ::1 /very_cms/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.003000s ]
+SQL: select page_name from very_html where nick_name='首页' order by mtime desc limit 1 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T09:56:03+08:00 ] ::1 /very_cms/index.php/Index/product/pid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.012001s ]
+SQL: select page_name from very_html where page_name='3_p' and nick_name='产品' order by mtime desc limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 25 行.
+ERR: 模板不存在:./Application/Home/View/Index/product.html
+
+[ 2015-07-29T09:56:03+08:00 ] ::1 /very_cms/index.php/Index/product/pid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.002000s ]
+SQL: select page_name from very_html where page_name='4_p' and nick_name='产品' order by mtime desc limit 1 [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 25 行.
+ERR: 模板不存在:./Application/Home/View/Index/product.html
+
+[ 2015-07-29T16:41:41+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:41:52+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:46:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:46:31+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.004000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:47:13+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:47:34+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-07-29T16:47:36+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:47:37+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:48:17+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:48:49+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:49:11+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:49:32+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:34+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.004000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:49:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+NOTIC: [8] Undefined index: id D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T16:50:49+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:01:55+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.027002s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:01:55+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:09:03+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:09:39+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:09:40+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:09:44+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:09:49+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:10:13+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:10:13+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:10:38+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:01+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:09+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.004001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.001000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2015-07-29T17:11:14+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:11:28+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:11:29+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:11:36+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 68 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:11:51+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,20 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:13:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,20 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:13:18+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,20 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:17:30+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,20 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:17:55+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,2 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:17:56+08:00 ] ::1 /very_cms/index.php/Index/yingyong
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.005000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 89 行.
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,2 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:17:57+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 2,2 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:17:59+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,2 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:18:00+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 2,2 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:18:04+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,2 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:18:09+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002001s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,2 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:18:25+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,2 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:18:47+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,2 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:18:52+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 2,2 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:19:31+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 20,20 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:19:34+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,20 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:19:35+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.005000s ]
+SQL: select * from very_type [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  order by time desc  limit 0,20 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:25:16+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.000000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: game D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:25:18+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.005001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.000000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: game D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:25:19+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.000000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: game D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:26:09+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.001000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: game D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:26:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.000000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: game D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:26:10+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.000000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: game D:\code\very_cms\Application\Runtime\Cache\Home\899b7fb62cfe776531d49d4158b36a1d.php 第 111 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:26:27+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.000000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:26:35+08:00 ] ::1 /very_cms/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.002000s ]
+SQL: select page_name from very_html where nick_name='首页' order by mtime desc limit 1 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:26:35+08:00 ] ::1 /very_cms/index.php/Index/product/pid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.002000s ]
+SQL: select page_name from very_html where page_name='3_p' and nick_name='产品' order by mtime desc limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 30 行.
+ERR: 模板不存在:./Application/Home/View/Index/product.html
+
+[ 2015-07-29T17:26:35+08:00 ] ::1 /very_cms/index.php/Index/product/pid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.002000s ]
+SQL: select page_name from very_html where page_name='4_p' and nick_name='产品' order by mtime desc limit 1 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 0 D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 30 行.
+ERR: 模板不存在:./Application/Home/View/Index/product.html
+
+[ 2015-07-29T17:26:41+08:00 ] ::1 /very_cms/index.php/Index/appshow/type/ios
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.003000s ]
+SQL: select page_name from very_html where page_name='ios' and nick_name='应用分类' order by mtime desc limit 1 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:26:44+08:00 ] ::1 /very_cms/index.php/Index/appshow/type/ios
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_html` [ RunTime:0.003000s ]
+SQL: select page_name from very_html where page_name='ios' and nick_name='应用分类' order by mtime desc limit 1 [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:26:51+08:00 ] ::1 /very_cms/index.php/AppAdmins/newShow/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_news` [ RunTime:0.039002s ]
+SQL: select * from very_news order by time desc [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:27:02+08:00 ] ::1 /very_cms/index.php/AppAdmins/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select id,appname,apptype,appsystem,applanguage,money,time,tag from very_app order by time desc [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:27:03+08:00 ] ::1 /very_cms/index.php/AppAdmins/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003000s ]
+SQL: select id,appname,apptype,appsystem,applanguage,money,time,tag from very_app order by time desc [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:27:04+08:00 ] ::1 /very_cms/index.php/AppAdmins/makeJob
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.002000s ]
+SQL: SELECT type_id,type_name FROM very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: subapp D:\code\very_cms\Application\Home\Controller\AppAdminsController.class.php 第 36 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: error D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 36 行.
+NOTIC: [8] Undefined variable: appname D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 41 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: money D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 56 行.
+NOTIC: [8] Undefined variable: money D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 57 行.
+NOTIC: [8] Undefined variable: appshowname D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 64 行.
+NOTIC: [8] Undefined variable: appversion D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 70 行.
+NOTIC: [8] Undefined variable: applanguage D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 77 行.
+NOTIC: [8] Undefined variable: applanguage D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 78 行.
+NOTIC: [8] Undefined variable: applanguage D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 79 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 87 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 88 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 89 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 90 行.
+NOTIC: [8] Undefined variable: apphome D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 97 行.
+NOTIC: [8] Undefined variable: come D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 108 行.
+NOTIC: [8] Undefined variable: summary D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 114 行.
+NOTIC: [8] Undefined variable: upsummary D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:27:17+08:00 ] ::1 /very_cms/index.php/AppAdmins/makeJob
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.030002s ]
+SQL: SELECT type_id,type_name FROM very_type [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: insert into very_app values ('','dsdf ','adsf','1','sadf','Android','中文','',
+					'sdfa','/very_cms/appimage/20150729/20150729172717aa.png','2015-07-29 17:27:17','asdfasd','否','			asdf					','			asdf				','','') [ RunTime:0.066004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007000s ]
+NOTIC: [8] Undefined variable: error D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 36 行.
+NOTIC: [8] Undefined variable: appname D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 41 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: apptype D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 48 行.
+NOTIC: [8] Undefined variable: money D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 56 行.
+NOTIC: [8] Undefined variable: money D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 57 行.
+NOTIC: [8] Undefined variable: appshowname D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 64 行.
+NOTIC: [8] Undefined variable: appversion D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 70 行.
+NOTIC: [8] Undefined variable: applanguage D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 77 行.
+NOTIC: [8] Undefined variable: applanguage D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 78 行.
+NOTIC: [8] Undefined variable: applanguage D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 79 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 87 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 88 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 89 行.
+NOTIC: [8] Undefined variable: appsystem D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 90 行.
+NOTIC: [8] Undefined variable: apphome D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 97 行.
+NOTIC: [8] Undefined variable: come D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 108 行.
+NOTIC: [8] Undefined variable: summary D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 114 行.
+NOTIC: [8] Undefined variable: upsummary D:\code\very_cms\Application\Runtime\Cache\Home\dc9fbe82f3326df9aac986e3378ea34f.php 第 122 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:27:20+08:00 ] ::1 /very_cms/index.php/AppAdmins/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.002000s ]
+SQL: select id,appname,apptype,appsystem,applanguage,money,time,tag from very_app order by time desc [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+NOTIC: [8] Use of undefined constant 　 - assumed '　' D:\code\very_cms\Application\Runtime\Cache\Home\94535588fc78beee5edf69e1f31a1444.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-07-29T17:27:21+08:00 ] ::1 /very_cms/index.php/Index/yingyong/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `very_type` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `very_app` [ RunTime:0.003001s ]
+SQL: select * from very_type [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: pid D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 76 行.
+SQL: select count(1) as cnt from very_app where appsystem='android'   and apptype not in('14','15','16')  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pageSize D:\code\very_cms\Application\Home\Controller\IndexController.class.php 第 90 行.
+SQL: select * from very_app where appsystem='android'  and apptype not in('14','15','16') order by time desc  limit 0,20 [ RunTime:0.000000s ]
+SQL: select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:27:24+08:00 ] ::1 /very_cms/index.php/Adv/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_adv` [ RunTime:0.005001s ]
+SQL: select * from very_adv order by mtime desc [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-07-29T17:27:25+08:00 ] ::1 /very_cms/index.php/Adv/addAdv
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: subapp D:\code\very_cms\Application\Home\Controller\AdvController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: error D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 55 行.
+NOTIC: [8] Undefined variable: advname D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 60 行.
+NOTIC: [8] Undefined variable: showpage D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 67 行.
+NOTIC: [8] Undefined variable: showpage D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 68 行.
+NOTIC: [8] Undefined variable: showpage D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 69 行.
+NOTIC: [8] Undefined variable: showpage D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 70 行.
+NOTIC: [8] Undefined variable: system D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 84 行.
+NOTIC: [8] Undefined variable: system D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 85 行.
+NOTIC: [8] Undefined variable: system D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 86 行.
+NOTIC: [8] Undefined variable: system D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 87 行.
+NOTIC: [8] Undefined variable: apphome D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 94 行.
+NOTIC: [8] Undefined variable: stime D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 100 行.
+NOTIC: [8] Undefined variable: etime D:\code\very_cms\Application\Runtime\Cache\Home\a76566f4b58f3ba102adf75dce172164.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-07-29T17:27:29+08:00 ] ::1 /very_cms/index.php/Adv/editadv/nid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `very_adv` [ RunTime:0.003000s ]
+SQL: select * from very_adv where id='13' [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: subapp D:\code\very_cms\Application\Home\Controller\AdvController.class.php 第 87 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: error D:\code\very_cms\Application\Runtime\Cache\Home\407f5fb6edfe5831667da6be2474499f.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

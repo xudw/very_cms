@@ -19,7 +19,14 @@
 <div class="box_d">
      <div class="top_d">
          <span class="top_d_left"><a href=""  target="_blank">手游天下首页</a></span>
-         <span class="top_d_right"><a href=""  target="_blank">安卓</a><a href=""  target="_blank">苹果</a><a href=""  target="_blank">WP</a><a href=""  target="_blank">html5</a><a href=""  target="_blank">社区</a><a href=""  target="_blank">手机版</a></span>
+         <span class="top_d_right">
+         <a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/android"  target="_blank">安卓</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/ios"  target="_blank">苹果</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/wp"  target="_blank">WP</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/html"  target="_blank">html5</a>
+<!--<a href=""  target="_blank">社区</a>-->
+<!--<a href=""  target="_blank">手机版</a></span>-->
+         </span>
      </div>
 </div>
 <!--LOGO -->
@@ -66,12 +73,12 @@
 </div>
 <!--MENU -->
 <div class="box_menu">
-     <a href="" >首页</a>
-     <a href=""  class="menu1">应用</a>
-     <a href="" >排行榜</a>
-     <a href=""  >APP专题</a>
-     <a href=""  >资讯</a>
-     <a href=""  target="_blank">社区</a>
+    <a href="<?php echo WEB_PAHT.WEB_NAME; ?>" tppabs="" class="menu1">首页</a>
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/yingyong" >应用</a>
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/paihang" >排行榜</a>
+<!--<a href="" >APP专题</a>-->
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/zixun" >资讯</a>
+<!--<a href="" target="_blank">社区</a>-->
 </div><!--第一大版块开始 -->
 <div class="box_center">
      <!--右边 -->
@@ -110,6 +117,21 @@
                     <img src="/very_cms/appimage/20150727/20150727152729aa.png"  />
                     <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" target="_blank" class="hei333">测试应用</a></div>
                     <p class="phb_top_zi2">你好</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">6</div>
+                    <img src="/very_cms/appimage/20150729/20150729172717aa.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/12" target="_blank" class="hei333">dsdf </a></div>
+                    <p class="phb_top_zi2">adsf</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">7</div>
+                    <img src="/very_cms/appimage/20150730/20150730152841aa.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" target="_blank" class="hei333">rf</a></div>
+                    <p class="phb_top_zi2">sdaf</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">8</div>
+                    <img src="/very_cms/appimage/20150730/20150730163831aa.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" target="_blank" class="hei333">网络呀</a></div>
+                    <p class="phb_top_zi2">阿斯蒂芬</p>
                 </li>
 			            </ul>
           </div>

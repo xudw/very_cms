@@ -285,8 +285,8 @@ class MakeHtmlModel extends Model
          </div>
          <div class="jianjie_cent">
               <p>产品主要功能<br />
-'.$allist['summary'].'
-<br /></p>
+            '.$allist['summary'].'
+        <br /></p>
          </div>
      </div>
 
@@ -620,6 +620,7 @@ mso-font-kerning:0pt">
                 
                 
                 foreach($showlist as $listkey=>$shl){
+                    $id = $shl['id'];
                     $topp = $listkey+1;
                     $paihang .='
                           <div class="jietus showNow">
@@ -652,7 +653,75 @@ mso-font-kerning:0pt">
                 $htmltable->execute($insert_html_sql);
             }
             
-        }unset($paihang);
+        }
     }
-    
+
+    //咨询列表页生成
+    public function app_zixun_page($date,$apptable,$newtable,$advtable,$htmltable){
+        $path = "./Application/Home/View/Index/";
+
+        $get_much_type = "select newsystem from very_news group by newsystem";//查询有几种类型
+        $much_type = $apptable->query($get_much_type);
+
+        foreach($much_type as $much_ty){
+            $fp = fopen($path . "zixun.html", "r"); //只读打开模板
+            $str = fread($fp, filesize($path . "zixun.html"));//读取模板中内容
+
+            $newpage = strtolower($much_ty['newsystem']).'_zx.html';
+            $newsystem_type = strtolower($much_ty['newsystem']);
+            $show_type = $much_ty['newsystem'];
+
+            /*资讯列表*/
+            $get_zx_list_sql = "select * from very_news where newsystem='$show_type' order by time desc ";
+            $zx_list = $newtable->query($get_zx_list_sql);
+            $zixun = "";
+            foreach($zx_list as $zxl){
+                $id = $zxl['id'];
+                $content = mb_substr($zxl['content'],0,50);
+                $zixun .='<dl>
+            <img src="'.$zxl['newimage'].'"/>
+            <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $id . '"> '.$zxl['title'].'</a></dt>
+            <dd>'.$content.'...
+            </dd>
+            <p><span>来源：'.$zxl['come'].'</span><span>'.$zxl['time'].'</span></p>
+             </dl>';
+            }
+            $str = str_replace("{zixun}", $zixun, $str);
+            /*资讯列表结束*/
+
+            /*应用排行*/
+            $get_app_list_sql = "select * from very_app where appsystem='$show_type' and apptype not in('14','15','16') order by downloadnum desc limit 10";
+            $app_list = $apptable->query($get_app_list_sql);
+            $yingyongp = "";
+            foreach($app_list as $ak=>$appl){
+                $id = $appl['id'];
+                $topk = $ak+1;
+                $yingyongp .= '<ul>
+            <li class="phb_top_one">
+                <div class="phb_top_bot1">'.$topk.'</div>
+                <img src="'.$appl['appimage'].'"/>
+
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" class="hei333" target="_blank">'.$appl['appname'].'</a></div>
+                <p class="phb_top_zi2">'.$appl['appshowname'].'</p>
+            </li>
+        </ul>';
+                $str = str_replace("{yingyongp}", $yingyongp, $str);
+            }
+            /*应用排行结束*/
+            fclose($fp);
+            $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径
+            fwrite($handle, $str); //把刚才替换的内容写进生成的HTML文件
+            fclose($handle);
+            unset($str,$fp);
+            /*处理文件名入库*/
+            $htmltime = time();
+            $htmlpage = basename($newpage, ".html");
+
+            $del_html_sql = "delete from very_html where nick_name='咨询列表' and page_name='$htmlpage'";
+            $htmltable->execute($del_html_sql);
+
+            $insert_html_sql = "insert into very_html values ('','$htmlpage','咨询列表','$htmltime')";
+            $htmltable->execute($insert_html_sql);
+        }
+    }
 }

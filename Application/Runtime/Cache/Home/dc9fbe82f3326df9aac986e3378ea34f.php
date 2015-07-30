@@ -10,9 +10,24 @@
         <meta name="format-detection" content="telephone=no"/>
 		<script type="text/javascript" src="<?php echo WEB_NAME; ?>/Public/jquery-1.7.1.min.js"></script>        
         <link rel="stylesheet" type="text/css" href="<?php echo WEB_NAME; ?>/Public/css/main.css">
-        
+
+<script type="text/javascript" src="<?php echo WEB_NAME; ?>/Public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="<?php echo WEB_NAME; ?>/Public/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    window.UEDITOR_HOME_URL = "<?php echo WEB_NAME; ?>/Public/ueditor/";    //UEDITOR_HOME_URL、config、all这三个顺序不能改变(绝对路径)
+    window.onload=function(){
+        window.UEDITOR_CONFIG.initialFrameHeight=300;//编辑器的高度
+        window.UEDITOR_CONFIG.initialFrameWidth=700;//编辑器的高度
+        window.UEDITOR_CONFIG.imageUrl="<?php echo WEB_NAME; ?>/ueditor/";
+        UE.getEditor('summary');//里面的contents是我的textarea的id值
+
+    }
+
+</script>
+
     </head>
     <body>
+
     <div id="main">
     <div id="left">
         <div id="menu_sty">
@@ -34,7 +49,8 @@
 	
     <div id="right" >
 	<?php echo ($error); ?>
-	<form  enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/AppAdmins/makeJob">
+	<form name="formName"  enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/AppAdmins/makeJob">
+        <script type="text/plain" id="Vent" style="width:500px;"></script>
         <table>
 		<tr>
 			<td>应用名</td>
@@ -110,7 +126,17 @@
 		<tr>
 			<td>应用简介</td>
 			<td>
-				<textarea rows="3" cols="20" name='summary'>
+
+
+                <!-- 实例化编辑器 -->
+                <script type="text/javascript">
+                    var ue = UE.getEditor('summary',{
+                        initialFrameWidth : 600,
+                        initialFrameHeight: 300
+                    });
+                </script>
+				<textarea rows="3" cols="20" name='summary' id="summary">
+
 				<?php echo ($summary); ?>
 				</textarea>
 			</td>
@@ -126,6 +152,7 @@
 		<tr><td colspan='2'><input type='submit' name="subapp" value="提交"></td></tr>
 		</table>
 		</form>
+
     </div>
 </div>
 <div id="footer">

@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>苹果专区应用</title>
     <meta name="description" content="提供iphone|ipad 免费应用下载，包括限时免费，越狱软件等下载"/>
     <link href="<?php echo WEB_NAME; ?>/Public/webcss/common.css" rel="stylesheet" type="text/css"/>
@@ -15,10 +15,12 @@
 <div class="box_d">
     <div class="top_d">
         <span class="top_d_left"><a href="" target="_blank">手游天下首页</a></span>
-        <span class="top_d_right"><a href="" target="_blank">安卓</a><a href="" target="_blank">苹果</a><a href=""
-                                                                                                       target="_blank">WP</a><a
-                href="" target="_blank">html5</a><a href="" target="_blank">社区</a><a href=""
-                                                                                     target="_blank">手机版</a></span>
+        <span class="top_d_right"><a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/android"  target="_blank">安卓</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/ios"  target="_blank">苹果</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/wp"  target="_blank">WP</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/html"  target="_blank">html5</a>
+<!--<a href=""  target="_blank">社区</a>-->
+<!--<a href=""  target="_blank">手机版</a></span>--></span>
     </div>
 </div>
 <!--LOGO -->
@@ -65,12 +67,12 @@
 </div>
 <!--MENU -->
 <div class="box_menu">
-    <a href="">首页</a>
-    <a href="" class="menu1">应用</a>
-    <a href="">排行榜</a>
-    <a href="">APP专题</a>
-    <a href="">资讯</a>
-    <a href="" target="_blank">社区</a>
+    <a href="<?php echo WEB_PAHT.WEB_NAME; ?>" tppabs="" class="menu1">首页</a>
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/yingyong" >应用</a>
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/paihang" >排行榜</a>
+<!--<a href="" >APP专题</a>-->
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/zixun" >资讯</a>
+<!--<a href="" target="_blank">社区</a>-->
 </div>
 <!--筛选开始 -->
 <div class="box_shaixuan">

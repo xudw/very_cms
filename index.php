@@ -26,6 +26,8 @@ define('WEB_PATH',dirname(__FILE__));
 
 define('WEB_NAME','/very_cms');
 
+define('WEB_PAHT','http://localhost');
+
 define('WEB_ADMIN_TITLE','应用');
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

@@ -32,5 +32,8 @@ class MakeHtmlController extends Controller
         //排行分类页
         $d->app_paihang_page($date,$apptable,$newtable,$advtable,$htmltable);
 
+        //咨询列表页生成
+        $d->app_zixun_page($date,$apptable,$newtable,$advtable,$htmltable);
+
     }
 }

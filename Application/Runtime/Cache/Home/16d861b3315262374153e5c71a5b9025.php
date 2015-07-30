@@ -18,7 +18,15 @@
 <div class="box_d">
      <div class="top_d">
          <span class="top_d_left"><a href=""  target="_blank">手游天下首页</a></span>
-         <span class="top_d_right"><a href=""  target="_blank">安卓</a><a href=""  target="_blank">苹果</a><a href=""  target="_blank">WP</a><a href=""  target="_blank">html5</a><a href=""  target="_blank">社区</a><a href=""  target="_blank">手机版</a></span>
+         <span class="top_d_right">
+             <a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/android"  target="_blank">安卓</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/ios"  target="_blank">苹果</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/wp"  target="_blank">WP</a>
+<a href="<?php echo WEB_NAME; ?>/index.php/Index/appshow/type/html"  target="_blank">html5</a>
+<!--<a href=""  target="_blank">社区</a>-->
+<!--<a href=""  target="_blank">手机版</a></span>-->
+
+
      </div>
 </div>
 <!--LOGO -->
@@ -65,12 +73,13 @@
 </div>
 <!--MENU -->
 <div class="box_menu">
-     <a href="index.htm" tppabs="http://ios.155.cn/" class="menu1">首页</a>    
-     <a href="" >应用</a>    
-<a href="" >排行榜</a>
-     <a href="" >APP专题</a>
-     <a href="" >资讯</a>
-     <a href="" target="_blank">社区</a>
+    <a href="<?php echo WEB_PAHT.WEB_NAME; ?>" tppabs="" class="menu1">首页</a>
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/yingyong" >应用</a>
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/paihang" >排行榜</a>
+<!--<a href="" >APP专题</a>-->
+<a href="<?php echo WEB_PAHT.WEB_NAME; ?>/index.php/Index/zixun" >资讯</a>
+<!--<a href="" target="_blank">社区</a>-->
+
 </div><!--第一大版块开始 -->
 <div class="and_cent1">
      <!--新闻-->
@@ -78,7 +87,7 @@
           
           <div class="c1_news_t">
                
-               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/5" title="">sdf</a></h1>
+               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" title="">测试</a></h1>
                         <p>asdf..</p>
           </div>
           <ul style="border-bottom:1px dashed #e9e9e9;">
@@ -92,7 +101,7 @@
     <div class="c1_banner">
         <div class="container" id="idTransformView">
             <ul class="slider" id="idSlider">
-                
+                <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank" title=""><img src="/very_cms/advimage/20150728/20150728143744aa.png"  width="543" height="220" alt="大侠传"/></a></li>
 
 
             </ul>
@@ -115,8 +124,8 @@
               <p class="t_left">新游推荐</p><p class="t_right"><a href="#">more</a></p>
           </div>
           <ul>
-              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank">
-                <img src="/very_cms/image/20150725/201507251026042.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试游戏应用二</a></p></li>
+              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank">
+                <img src=""  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">asdsdf</a></p></li>
 
 		          </ul>
      </div>
@@ -151,8 +160,8 @@
         <ul>
 		<!-- <div class="zhu_genxin"> <div class="zhu_new">-->
 		
-		              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank">
-                <img src="/very_cms/image/20150725/201507251026042.png" title="" target="_blank">测试游戏应用二</a></p><div ></div></li>
+		              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank">
+                <img src="" title="" target="_blank">asdsdf</a></p><div ></div></li>
 		              
 		
           </ul>
@@ -163,8 +172,8 @@
         <ul>
                         <li class="phb_top_one">
                 <div class="phb_top_bot1">1</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank"><img src="/very_cms/image/20150725/201507251026042.png" /></a>
-                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank"  class="hei333">测试游戏应用二 </a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank"><img src="" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank"  class="hei333">asdsdf </a></div>
                 <p class="phb_top_zi2"></p>
             </li>
             
@@ -188,7 +197,9 @@
     <div class="c2_game game_list" id="softlist">  
 <ul>
 		               
-
+<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">
+                <img src="/very_cms/appimage/20150730/20150730152841aa.png"  title="" alt="" width="74" height="74" /></a>
+                <p><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">rf</a></p></li>
                    
 		              
 		          </ul>
@@ -197,7 +208,12 @@
     <!--排行榜 -->
     <div class="c2_phb">
         <ul>
-        
+        <li class="phb_top_one">
+                <div class="phb_top_bot1">1</div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"><img src="/very_cms/appimage/20150730/20150730152841aa.png" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"  class="hei333">rf </a></div>
+                <p class="phb_top_zi2"></p>
+            </li>
            
 			           
 			        </ul>

@@ -51,13 +51,33 @@ class IndexController extends Controller
 
         $htmltable = D('very_html');
         if ($type == 'android') {
+            session_destroy();
             $page = 'android';
+            $lifetime = 3600;//保存1分钟
+            session_start();
+            setcookie(session_name(), session_id(), time() + $lifetime, "/");
+            $_SESSION["TYPE"] = $page;
         } else if ($type == 'ios') {
+            session_destroy();
             $page = 'ios';
+            $lifetime = 3600;//保存1分钟
+            session_start();
+            setcookie(session_name(), session_id(), time() + $lifetime, "/");
+            $_SESSION["TYPE"] = $page;
         } else if ($type == 'wp') {
+            session_destroy();
             $page = 'wp';
+            $lifetime = 3600;//保存1分钟
+            session_start();
+            setcookie(session_name(), session_id(), time() + $lifetime, "/");
+            $_SESSION["TYPE"] = $page;
         } else if ($type == 'html5') {
+            session_destroy();
             $page = 'html';
+            $lifetime = 3600;//保存1分钟
+            session_start();
+            setcookie(session_name(), session_id(), time() + $lifetime, "/");
+            $_SESSION["TYPE"] = $page;
         }
 
         $sql = "select page_name from very_html where page_name='$page' and nick_name='应用分类' order by mtime desc limit 1";
@@ -68,19 +88,20 @@ class IndexController extends Controller
     //应用
     public function yingyong()
     {
+        $types = $_SESSION['TYPE'];
         $typetable = D('very_type');
         $apptable = D('very_app');
         $type_sql = "select * from very_type";
         $typelist = $typetable->query($type_sql);
 
         $pid = htmlspecialchars(addslashes($_GET['pid']));
-        if (isset($pid)) {
+        if (!empty($pid)) {
             $type = " and apptype='$pid'";
         } else {
             $type = " and apptype not in('14','15','16')";
         }
-//        $d = new \Home\Model\FinanceModel('Finance', '', 'DB_CP_DSN');
-        $count_sql = "select count(1) as cnt from very_app where appsystem='android'  $type ";
+
+        $count_sql = "select count(1) as cnt from very_app where appsystem='$types'  $type ";
         $count = $apptable->query($count_sql); // 查询满足要求的总记录数
 
         $Page = new \Think\Page($count[0]['cnt'], 20); // 实例化分页类 传入总记录数和每页显示的记录数(25)
@@ -91,11 +112,11 @@ class IndexController extends Controller
         $p = ($pageNum - 1) * $pageSize;
         $list = " limit $p,$pageSize";
 
-        $end_sql = "select * from very_app where appsystem='android' $type order by time desc $list";
+        $end_sql = "select * from very_app where appsystem='$types' $type order by time desc $list";
         $data = $apptable->query($end_sql);
 
         //游戏排行
-        $game_sql = "select * from very_app where appsystem='android' and apptype in('14','15','16') order by downloadnum desc limit 10";
+        $game_sql = "select * from very_app where appsystem='$types' and apptype in('14','15','16') order by downloadnum desc limit 10";
         $game_list = $apptable->query($game_sql);
 
         $this->assign('typelist', $typelist);
@@ -106,9 +127,13 @@ class IndexController extends Controller
     }
 
     //排行榜
-    public function paihang(){
-
-        $type = htmlspecialchars(addslashes($_GET['type']));
+    public function paihang()
+    {
+        if ($_GET['type']) {
+            $type = htmlspecialchars(addslashes($_GET['type']));
+        } else {
+            $type = $_SESSION['TYPE'];
+        }
 
         $htmltable = D('very_html');
         if ($type == 'android') {
@@ -119,7 +144,7 @@ class IndexController extends Controller
             $page = 'wpd';
         } else if ($type == 'html5') {
             $page = 'htmld';
-        }elseif ($type == 'androidn') {
+        } elseif ($type == 'androidn') {
             $page = 'androidn';
         } else if ($type == 'iosn') {
             $page = 'iosn';
@@ -134,4 +159,24 @@ class IndexController extends Controller
         $this->display($newpage[0]['page_name']);
     }
 
+    //资讯
+    public function zixun()
+    {
+//        $type = htmlspecialchars(addslashes($_GET['type']));
+        $type = $_SESSION['TYPE'];
+        $htmltable = D('very_html');
+        if ($type == 'android') {
+            $page = 'android_zx';
+        } else if ($type == 'ios') {
+            $page = 'ios_zx';
+        } else if ($type == 'wp') {
+            $page = 'wp_zx';
+        } else if ($type == 'html5') {
+            $page = 'html_zx';
+        }
+
+        $sql = "select page_name from very_html where page_name='$page' and nick_name='咨询列表' order by mtime desc limit 1";
+        $newpage = $htmltable->query($sql);
+        $this->display($newpage[0]['page_name']);
+    }
 }

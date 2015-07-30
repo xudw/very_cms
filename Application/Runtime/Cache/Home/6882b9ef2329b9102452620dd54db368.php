@@ -88,40 +88,20 @@
                           <div class="jietus showNow">
                                       <dl>
                                  <div class="rank_nab">1</div>
-                                 <a href="" target="_blank"><img src=""  /></a>
-                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank">adf</a></dt>
+                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150728/201507282107182.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank">测试游戏应用</a></dt>
                                  <dd>下载:0 </dd>
-                                 <dd>0000-00-00</dd>
+                                 <dd>0000-00-00 00:00:00</dd>
                               </dl>
                                  </div>
                         
                           <div class="jietus showNow">
                                       <dl>
                                  <div class="rank_nab">2</div>
-                                 <a href="" target="_blank"><img src="/appcms/image/20150722/20150722151352aa.png"  /></a>
-                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank">adfc</a></dt>
+                                 <a href="" target="_blank"><img src="/very_cms/image/20150725/201507251819582.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank">测试游戏应用一</a></dt>
                                  <dd>下载:0 </dd>
-                                 <dd>2015-07-22</dd>
-                              </dl>
-                                 </div>
-                        
-                          <div class="jietus showNow">
-                                      <dl>
-                                 <div class="rank_nab">3</div>
-                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150727/20150727112758aa.png"  /></a>
-                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" target="_blank">测试</a></dt>
-                                 <dd>下载:0 </dd>
-                                 <dd>2015-07-27</dd>
-                              </dl>
-                                 </div>
-                        
-                          <div class="jietus showNow">
-                                      <dl>
-                                 <div class="rank_nab">4</div>
-                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150727/20150727152729aa.png"  /></a>
-                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" target="_blank">测试应用</a></dt>
-                                 <dd>下载:0 </dd>
-                                 <dd>2015-07-27</dd>
+                                 <dd>0000-00-00 00:00:00</dd>
                               </dl>
                                  </div>
                         

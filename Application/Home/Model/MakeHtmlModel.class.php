@@ -285,7 +285,8 @@ class MakeHtmlModel extends Model
          </div>
          <div class="jianjie_cent">
               <p>产品主要功能<br />
-            '.$allist['summary'].'
+
+            '. $allist['summary'].'
         <br /></p>
          </div>
      </div>

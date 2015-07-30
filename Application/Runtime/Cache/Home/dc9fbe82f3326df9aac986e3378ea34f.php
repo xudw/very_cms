@@ -18,7 +18,6 @@
     window.onload=function(){
         window.UEDITOR_CONFIG.initialFrameHeight=300;//编辑器的高度
         window.UEDITOR_CONFIG.initialFrameWidth=700;//编辑器的高度
-        window.UEDITOR_CONFIG.imageUrl="<?php echo WEB_NAME; ?>/ueditor/";
         UE.getEditor('summary');//里面的contents是我的textarea的id值
 
     }

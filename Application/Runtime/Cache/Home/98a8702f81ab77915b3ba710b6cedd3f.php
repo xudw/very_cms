@@ -85,7 +85,7 @@
      <div class="ios_d_r">
           <div class="genxing">
               <div class="gx_tit">版本更新</div>
-              <p>            	dsf						                </p>
+              <p>                                                                                                                                                sadf	sd				                                                                                                                                                                                                </p>
           </div>
        
 		            <!--排行榜 -->
@@ -94,54 +94,54 @@
             <ul>
              <li class="phb_top_one">
                     <div class="phb_top_bot1">1</div>
-                    <img src=""  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank" class="hei333">asdsdf</a></div>
+                    <img src="/very_cms/appimage/20150728/201507282107182.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank" class="hei333">测试游戏应用</a></div>
                     <p class="phb_top_zi2">w</p>
                 </li> <li class="phb_top_one">
                     <div class="phb_top_bot1">2</div>
-                    <img src="/very_cms/appimage/20150730/20150730172127aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16" target="_blank" class="hei333">zhege </a></div>
-                    <p class="phb_top_zi2">adf</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">3</div>
-                    <img src="/very_cms/appimage/20150730/20150730163831aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" target="_blank" class="hei333">网络呀</a></div>
-                    <p class="phb_top_zi2">阿斯蒂芬</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">4</div>
-                    <img src="/very_cms/appimage/20150730/20150730152841aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" target="_blank" class="hei333">rf</a></div>
-                    <p class="phb_top_zi2">sdaf</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">5</div>
-                    <img src="/very_cms/appimage/20150729/20150729172717aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/12" target="_blank" class="hei333">dsdf </a></div>
-                    <p class="phb_top_zi2">adsf</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">6</div>
-                    <img src="/very_cms/appimage/20150727/20150727152729aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" target="_blank" class="hei333">测试应用</a></div>
-                    <p class="phb_top_zi2">你好</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">7</div>
-                    <img src="/very_cms/appimage/20150727/20150727112758aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" target="_blank" class="hei333">测试</a></div>
-                    <p class="phb_top_zi2">爱的色放</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">8</div>
-                    <img src="/appcms/image/20150722/20150722151352aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank" class="hei333">adfc</a></div>
-                    <p class="phb_top_zi2">sdf</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">9</div>
-                    <img src=""  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank" class="hei333">adf</a></div>
+                    <img src="/very_cms/appimage/20150730/201507302121002.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16" target="_blank" class="hei333">wwww</a></div>
                     <p class="phb_top_zi2">asdf</p>
                 </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">10</div>
-                    <img src="/very_cms/appimage/20150730/20150730180339aa.png"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17" target="_blank" class="hei333">我什么</a></div>
+                    <div class="phb_top_bot1">3</div>
+                    <img src="/very_cms/appimage/20150729/201507292241152.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/15" target="_blank" class="hei333">dsfg</a></div>
+                    <p class="phb_top_zi2">dfg</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">4</div>
+                    <img src="/very_cms/appimage/20150728/201507282148072.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" target="_blank" class="hei333">打工</a></div>
+                    <p class="phb_top_zi2">萨芬</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">5</div>
+                    <img src="/very_cms/appimage/20150728/201507282139152.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" target="_blank" class="hei333">应用测试</a></div>
+                    <p class="phb_top_zi2">这个</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">6</div>
+                    <img src="/very_cms/appimage/20150726/201507261149002.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/12" target="_blank" class="hei333">测试游戏应用五</a></div>
+                    <p class="phb_top_zi2">sdf</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">7</div>
+                    <img src="/very_cms/image/20150725/201507251026542.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" target="_blank" class="hei333">测试游戏应用四</a></div>
+                    <p class="phb_top_zi2">sdf</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">8</div>
+                    <img src="/very_cms/image/20150725/201507251026322.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" target="_blank" class="hei333">测试游戏应三</a></div>
                     <p class="phb_top_zi2">adf</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">9</div>
+                    <img src="/very_cms/image/20150725/201507251026042.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank" class="hei333">测试游戏应用二</a></div>
+                    <p class="phb_top_zi2">qw</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">10</div>
+                    <img src="/very_cms/image/20150725/201507251819582.png"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank" class="hei333">测试游戏应用一</a></div>
+                    <p class="phb_top_zi2">asdf</p>
                 </li>
 			            </ul>
           </div>
@@ -150,11 +150,11 @@
      </div>
      <!--游戏 -->
      <div class="cent1_left">
-         <div class="c1_img"><img src="/very_cms/appimage/20150730/20150730180339aa.png" /></div>
-         <h1>我什么<span>阿斯蒂芬</span></h1>
+         <div class="c1_img"><img src="/very_cms/appimage/20150730/201507302130152.png" /></div>
+         <h1>xzcvzcv<span>sdfsdf</span></h1>
          <div class="star_5"></div>
          <div class="c1_biaoqian"><span style="background-color:#cb1818;">单机</span><span>中文</span><span>否</span></div>
-         <div class="c1_biaoqian2"><span>上线: 2015-07-30</span></div>
+         <div class="c1_biaoqian2"><span>上线: 2015-07-30 21:30:15</span></div>
          <div class="c1_bot"><a href="#k_down" class="down"></a><a href="" class="down1" target="_blank"></a></div>
      </div>
      <!--简介 -->
@@ -164,7 +164,8 @@
          </div>
          <div class="jianjie_cent">
               <p>产品主要功能<br />
-            &lt;p&gt;&lt;img alt=&quot;aa.png&quot; src=&quot;/ueditor/php/upload/image/20150730/1438250615137718.png&quot; title=&quot;1438250615137718.png&quot;/&gt;&lt;/p&gt;
+
+            <p><img alt="2.png" src="/very_cms/ueditorimage/image/20150730/1438265338208273.png" title="1438265338208273.png"/></p>
         <br /></p>
          </div>
      </div>
@@ -176,7 +177,7 @@
          </div>
          <div class="k_down" id="k_down">
                <ul>
-				<li><a href="爱的色放" title="" class="downL-btn ml10" >点击下载</a></li>
+				<li><a href="sdfdsf" title="" class="downL-btn ml10" >点击下载</a></li>
 
 		               </ul>
           </div>

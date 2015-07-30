@@ -303,7 +303,7 @@ class Uploader
     private function getFilePath()
     {
         $fullname = $this->fullName;
-        $rootPath = WEB_NAME;
+        $rootPath = $_SERVER['DOCUMENT_ROOT'].'/very_cms/';
 
         if (substr($fullname, 0, 1) != '/') {
             $fullname = '/' . $fullname;

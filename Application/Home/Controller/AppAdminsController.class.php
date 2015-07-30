@@ -27,7 +27,6 @@ class AppAdminsController extends Controller
     public function makeJob()
     {
 
-
         $type = D("very_type");
         $type->tableName = 'very_type';
 
@@ -46,7 +45,8 @@ class AppAdminsController extends Controller
 //            $appimage = htmlspecialchars(addslashes($_POST['appimage']));
 
             $come = htmlspecialchars(addslashes($_POST['come']));
-            $summary = htmlspecialchars(addslashes($_POST['summary']));
+            $summarys = addslashes($_POST['summary']);
+            $summary = str_replace('/ueditorimage',WEB_NAME.'/ueditorimage',$summarys);
             $upsummary = htmlspecialchars(addslashes($_POST['upsummary']));
 
             if (empty($appname)) {
@@ -131,7 +131,8 @@ class AppAdminsController extends Controller
             $appimages = htmlspecialchars(addslashes($_POST['appimages']));
 
             $come = htmlspecialchars(addslashes($_POST['come']));
-            $summary = htmlspecialchars(addslashes($_POST['summary']));
+            $summarys = addslashes($_POST['summary']);
+            $summary = str_replace('/ueditorimage',WEB_NAME.'/ueditorimage',$summarys);
             $upsummary = htmlspecialchars(addslashes($_POST['upsummary']));
 
             $old_sql = "select id from very_app where appname='$appname' and id!='$id'";

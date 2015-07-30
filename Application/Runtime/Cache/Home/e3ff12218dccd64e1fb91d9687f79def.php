@@ -51,10 +51,10 @@
 <div class="box_mulu">
      <ul>
          <li><span class="mulu_bg1">安卓</span>
-		        <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/18"   target="_blank">dsfg sdfgsdfg</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14"   target="_blank">网络呀</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16"   target="_blank">zhege </a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17"   target="_blank">我什么</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10"   target="_blank">测试</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11"   target="_blank">测试应用</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9"   target="_blank">adfc</a>
+		        <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/19"   target="_blank">hhhhh </a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17"   target="_blank">xzcvzcv</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16"   target="_blank">wwww</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/15"   target="_blank">dsfg</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5"   target="_blank">测试游戏应用</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8"   target="_blank">测试游戏应用一</a>
 				</li>
          <li><span class="mulu_bg2">苹果</span>
-		         
+		         <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9"   target="_blank">测试游戏应用二</a>
 				</li>
          <li><span class="mulu_bg3">wp</span>
             
@@ -74,7 +74,7 @@
 	 </form>
      </div>
      <div class="sou_zi"><span>热门搜索</span>
-         <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/18"   target="_blank">dsfg sdfgsdfg</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8"   target="_blank">adf</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9"   target="_blank">adfc</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10"   target="_blank">测试</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11"   target="_blank">测试应用</a>
+         <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/19"   target="_blank">hhhhh </a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8"   target="_blank">测试游戏应用一</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9"   target="_blank">测试游戏应用二</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/15"   target="_blank">dsfg</a><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16"   target="_blank">wwww</a>
 		</div>
 </div>
 <!--bamner -->
@@ -82,7 +82,17 @@
      <div class="c1_banner">
 		<script type="text/javascript">
 				var counts=5;     //总条数
-        
+        img1=new Image();
+            img1.src='/very_cms/advimage/20150726/201507261147492.png';
+            img1.alt='为什么';
+            url1=new Image();
+            url1.src='<?php echo WEB_NAME; ?>/index.php/Index/product/pid/4';
+            url1.title='为什么';img2=new Image();
+            img2.src='/very_cms/advimage/20150726/201507261149422.png';
+            img2.alt='DDD';
+            url2=new Image();
+            url2.src='<?php echo WEB_NAME; ?>/index.php/Index/product/pid/3';
+            url2.title='DDD';
 
 						</script>
 	 <div class="flash">
@@ -91,7 +101,7 @@
 	 </div>
      <div class="c1_news">
           <div class="wy_news_tit">
-             <h1></h1>
+             <h1><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" title="测试新闻测1试新闻测试新闻测试新闻" class="red">测试新闻测1试新闻测试新闻测试新</a></h1>
              <!-- <p><a href="" title=""  target='_blank'>[剑仙缘]</a><ahref="" title=""  target='_blank'>[诛神online-五岳争霸]</a><a href="" title=""  target='_blank'>[时空猎人]</a></p> -->
           </div>
           <ul>
@@ -108,7 +118,8 @@
 
 				             <li>
                      <!-- <span class="c2li_s1">09-12</span> -->
-                     
+                     <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/12"  target="_blank" class="c2li_s2">测试游戏应用五</a>
+                             <a href="http://www.baidu.com"  target="_blank" target="_blank" class="c2li_s3"></a>
           <!--    <a href=""  target="_blank" class="c2li_s2">刀塔风暴</a>
              <a href=""  target="_blank" target="_blank" class="c2li_s3"></a> -->
              <span class="c2li_s4"></span>
@@ -123,22 +134,22 @@
               <p class="tit_left">新游评测</p><p class="tit_right"><a href=""  target="_blank">more</a></p>
           </div>
            <ul style="border-bottom:1px dashed #efefef;">
-              <div>
+              <div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11"><img src="/very_cms/image/20150725/201507251026542.png"  alt=""/>测试游戏应用四</a>
               </div>
-                    <li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/2" title="">assd..</a></li>
+                    <li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/5" title="">sdf..</a></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/2" title="">测试新闻测试新闻测试..</a></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/3" title="">测试新闻测试新闻测试..</a></li>
 			          </ul>
            <ul>
-              <div>
+              <div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10"><img src="/very_cms/image/20150725/201507251026322.png"  alt=""/>测试游戏应三</a>
               </div>
                     
 			          </ul>
      </div>
      <!--二维码-->
      <!-- <div class="c1_weixin"> -->
-     <div class="c1_gg"><a  href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/6" target="_blank"><img src="/very_cms/advimage/20150727/20150727112549QQ图片20150722160156.png" alt=""/></a></div>
+     <div class="c1_gg"><a  href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank"><img src="/very_cms/advimage/20150726/201507261150122.png" alt=""/></a></div>
      <!-- </div> -->
      <!--广告图-->
-     <div class="c1_gg" style="margin-top:40px;"></div>
+     <div class="c1_gg" style="margin-top:40px;"><a  href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/2" target="_blank"><img src="/very_cms/advimage/20150726/201507261148512.png" alt=""/></a></div>
 </div>
 
 <div class="box_cent4">
@@ -149,12 +160,12 @@
           <ul class="c2_phb">
             <li class="phb_top_one">
             <div class="phb_top_bot1">1</div>
-               <img src=""  />
-              <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" class="hei333">adf</a></div>
-                <p class="phb_top_zi2"><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8">asdf</a></p>
+               <img src="/very_cms/appimage/20150728/201507282107182.png"  />
+              <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" class="hei333">测试游戏应用</a></div>
+                <p class="phb_top_zi2"><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5">w</a></p>
                 
             </li>
-             <li class="phb_top_two"><div class="phb_top_bot1">2</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9">adfc</a><span>sdf</span></li> <li class="phb_top_two"><div class="phb_top_bot1">3</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10">测试</a><span>爱的色放</span></li> <li class="phb_top_two"><div class="phb_top_bot1">4</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11">测试应用</a><span>你好</span></li> <li class="phb_top_two"><div class="phb_top_bot1">5</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14">网络呀</a><span>阿斯蒂芬</span></li> <li class="phb_top_two"><div class="phb_top_bot1">6</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16">zhege </a><span>adf</span></li> <li class="phb_top_two"><div class="phb_top_bot1">7</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17">我什么</a><span>adf</span></li>
+             <li class="phb_top_two"><div class="phb_top_bot1">2</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8">测试游戏应用一</a><span>asdf</span></li> <li class="phb_top_two"><div class="phb_top_bot1">3</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/15">dsfg</a><span>dfg</span></li> <li class="phb_top_two"><div class="phb_top_bot1">4</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16">wwww</a><span>asdf</span></li> <li class="phb_top_two"><div class="phb_top_bot1">5</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17">xzcvzcv</a><span>sdf</span></li> <li class="phb_top_two"><div class="phb_top_bot1">6</div><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/19">hhhhh </a><span>123</span></li>
 
         </ul>
      </div>
@@ -182,9 +193,9 @@
           <div class="hd_tit">
           <p class="tit_left">安卓资讯</p><p class="tit_right"><a href="#">more</a></p>
           </div>
-          <div class="hd_pic"></div>
+          <div class="hd_pic"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/1" target="_blank"><img src="/very_cms/advimage/20150726/201507261149362.png"   alt=""/></a></div>
           <ul class="hd_ul">
-                      <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" target="_blank">测试</a></li>
+                      <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/4" target="_blank">测试新闻测试新闻测试新闻测试新</a></li>
 		  	              
 		  	          </ul>
      </div>
@@ -194,15 +205,13 @@
 <div class="box_cent5">
      <div class="hd_tit"><p class="tit_left">安卓游戏</p><p class="tit_right"><a href="">more</a></p></div>
      <ul class="game_list">
-      <li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14"><img src="/very_cms/appimage/20150730/20150730163831aa.png"</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14">网络呀</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16"><img src="/very_cms/appimage/20150730/20150730172127aa.png"</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16">zhege </a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17"><img src="/very_cms/appimage/20150730/20150730180339aa.png"</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17">我什么</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/18"><img src="/very_cms/appimage/20150730/20150730181206aa.png"</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/18">dsfg sdfgsdfg</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10"><img src="/very_cms/appimage/20150727/20150727112758aa.png"</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10">测试</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11"><img src="/very_cms/appimage/20150727/20150727152729aa.png"</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11">测试应用</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9"><img src="/appcms/image/20150722/20150722151352aa.png"</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9">adfc</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8"><img src=""</a>
-            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8">adf</a></p></li>
+      <li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/19"><img src="/very_cms/appimage/20150730/201507302212042.png"</a>
+            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/19">hhhhh </a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17"><img src="/very_cms/appimage/20150730/201507302130152.png"</a>
+            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17">xzcvzcv</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16"><img src="/very_cms/appimage/20150730/201507302121002.png"</a>
+            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16">wwww</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/15"><img src="/very_cms/appimage/20150729/201507292241152.png"</a>
+            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/15">dsfg</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5"><img src="/very_cms/appimage/20150728/201507282107182.png"</a>
+            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5">测试游戏应用</a></p></li><li><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8"><img src="/very_cms/image/20150725/201507251819582.png"</a>
+            <p><a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8">测试游戏应用一</a></p></li>
            			
 					<!--24	-->
 			     </ul>

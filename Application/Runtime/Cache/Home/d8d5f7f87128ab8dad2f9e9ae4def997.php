@@ -29,12 +29,19 @@
 
     <div class="shezhi_ok"></div>
     <div class="t_search">
-        <form name="soso" method="get" action="http://ios.155.cn/search.php" class="left">
-            <label>
-                <input type="text" name="kw" id="search_txt" class="t_sousuo"/>
-                <input name="button" type="submit" id="search_btn" class="t_bot" onclick="soso.submit()" value=""/>
-            </label>
-        </form>
+        
+<form name="soso"  method="post" action="<?php echo WEB_NAME; ?>/index.php/SomeAction/search" class="left" >
+    <label>
+        <input type="text" name="search" id="search_txt" class="t_sousuo"/>
+        <input name="button" type="submit" id="search_btn"  class="t_bot"  value=""/>
+    </label>
+</form>
+        <!--<form name="soso" method="get" action="http://ios.155.cn/search.php" class="left">-->
+            <!--<label>-->
+                <!--<input type="text" name="kw" id="search_txt" class="t_sousuo"/>-->
+                <!--<input name="button" type="submit" id="search_btn" class="t_bot" onclick="soso.submit()" value=""/>-->
+            <!--</label>-->
+        <!--</form>-->
     </div>
     <script type="text/javascript">
         void function () {

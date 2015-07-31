@@ -10,7 +10,18 @@
         <meta name="format-detection" content="telephone=no"/>
 		<script type="text/javascript" src="<?php echo WEB_NAME; ?>/Public/jquery-1.7.1.min.js"></script>        
         <link rel="stylesheet" type="text/css" href="<?php echo WEB_NAME; ?>/Public/css/main.css">
+<script type="text/javascript" src="<?php echo WEB_NAME; ?>/Public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="<?php echo WEB_NAME; ?>/Public/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript">
+    window.UEDITOR_HOME_URL = "<?php echo WEB_NAME; ?>/Public/ueditor/";    //UEDITOR_HOME_URL、config、all这三个顺序不能改变(绝对路径)
+    window.onload=function(){
+        window.UEDITOR_CONFIG.initialFrameHeight=300;//编辑器的高度
+        window.UEDITOR_CONFIG.initialFrameWidth=700;//编辑器的高度
+        UE.getEditor('summary');//里面的contents是我的textarea的id值
 
+    }
+
+</script>
 </head>
 <body>
 <div id="main">
@@ -24,7 +35,7 @@
     <li></li>
     <li></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/" target="_blank">前台首页</a></li>
 </ul>
 
 
@@ -79,7 +90,7 @@
                 <tr>
                     <td>内容</td>
                     <td>
-                        <textarea name="content" row="5" col="10">
+                         <textarea rows="3" cols="20" name='content' id="summary">
                             <?php echo ($content); ?>
                         </textarea>
                     </td>

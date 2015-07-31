@@ -24,7 +24,7 @@
     <li></li>
     <li></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/" target="_blank">前台首页</a></li>
 </ul>
 
 
@@ -33,14 +33,15 @@
     </div>
     <div id="right">
         <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newIndex">添加资讯</a>
-        <table>
+        <div class="cptable">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <th>
                     标题
                 </th>
-                <th>
-                    内容
-                </th>
+                <!--<th>-->
+                    <!--内容-->
+                <!--</th>-->
                 <th>
                     来源
                 </th>
@@ -62,7 +63,7 @@
             </tr>
             <?php if(is_array($new_list)): foreach($new_list as $key=>$list): ?><tr>
                     <td><?php  echo mb_substr($list['title'],0,10).'......'; ?></td>
-                    <td><?php  echo mb_substr($list['content'],0,20).'......'; ?></td>
+                    <!--<td><?php  echo mb_substr($list['content'],0,20).'......'; ?></td>-->
                     <td><?php echo ($list["come"]); ?></td>
                     <td><?php echo ($list["author"]); ?></td>
                     <td><?php echo ($list["newtype"]); ?></td>
@@ -75,7 +76,7 @@
                     </td>
                 </tr><?php endforeach; endif; ?>
         </table>
-
+</div>
     </div>
 </div>
 <div id="footer">

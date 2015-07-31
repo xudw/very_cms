@@ -25,15 +25,17 @@
   
   <div class="shezhi_ok"></div>
   <div class="t_search">
-  <form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >
-  <label>
-   <input type="text" name="kw" id="search_txt" class="t_sousuo"/>
-   <input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>
-  </label>
-  </form>
+      <include file="Public::searchform" />
+  <!--<form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >-->
+  <!--<label>-->
+   <!--<input type="text" name="kw" id="search_txt" class="t_sousuo"/>-->
+   <!--<input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>-->
+  <!--</label>-->
+  <!--</form>-->
   </div>
 <script type="text/javascript">
-	void function(){
+
+    void function(){
 		var def_val = '请输入查找信息';
 		var kw = document.getElementById('search_txt');
 		kw.value = def_val;
@@ -80,21 +82,27 @@
 
 
      <!--评论列表 -->
-     <div class="pinlun_list">
-		<div class="game_comment">
-			<!--<h4>新闻评论</h4><h3><a href=""  rel="nofollow" target="_blank">155安卓玩家QQ群：207878733</a></h3>-->
-			<ul id="comment_lst">				<li><img src="images/ajax_loading.gif"  alt="load" /></li>
-
-			</ul>
-			<div class="page"></div>
-		</div>
-		<div id="comment"><img src="images/ajax_loading.gif"  alt="load" /></div>
-		<input type="hidden" name="logined_user" value="" />
-		<input type="hidden" name="aid" value="67690" />
+     <div class="pinlun_list" >
+         <div class="game_comment" style="margin-bottom: 20px;">
+             <h4 style="width:300px;">评论区域(注:您的评论审核后才可显示)</h4>
+             <br/>
+             <ul id="comment_lst">
+                 {pl}
+             </ul>
+         </div>
+         <form method="post" action="<?php echo WEB_NAME; ?>/index.php/SomeAction/comment">
+             {hiddenpid}
+            <textarea rows="5" cols="85" name='comment' id="textarea" autofocus>
+			</textarea>
+             <br/>
+             <input type="submit" value="评论" name="subcom">
+             </td>
+         </form>
      </div>
 
-     <div style="width:500px; float:left; height:20px;"></div>
+     <!--<div style="width:500px; float:left; height:20px;"></div>-->
 </div>
+
 <!--底部 star-->
 <div class="box_foot">
      <div class="foot_zi">

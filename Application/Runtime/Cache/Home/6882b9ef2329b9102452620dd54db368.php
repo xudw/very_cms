@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>苹果专区排行榜</title>
+<title>专区排行榜</title>
 <meta name="description" content="" />
 <link href="<?php echo WEB_NAME; ?>/Public/webcss/common.css" rel="stylesheet" type="text/css" />
 <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/jquery-1.4.min.js"></script>
@@ -28,12 +28,19 @@
   
   <div class="shezhi_ok"></div>
   <div class="t_search">
-  <form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >
-  <label>
-   <input type="text" name="kw" id="search_txt" class="t_sousuo"/>
-   <input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>
-  </label>
-  </form>
+      
+<form name="soso"  method="post" action="<?php echo WEB_NAME; ?>/index.php/SomeAction/search" class="left" >
+    <label>
+        <input type="text" name="search" id="search_txt" class="t_sousuo"/>
+        <input name="button" type="submit" id="search_btn"  class="t_bot"  value=""/>
+    </label>
+</form>
+  <!--<form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >-->
+  <!--<label>-->
+   <!--<input type="text" name="kw" id="search_txt" class="t_sousuo"/>-->
+   <!--<input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>-->
+  <!--</label>-->
+  <!--</form>-->
   </div>
 <script type="text/javascript">
 	void function(){
@@ -88,20 +95,70 @@
                           <div class="jietus showNow">
                                       <dl>
                                  <div class="rank_nab">1</div>
-                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150728/201507282107182.png"  /></a>
-                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank">测试游戏应用</a></dt>
+                                 <a href="" target="_blank"><img src=""  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank">adf</a></dt>
                                  <dd>下载:0 </dd>
-                                 <dd>0000-00-00 00:00:00</dd>
+                                 <dd>0000-00-00</dd>
                               </dl>
                                  </div>
                         
                           <div class="jietus showNow">
                                       <dl>
                                  <div class="rank_nab">2</div>
-                                 <a href="" target="_blank"><img src="/very_cms/image/20150725/201507251819582.png"  /></a>
-                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" target="_blank">测试游戏应用一</a></dt>
+                                 <a href="" target="_blank"><img src="/appcms/image/20150722/20150722151352aa.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank">adfc</a></dt>
                                  <dd>下载:0 </dd>
-                                 <dd>0000-00-00 00:00:00</dd>
+                                 <dd>2015-07-22</dd>
+                              </dl>
+                                 </div>
+                        
+                          <div class="jietus showNow">
+                                      <dl>
+                                 <div class="rank_nab">3</div>
+                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150727/20150727112758aa.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" target="_blank">测试</a></dt>
+                                 <dd>下载:0 </dd>
+                                 <dd>2015-07-27</dd>
+                              </dl>
+                                 </div>
+                        
+                          <div class="jietus showNow">
+                                      <dl>
+                                 <div class="rank_nab">4</div>
+                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150727/20150727152729aa.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" target="_blank">测试应用</a></dt>
+                                 <dd>下载:0 </dd>
+                                 <dd>2015-07-27</dd>
+                              </dl>
+                                 </div>
+                        
+                          <div class="jietus showNow">
+                                      <dl>
+                                 <div class="rank_nab">5</div>
+                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150730/20150730172127aa.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16" target="_blank">zhege </a></dt>
+                                 <dd>下载:0 </dd>
+                                 <dd>2015-07-30</dd>
+                              </dl>
+                                 </div>
+                        
+                          <div class="jietus showNow">
+                                      <dl>
+                                 <div class="rank_nab">6</div>
+                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150730/20150730180339aa.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17" target="_blank">我什么</a></dt>
+                                 <dd>下载:0 </dd>
+                                 <dd>2015-07-30</dd>
+                              </dl>
+                                 </div>
+                        
+                          <div class="jietus showNow">
+                                      <dl>
+                                 <div class="rank_nab">7</div>
+                                 <a href="" target="_blank"><img src="/very_cms/appimage/20150730/20150730181206aa.png"  /></a>
+                                 <dt><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/18" target="_blank">dsfg sdfgsdfg</a></dt>
+                                 <dd>下载:0 </dd>
+                                 <dd>2015-07-30</dd>
                               </dl>
                                  </div>
                         

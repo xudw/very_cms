@@ -29,7 +29,8 @@
 	{$error}
 	<form name="formName"  enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/AppAdmins/makeJob">
         <script type="text/plain" id="Vent" style="width:500px;"></script>
-        <table>
+
+            <table>
 		<tr>
 			<td>应用名</td>
 			<td><input type='text' name='appname' value='{$appname}'></td>
@@ -124,7 +125,7 @@
 		<tr>
 			<td>更新说明</td>
 			<td>
-			<textarea rows="3" cols="20" name='upsummary'>
+			<textarea rows="5" cols="50" name='upsummary'>
 			{$upsummary}
 				</textarea>
 			</td>

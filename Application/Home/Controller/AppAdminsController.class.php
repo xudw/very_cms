@@ -45,8 +45,8 @@ class AppAdminsController extends Controller
 //            $appimage = htmlspecialchars(addslashes($_POST['appimage']));
 
             $come = htmlspecialchars(addslashes($_POST['come']));
-            $summarys = addslashes($_POST['summary']);
-            $summary = str_replace('/ueditorimage',WEB_NAME.'/ueditorimage',$summarys);
+            $summary = addslashes($_POST['summary']);
+//            $summary = str_replace('/ueditorimage',WEB_NAME.'/ueditorimage',$summarys);
             $upsummary = htmlspecialchars(addslashes($_POST['upsummary']));
 
             if (empty($appname)) {
@@ -131,8 +131,8 @@ class AppAdminsController extends Controller
             $appimages = htmlspecialchars(addslashes($_POST['appimages']));
 
             $come = htmlspecialchars(addslashes($_POST['come']));
-            $summarys = addslashes($_POST['summary']);
-            $summary = str_replace('/ueditorimage',WEB_NAME.'/ueditorimage',$summarys);
+            $summary = addslashes($_POST['summary']);
+//            $summary = str_replace('/ueditorimage',WEB_NAME.'/ueditorimage',$summarys);
             $upsummary = htmlspecialchars(addslashes($_POST['upsummary']));
 
             $old_sql = "select id from very_app where appname='$appname' and id!='$id'";
@@ -218,8 +218,7 @@ class AppAdminsController extends Controller
             $come = htmlspecialchars(addslashes($_POST['come']));
             $newtype = htmlspecialchars(addslashes($_POST['newtype']));
             $newsystem = htmlspecialchars(addslashes($_POST['newsystem']));
-            $content = htmlspecialchars(addslashes(trim($_POST['content'])));
-
+            $content = addslashes(trim($_POST['content']));
             if (empty($title)) {
                 $error = '请填写标题';
             } elseif (empty($author)) {
@@ -299,7 +298,7 @@ class AppAdminsController extends Controller
             $come = htmlspecialchars(addslashes($_POST['come']));
             $newtype = htmlspecialchars(addslashes($_POST['newtype']));
             $newsystem = htmlspecialchars(addslashes($_POST['newsystem']));
-            $content = htmlspecialchars(addslashes(trim($_POST['content'])));
+            $content = addslashes(trim($_POST['content']));
             $newimages = htmlspecialchars(addslashes($_POST['newimages']));
 
             $old_sql = "select id from very_news where title='$title' and id!='$nids'";

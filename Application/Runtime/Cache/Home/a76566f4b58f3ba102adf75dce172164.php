@@ -43,7 +43,7 @@
     <li></li>
     <li></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/" target="_blank">前台首页</a></li>
 </ul>
 
 

@@ -133,7 +133,7 @@
         <tr>
             <td>更新说明</td>
             <td>
-            <textarea rows="3" cols="20" name='upsummary'>
+            <textarea rows="5" cols="50" name='upsummary'>
             <?php echo ($list["upsummary"]); ?>
                 </textarea>
             </td>

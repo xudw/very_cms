@@ -25,15 +25,23 @@
   
   <div class="shezhi_ok"></div>
   <div class="t_search">
-  <form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >
-  <label>
-   <input type="text" name="kw" id="search_txt" class="t_sousuo"/>
-   <input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>
-  </label>
-  </form>
+      
+<form name="soso"  method="post" action="<?php echo WEB_NAME; ?>/index.php/SomeAction/search" class="left" >
+    <label>
+        <input type="text" name="search" id="search_txt" class="t_sousuo"/>
+        <input name="button" type="submit" id="search_btn"  class="t_bot"  value=""/>
+    </label>
+</form>
+  <!--<form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >-->
+  <!--<label>-->
+   <!--<input type="text" name="kw" id="search_txt" class="t_sousuo"/>-->
+   <!--<input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>-->
+  <!--</label>-->
+  <!--</form>-->
   </div>
 <script type="text/javascript">
-	void function(){
+
+    void function(){
 		var def_val = '请输入查找信息';
 		var kw = document.getElementById('search_txt');
 		kw.value = def_val;
@@ -87,28 +95,28 @@
                  <p class="wy_top_zi2">w</p>
               </li> <li class="wy_top_one">
                  <div class="wy_top_bot1">2</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" title="" target="_blank"> <img src="" /></a>
-                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" title="" target="_blank">adf</a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17" title="" target="_blank"> <img src="/very_cms/appimage/20150730/20150730180339aa.png" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/17" title="" target="_blank">我什么</a></div>
                  <p class="star1 wy_top_star"></p>
-                 <p class="wy_top_zi2">asdf</p>
+                 <p class="wy_top_zi2">adf</p>
               </li> <li class="wy_top_one">
                  <div class="wy_top_bot1">3</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank"> <img src="/appcms/image/20150722/20150722151352aa.png" /></a>
-                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank">adfc</a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16" title="" target="_blank"> <img src="/very_cms/appimage/20150730/20150730172127aa.png" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/16" title="" target="_blank">zhege </a></div>
                  <p class="star1 wy_top_star"></p>
-                 <p class="wy_top_zi2">sdf</p>
+                 <p class="wy_top_zi2">adf</p>
               </li> <li class="wy_top_one">
                  <div class="wy_top_bot1">4</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" title="" target="_blank"> <img src="/very_cms/appimage/20150727/20150727112758aa.png" /></a>
-                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" title="" target="_blank">测试</a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" title="" target="_blank"> <img src="/very_cms/appimage/20150730/20150730163831aa.png" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" title="" target="_blank">网络呀</a></div>
                  <p class="star1 wy_top_star"></p>
-                 <p class="wy_top_zi2">爱的色放</p>
+                 <p class="wy_top_zi2">阿斯蒂芬</p>
               </li> <li class="wy_top_one">
                  <div class="wy_top_bot1">5</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" title="" target="_blank"> <img src="/very_cms/appimage/20150727/20150727152729aa.png" /></a>
-                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" title="" target="_blank">测试应用</a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"> <img src="/very_cms/appimage/20150730/20150730152841aa.png" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">rf</a></div>
                  <p class="star1 wy_top_star"></p>
-                 <p class="wy_top_zi2">你好</p>
+                 <p class="wy_top_zi2">sdaf</p>
               </li> <li class="wy_top_one">
                  <div class="wy_top_bot1">6</div>
                 <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/12" title="" target="_blank"> <img src="/very_cms/appimage/20150729/20150729172717aa.png" /></a>
@@ -117,16 +125,28 @@
                  <p class="wy_top_zi2">adsf</p>
               </li> <li class="wy_top_one">
                  <div class="wy_top_bot1">7</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"> <img src="/very_cms/appimage/20150730/20150730152841aa.png" /></a>
-                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">rf</a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" title="" target="_blank"> <img src="/very_cms/appimage/20150727/20150727152729aa.png" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/11" title="" target="_blank">测试应用</a></div>
                  <p class="star1 wy_top_star"></p>
-                 <p class="wy_top_zi2">sdaf</p>
+                 <p class="wy_top_zi2">你好</p>
               </li> <li class="wy_top_one">
                  <div class="wy_top_bot1">8</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" title="" target="_blank"> <img src="/very_cms/appimage/20150730/20150730163831aa.png" /></a>
-                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/14" title="" target="_blank">网络呀</a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" title="" target="_blank"> <img src="/very_cms/appimage/20150727/20150727112758aa.png" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/10" title="" target="_blank">测试</a></div>
                  <p class="star1 wy_top_star"></p>
-                 <p class="wy_top_zi2">阿斯蒂芬</p>
+                 <p class="wy_top_zi2">爱的色放</p>
+              </li> <li class="wy_top_one">
+                 <div class="wy_top_bot1">9</div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank"> <img src="/appcms/image/20150722/20150722151352aa.png" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank">adfc</a></div>
+                 <p class="star1 wy_top_star"></p>
+                 <p class="wy_top_zi2">sdf</p>
+              </li> <li class="wy_top_one">
+                 <div class="wy_top_bot1">10</div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" title="" target="_blank"> <img src="" /></a>
+                 <div class="wy_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/8" title="" target="_blank">adf</a></div>
+                 <p class="star1 wy_top_star"></p>
+                 <p class="wy_top_zi2">asdf</p>
               </li>
 		          </ul>
      </div>
@@ -147,21 +167,29 @@ mso-font-kerning:0pt">
 
 
      <!--评论列表 -->
-     <div class="pinlun_list">
-		<div class="game_comment">
-			<h4>新闻评论</h4><h3><a href=""  rel="nofollow" target="_blank">155安卓玩家QQ群：207878733</a></h3>
-			<ul id="comment_lst">				<li><img src="images/ajax_loading.gif"  alt="load" /></li>
-
-			</ul>
-			<div class="page"></div>
-		</div>
-		<div id="comment"><img src="images/ajax_loading.gif"  alt="load" /></div>
-		<input type="hidden" name="logined_user" value="" />
-		<input type="hidden" name="aid" value="67690" />
+     <div class="pinlun_list" >
+         <div class="game_comment" style="margin-bottom: 20px;">
+             <h4 style="width:300px;">评论区域(注:您的评论审核后才可显示)</h4>
+             <br/>
+             <ul id="comment_lst">
+                 
+             </ul>
+         </div>
+         <form method="post" action="<?php echo WEB_NAME; ?>/index.php/SomeAction/comment">
+             <input type="hidden" value="1" name="pid">
+            <input type="hidden" value="new" name="who">
+            <input type="hidden" value="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" name="pageurl">
+            <textarea rows="5" cols="85" name='comment' id="textarea" autofocus>
+			</textarea>
+             <br/>
+             <input type="submit" value="评论" name="subcom">
+             </td>
+         </form>
      </div>
 
-     <div style="width:500px; float:left; height:20px;"></div>
+     <!--<div style="width:500px; float:left; height:20px;"></div>-->
 </div>
+
 <!--底部 star-->
 <div class="box_foot">
      <div class="foot_zi">

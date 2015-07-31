@@ -19,21 +19,24 @@ class MakeHtmlController extends Controller
 
         //生成首页
         $d->index_page($date,$apptable,$newtable,$advtable,$htmltable);
-
+        echo '20%';
         //生成产品页
         $d->product_page($date,$apptable,$newtable,$advtable,$htmltable);
-
+        echo '40%';
         //生成新闻页
         $d->news_page($date,$apptable,$newtable,$advtable,$htmltable);
-
+        echo '50%';
         //生成应用分类页
         $d->app_type_page($date,$apptable,$newtable,$advtable,$htmltable);
-
+        echo '70%';
         //排行分类页
         $d->app_paihang_page($date,$apptable,$newtable,$advtable,$htmltable);
-
+        echo '85%';
         //咨询列表页生成
         $d->app_zixun_page($date,$apptable,$newtable,$advtable,$htmltable);
+        echo '100%';
 
+//        $this->display();
+        redirect(WEB_NAME . "/index.php/AppAdmins/index");
     }
 }

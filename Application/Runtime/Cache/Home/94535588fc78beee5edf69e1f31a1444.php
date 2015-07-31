@@ -24,7 +24,7 @@
     <li></li>
     <li></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/" target="_blank">前台首页</a></li>
 </ul>
 
 
@@ -33,7 +33,8 @@
     </div>
     <div id="right">
         <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/makeJob">添加应用</a>
-        <table>
+        <div class="cptable">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <th>
                     应用名
@@ -77,7 +78,7 @@
                     </td>
                 </tr><?php endforeach; endif; ?>
         </table>
-
+    </div>
     </div>
 </div>
 <div id="footer">

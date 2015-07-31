@@ -38,7 +38,7 @@
     <li></li>
     <li></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
-    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/">前台首页</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/" target="_blank">前台首页</a></li>
 </ul>
 
 
@@ -50,7 +50,8 @@
 	<?php echo ($error); ?>
 	<form name="formName"  enctype="multipart/form-data" method="post" action="<?php echo WEB_NAME;?>/index.php/AppAdmins/makeJob">
         <script type="text/plain" id="Vent" style="width:500px;"></script>
-        <table>
+
+            <table>
 		<tr>
 			<td>应用名</td>
 			<td><input type='text' name='appname' value='<?php echo ($appname); ?>'></td>
@@ -143,7 +144,7 @@
 		<tr>
 			<td>更新说明</td>
 			<td>
-			<textarea rows="3" cols="20" name='upsummary'>
+			<textarea rows="5" cols="50" name='upsummary'>
 			<?php echo ($upsummary); ?>
 				</textarea>
 			</td>

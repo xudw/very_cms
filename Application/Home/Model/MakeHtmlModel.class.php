@@ -307,6 +307,30 @@ class MakeHtmlModel extends Model
 
             $str = str_replace("{product_page}", $product_page, $str);
 
+            /*评论列表*/
+            $pinglun = D("very_comment_app");
+            $get_pl_sql = "select * from very_comment_app where comment_app='$id' order by comment_time desc limit 50";
+            $pl_list = $pinglun->query($get_pl_sql);
+            $pl = "";
+            foreach($pl_list as $pls){
+                $pl .= '<li>
+                <div style="font-size: 12px;border-bottom: 1px solid gray;margin-bottom: 5px;">
+                   <div></div><div style="float:right">'.$pls['comment_time'].'</div>
+                    <div style="clear:both;">'.$pls['comment_text'].'</div>
+                </div>
+                </li>';
+            }
+            $str = str_replace("{pl}", $pl, $str);
+            /*评论列表结束*/
+
+            /*隐藏id为表单提供*/
+            $hiddenpid = "";
+            $hiddenpid .= '<input type="hidden" value="'.$id.'" name="pid">
+            <input type="hidden" value="app" name="who">
+            <input type="hidden" value="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/' . $id . '" name="pageurl">';
+            $str = str_replace("{hiddenpid}", $hiddenpid, $str);
+            /*隐藏id为表单提供 结束*/
+
             fclose($fp);
             $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径
             fwrite($handle, $str); //把刚才替换的内容写进生成的HTML文件
@@ -375,6 +399,30 @@ mso-font-kerning:0pt">
             $newpage = $id. '_n.html';
 
             $str = str_replace("{new_page}", $new_page, $str);
+
+            /*评论列表*/
+            $pinglun = D("very_comment_news");
+            $get_pl_sql = "select * from very_comment_news where comment_news='$id' order by comment_time desc limit 50";
+            $pl_list = $pinglun->query($get_pl_sql);
+            $pl = "";
+            foreach($pl_list as $pls){
+                $pl .= '<li>
+                <div style="font-size: 12px;">
+                   <div></div><div style="float:right">'.$pls['comment_time'].'</div>
+                    <div style="clear:both;">'.$pls['comment_text'].'</div>
+                </div>
+                </li>';
+            }
+            $str = str_replace("{pl}", $pl, $str);
+            /*评论列表结束*/
+
+            /*隐藏id为表单提供*/
+            $hiddenpid = "";
+            $hiddenpid .= '<input type="hidden" value="'.$id.'" name="pid">
+            <input type="hidden" value="new" name="who">
+            <input type="hidden" value="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $id . '" name="pageurl">';
+            $str = str_replace("{hiddenpid}", $hiddenpid, $str);
+            /*隐藏id为表单提供 结束*/
 
             fclose($fp);
             $handle = fopen($path . $newpage, "w"); //写入方式打开新闻路径

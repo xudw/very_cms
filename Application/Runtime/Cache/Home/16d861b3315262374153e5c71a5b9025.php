@@ -35,12 +35,19 @@
   
   <div class="shezhi_ok"></div>
   <div class="t_search">
-  <form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >
-  <label>
-   <input type="text" name="kw" id="search_txt" class="t_sousuo"/>
-   <input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>
-  </label>
-  </form>
+      
+<form name="soso"  method="post" action="<?php echo WEB_NAME; ?>/index.php/SomeAction/search" class="left" >
+    <label>
+        <input type="text" name="search" id="search_txt" class="t_sousuo"/>
+        <input name="button" type="submit" id="search_btn"  class="t_bot"  value=""/>
+    </label>
+</form>
+  <!--<form name="soso"  method="get" action="http://ios.155.cn/search.php" class="left" >-->
+  <!--<label>-->
+   <!--<input type="text" name="kw" id="search_txt" class="t_sousuo"/>-->
+   <!--<input name="button" type="submit" id="search_btn"  class="t_bot" onclick="soso.submit()" value=""/>-->
+  <!--</label>-->
+  <!--</form>-->
   </div>
 <script type="text/javascript">
 	void function(){
@@ -87,7 +94,7 @@
           
           <div class="c1_news_t">
                
-               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/5" title="">sdf</a></h1>
+               <h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/1" title="">测试</a></h1>
                         <p>asdf..</p>
           </div>
           <ul style="border-bottom:1px dashed #e9e9e9;">
@@ -124,8 +131,8 @@
               <p class="t_left">新游推荐</p><p class="t_right"><a href="#">more</a></p>
           </div>
           <ul>
-              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" target="_blank">
-                <img src="/very_cms/image/20150725/201507251026042.png"  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">测试游戏应用二</a></p></li>
+              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" target="_blank">
+                <img src=""  title="" alt="" width="65" height="65"/></a><p><a href="" target="_blank">asdsdf</a></p></li>
 
 		          </ul>
      </div>
@@ -160,8 +167,8 @@
         <ul>
 		<!-- <div class="zhu_genxin"> <div class="zhu_new">-->
 		
-		              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank">
-                <img src="/very_cms/image/20150725/201507251026042.png" title="" target="_blank">测试游戏应用二</a></p><div ></div></li>
+		              <li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank">
+                <img src="" title="" target="_blank">asdsdf</a></p><div ></div></li>
 		              
 		
           </ul>
@@ -172,8 +179,8 @@
         <ul>
                         <li class="phb_top_one">
                 <div class="phb_top_bot1">1</div>
-                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank"><img src="/very_cms/image/20150725/201507251026042.png" /></a>
-                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/9" title="" target="_blank"  class="hei333">测试游戏应用二 </a></div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank"><img src="" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/5" title="" target="_blank"  class="hei333">asdsdf </a></div>
                 <p class="phb_top_zi2"></p>
             </li>
             
@@ -197,7 +204,9 @@
     <div class="c2_game game_list" id="softlist">  
 <ul>
 		               
-
+<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">
+                <img src="/very_cms/appimage/20150730/20150730152841aa.png"  title="" alt="" width="74" height="74" /></a>
+                <p><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank">rf</a></p></li>
                    
 		              
 		          </ul>
@@ -206,7 +215,12 @@
     <!--排行榜 -->
     <div class="c2_phb">
         <ul>
-        
+        <li class="phb_top_one">
+                <div class="phb_top_bot1">1</div>
+                <a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"><img src="/very_cms/appimage/20150730/20150730152841aa.png" /></a>
+                <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/13" title="" target="_blank"  class="hei333">rf </a></div>
+                <p class="phb_top_zi2"></p>
+            </li>
            
 			           
 			        </ul>

@@ -67,9 +67,9 @@
 <!--serach -->
 <div class="box_sou">
      <div class="sou">
-	  <form  action="http://so.155.cn/" method="get" target="_blank" id="soso" name="soso">
-       <input type="text" name="kw" id="kw" value="" class="sou_input" />
-       <input type="submit" name="button" id="search_btn" value="" class="sou_bot" onclick="soso.submit()" />
+	  <form  action="<?php echo WEB_NAME; ?>/index.php/SomeAction/search" method="post" target="_blank" id="soso" name="soso">
+       <input type="text" name="search" id="kw" value="" class="sou_input" />
+       <input type="submit" name="button" id="search_btn" value="" class="sou_bot"  />
 		<div class="so-word" id="so-word" style="display:none;"><img src="<?php echo WEB_NAME; ?>/Public/images/search-wp.png"  /></div>
 	 </form>
      </div>
@@ -156,24 +156,24 @@
         </ul>
      </div>
      <!--新游评测-->
-     <div class="wy_pingce">
-          <div class="hd_tit">
-              <p class="tit_left">安卓专题</p><p class="tit_right"><a href="" target="_blank">more</a></p>
-          </div>
+     <!--<div class="wy_pingce">-->
+          <!--<div class="hd_tit">-->
+              <!--<p class="tit_left">安卓专题</p><p class="tit_right"><a href="" target="_blank">more</a></p>-->
+          <!--</div>-->
 
-		          <dl class="tj_dl">
-			 <img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_1151394513453.jpg"  alt=""/>
-              <dt><a target="_blank" href="">安卓虚幻3引擎游戏合辑</a></dt>
-              <dd>国内最全安卓虚幻3游戏主题合辑，没有之一</dd>
-			   <div class="wy_tuijian_bot3"><a target="_blank" href="">进入专题</a></div>
-          </dl>
-		          <dl class="tj_dl">
-			 <img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_5731394784636.jpg" alt=""/>
-              <dt><a target="_blank" href="">安卓Unity引擎游戏专辑</a></dt>
-              <dd>国内最全安卓Unity游戏主题合辑，没有之一</dd>
-			   <div class="wy_tuijian_bot3"><a target="_blank" href="">进入专题</a></div>
-          </dl>
-		     </div>
+		          <!--<dl class="tj_dl">-->
+			 <!--<img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_1151394513453.jpg"  alt=""/>-->
+              <!--<dt><a target="_blank" href="">安卓虚幻3引擎游戏合辑</a></dt>-->
+              <!--<dd>国内最全安卓虚幻3游戏主题合辑，没有之一</dd>-->
+			   <!--<div class="wy_tuijian_bot3"><a target="_blank" href="">进入专题</a></div>-->
+          <!--</dl>-->
+		          <!--<dl class="tj_dl">-->
+			 <!--<img src="<?php echo WEB_NAME; ?>/Public/images/155_cn_5731394784636.jpg" alt=""/>-->
+              <!--<dt><a target="_blank" href="">安卓Unity引擎游戏专辑</a></dt>-->
+              <!--<dd>国内最全安卓Unity游戏主题合辑，没有之一</dd>-->
+			   <!--<div class="wy_tuijian_bot3"><a target="_blank" href="">进入专题</a></div>-->
+          <!--</dl>-->
+		     <!--</div>-->
      <!--网游资讯-->
      <div class="wy_zixun">
           <div class="hd_tit">

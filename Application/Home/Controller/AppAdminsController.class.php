@@ -364,7 +364,7 @@ class AppAdminsController extends Controller
     {
         $file = $_FILES['newimage'];
 
-        $arrType = array('image/jpg', 'image/gif', 'image/png', 'image/bmp', 'image/pjpeg');
+        $arrType = array('image/jpg', 'image/gif', 'image/png', 'image/bmp', 'image/pjpeg', 'image/jpeg');
         $max_size = '500000';      // 最大文件限制（单位：byte）
         $date = date('Ymd');
         $datetime = date('YmdHis');
@@ -423,7 +423,7 @@ class AppAdminsController extends Controller
     {
         $file = $_FILES['appimage'];
 
-        $arrType = array('image/jpg', 'image/gif', 'image/png', 'image/bmp', 'image/pjpeg');
+        $arrType = array('image/jpg', 'image/gif', 'image/png', 'image/bmp', 'image/pjpeg','image/jpeg');
         $max_size = '500000';      // 最大文件限制（单位：byte）
         $date = date('Ymd');
         $datetime = date('YmdHis');

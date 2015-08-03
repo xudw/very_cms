@@ -59,7 +59,7 @@
                     <td><input type="text" name="come" value="<?php echo ($come); ?>"></td>
                 </tr>
                 <tr>
-                    <td>咨询类型</td>
+                    <td>资讯类型</td>
                     <td>
                     <select name='newtype'>
                         <option value=''>选择类型</option>

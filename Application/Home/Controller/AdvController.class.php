@@ -146,7 +146,7 @@ class AdvController extends Controller
 
     public function _upload()
     {
-        $file = $_FILES['advimage'];+
+        $file = $_FILES['advimage'];
 
         $arrType = array('image/jpeg', 'image/jpg', 'image/gif', 'image/png', 'image/bmp', 'image/pjpeg');
         $max_size = '5000000';      // 最大文件限制（单位：byte）

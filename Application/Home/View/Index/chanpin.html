@@ -6,13 +6,49 @@
     <title>应用页</title>
     <meta name="description" content=""/>
     <link href="<?php echo WEB_NAME; ?>/Public/webcss/common.css" rel="stylesheet" type="text/css"/>
-    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/jquery-1.4.min.js"></script>
+    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/jquery-1.9.1.min.js"></script>
 
     <link href="<?php echo WEB_NAME; ?>/Public/webcss/comment.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo WEB_NAME; ?>/Public/webcss/down.css" rel="stylesheet" type="text/css"/>
     <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/public.js"></script>
-    <script language="javascript" src="<?php echo WEB_NAME; ?>/Publicjs/phone-r4.js"></script>
-    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/comment.js"></script>
+    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/phone-r4.js"></script>
+    <style>
+    .a-upload {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    height: 30px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+    </style>
 
 </head>
 <body>
@@ -40,32 +76,32 @@
         <!--</form>-->
     </div>
     <script type="text/javascript">
-        void function () {
-            var def_val = '请输入查找信息';
-            var kw = document.getElementById('search_txt');
-            kw.value = def_val;
-            kw.onclick = function () {
-                this.value = this.value == def_val ? '' : this.value;
-            }
-            kw.onblur = function () {
-                this.value = this.value || def_val;
-                this.parentNode.style.cssText = ''
-            }
-            kw.focus = function () {/*if(this.value == def_val) this.value = '';*/
-                this.parentNode.style.cssText = '';
-            }
-            kw.onmouseover = function () {
-                this.focus()
-            };
-            kw.focus();
-            var sb = document.getElementById('search_btn');
-            sb.onclick = function () {
-                if (kw.value == '' || kw.value == def_val) {
-                    alert('请输入查找信息');
-                    return false;
-                }
-            }
-        }();
+        // void function () {
+        //     var def_val = '请输入查找信息';
+        //     var kw = document.getElementById('search_txt');
+        //     kw.value = def_val;
+        //     kw.onclick = function () {
+        //         this.value = this.value == def_val ? '' : this.value;
+        //     }
+        //     kw.onblur = function () {
+        //         this.value = this.value || def_val;
+        //         this.parentNode.style.cssText = ''
+        //     }
+        //     kw.focus = function () {if(this.value == def_val) this.value = '';
+        //         this.parentNode.style.cssText = '';
+        //     }
+        //     kw.onmouseover = function () {
+        //         this.focus()
+        //     };
+        //     kw.focus();
+        //     var sb = document.getElementById('search_btn');
+        //     sb.onclick = function () {
+        //         if (kw.value == '' || kw.value == def_val) {
+        //             alert('请输入查找信息');
+        //             return false;
+        //         }
+        //     }
+        // }();
     </script>
 </div>
 <!--MENU -->
@@ -158,3 +194,26 @@
 <!--版权结束 -->
 </body>
 </html>
+<script>
+
+$("#down").click(function(){
+
+    var id = $(this).attr('title');
+    var jump = $(this).attr('tag');
+    var webname = "<?php echo WEB_NAME; ?>";
+    jQuery.ajax({
+            type: 'POST',
+            url: webname + '/index.php/SomeAction/updown',
+            data: 'id=' + id,
+            dataType: 'json'
+            ,
+            success: function(data) {
+               window.location.href = jump;
+            }
+        });
+   
+    
+});
+
+
+</script>

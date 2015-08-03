@@ -296,9 +296,9 @@ class MakeHtmlModel extends Model
              <p class="qie_left">客户端下载</p>
 
          </div>
-         <div class="k_down" id="k_down">
+         <div id="k_down">
                <ul>
-				<li><a href="'.$allist['apphome'].'" title="" class="downL-btn ml10" >点击下载</a></li>
+				<li><input style="margin-top:20px;" class="a-upload" title="'.$id.'" tag="'.$allist['apphome'].'"  id="down"  value="点击这里进行下载"></li>
 
 		               </ul>
           </div>

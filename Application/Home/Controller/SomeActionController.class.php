@@ -47,7 +47,20 @@ class SomeActionController extends Controller
         $this->display();
     }
 
-    //应用下载被点击，更新相应 应用的下载书
+    //搜索新闻
+    public function searchnew(){
+        $serch = htmlspecialchars(addslashes($_POST['search']));
+
+        $d = D("very_app");
+
+        $sql = "select * from very_news where title like '%$serch%'";
+        $list = $d->query($sql);
+
+        $this->assign('data',$list);
+        $this->display();
+    }
+
+    //应用下载被点击，更新相应 应用的下载数
     public  function updown(){
 
         $id = htmlspecialchars(addslashes($_POST['id']));

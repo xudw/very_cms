@@ -15,10 +15,21 @@ class AppAdminsController extends Controller
         $apptable = D('very_app');
         $apptable->tableName = 'very_app';
 
-        $get_sql = "select id,appname,apptype,appsystem,applanguage,money,time,tag from very_app order by time desc";
+        if($_POST['msearch']){
+            $search = htmlspecialchars(addslashes($_POST['search']));
+            if(!empty($search)){
+                $where  = " where appname like'%$search%'";
+            }else{
+                $where = "";
+                $error = "请输入正确的应用名称";
+            }
+        }
+
+        $get_sql = "select id,appname,apptype,appsystem,applanguage,money,time,tag from very_app $where order by time desc";
         $app_list = $apptable->query($get_sql);
 
-
+        $this->assign('search', $search);
+        $this->assign('error', $error);
         $this->assign('app_list', $app_list);
         $this->display();
     }
@@ -203,8 +214,21 @@ class AppAdminsController extends Controller
 
         $new_table = D("very_news");
         $new_table->tableName = "very_news";
-        $news_list = $new_table->query("select * from very_news order by time desc");
 
+        if($_POST['msearch']){
+            $search = htmlspecialchars(addslashes($_POST['search']));
+            if(!empty($search)){
+                $where  = " where title like'%$search%'";
+            }else{
+                $where = "";
+                $error = "请输入正确的资讯名称";
+            }
+        }
+        
+        $news_list = $new_table->query("select * from very_news $where order by time desc");
+
+        $this->assign('search', $search);
+        $this->assign('error', $error);
         $this->assign('new_list', $news_list);
         $this->display();
     }
@@ -218,6 +242,7 @@ class AppAdminsController extends Controller
             $come = htmlspecialchars(addslashes($_POST['come']));
             $newtype = htmlspecialchars(addslashes($_POST['newtype']));
             $newsystem = htmlspecialchars(addslashes($_POST['newsystem']));
+            $pagetag = htmlspecialchars(addslashes($_POST['pagetag']));
             $content = addslashes(trim($_POST['content']));
             if (empty($title)) {
                 $error = '请填写标题';
@@ -241,6 +266,7 @@ class AppAdminsController extends Controller
                 $this->assign('newtype', $newtype);
                 $this->assign('newsystem', $newsystem);
                 $this->assign('content', $content);
+                $this->assign('pagetag', $pagetag);
                 $this->assign('newimage', $appimage);
                 $this->assign('come', $come);
                 $this->assign('error', $error);
@@ -250,7 +276,7 @@ class AppAdminsController extends Controller
                 $new_table = D("very_news");
                 $new_table->tableName = "very_news";
                 $time = date('Y-m-d H:i:s');
-                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author','$newtype','$appimage','$newsystem')";
+                $insert_sql = "insert into very_news values ('','$title','$content','$time','$come','$author','$newtype','$appimage','$newsystem','$pagetag')";
                 $new_table->execute($insert_sql);
 
                 $this->success('操作成功', 'newShow', 3);
@@ -300,6 +326,7 @@ class AppAdminsController extends Controller
             $newsystem = htmlspecialchars(addslashes($_POST['newsystem']));
             $content = addslashes(trim($_POST['content']));
             $newimages = htmlspecialchars(addslashes($_POST['newimages']));
+            $pagetag = htmlspecialchars(addslashes($_POST['pagetag']));
 
             $old_sql = "select id from very_news where title='$title' and id!='$nids'";
             $hive = $new_table->query($old_sql);
@@ -332,6 +359,7 @@ class AppAdminsController extends Controller
                 $lists['newtype'] = $newtype;
                 $lists['newsystem'] = $newsystem;
                 $lists['content'] = $content;
+                $this->assign('pagetag', $pagetag);
                 $lists['newimage'] = $newimage;
                 $lists['come'] = $come;
                 $this->assign('error', $error);
@@ -340,7 +368,7 @@ class AppAdminsController extends Controller
                 $this->display();
                 exit;
             } else {
-                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come' ,newtype='$newtype',newimage='$newimage',newsystem='$newsystem'  where id='$nids'";
+                $upate_sql = "update very_news set title='$title',author='$author',content='$content',come='$come' ,newtype='$newtype',newimage='$newimage',newsystem='$newsystem',pagetag='$pagetag'  where id='$nids'";
                 $new_table->execute($upate_sql);
                 redirect(WEB_NAME . "/index.php/AppAdmins/newShow");
             }

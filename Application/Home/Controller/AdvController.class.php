@@ -14,9 +14,21 @@ class AdvController extends Controller
         $apptable = D('very_adv');
         $apptable->tableName = 'very_adv';
 
-        $get_sql = "select * from very_adv order by mtime desc";
+        if($_POST['msearch']){
+            $search = htmlspecialchars(addslashes($_POST['search']));
+            if(!empty($search)){
+                $where  = " where advname like'%$search%'";
+            }else{
+                $where = "";
+                $error = "请输入正确的广告名称";
+            }
+        }
+
+        $get_sql = "select * from very_adv $where order by mtime desc";
         $app_list = $apptable->query($get_sql);
 
+        $this->assign('search', $search);
+        $this->assign('error', $error);
         $this->assign('app_list', $app_list);
 
         $this->display();

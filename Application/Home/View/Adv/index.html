@@ -12,7 +12,14 @@
     </div>
     <div id="right">
         <a href="<?php echo WEB_NAME; ?>/index.php/Adv/addAdv">添加广告</a>
-        <div class="cptable">
+        <div style="margin:10px 0 0 0;float:right">
+            <form action="<?php echo WEB_NAME; ?>/index.php/Adv/index" method="post">
+            <input type="text" name="search" value="{$search}">
+            <input type="submit" name="msearch" value="查询">
+            </form>
+            {$error}
+        </div>
+        <div class="cptable" style="clear:both;">
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <th>

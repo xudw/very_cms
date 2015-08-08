@@ -14,7 +14,7 @@
 <!--顶部 -->
 <div class="box_d">
     <div class="top_d">
-        <span class="top_d_left"><a href="" target="_blank">手游天下首页</a></span>
+        <span class="top_d_left"><a href="<?php echo WEB_NAME; ?>/index.php/Index/index/" target="_blank">首页</a></span>
         <span class="top_d_right"><include file="Public::second_header" /></span>
     </div>
 </div>
@@ -24,12 +24,7 @@
 
     <div class="shezhi_ok"></div>
     <div class="t_search">
-        <form name="soso" method="get" action="http://ios.155.cn/search.php" class="left">
-            <label>
-                <input type="text" name="kw" id="search_txt" class="t_sousuo"/>
-                <input name="button" type="submit" id="search_btn" class="t_bot" onclick="soso.submit()" value=""/>
-            </label>
-        </form>
+        <include file="Public::searchform" />
     </div>
     <script type="text/javascript">
         void function () {

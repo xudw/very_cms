@@ -28,7 +28,7 @@
             <table>
                  <tr>
                      <td>标题</td>
-                     <td><input type="text" name="title" value="{$list.title}"></td>
+                     <td><input type="text" name="title" value="{$list.title}" style="width:500px;"></td>
                  </tr>
                 <tr>
                     <td>作者</td>
@@ -50,6 +50,16 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>是否头条</td>
+                    <td>
+                        <select name='pagetag'>
+                            <option value=''>选择</option>
+                            <option  value='首页头条' <?php if($list['pagetag']=='首页头条'){ ?>  selected="selected"  <?php  } ?> >首页头条</option>
+                            <option  value='二级页头条' <?php if($list['pagetag']=='二级页头条'){ ?>  selected="selected"  <?php  } ?> >二级页头条</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
                     <td>图片</td>
                     <td>
                         <img src="{$list.newimage}" width="100px" height="100px">
@@ -68,6 +78,7 @@
                         </select>
                     </td>
                 </tr>
+
                  <tr>
                     <td>内容</td>
                     <td>

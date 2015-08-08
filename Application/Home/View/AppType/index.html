@@ -1,0 +1,77 @@
+<include file="Public::header"/>
+
+</head>
+<body>
+<div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu"/>
+            </div>
+        </div>
+    </div>
+    <div id="right">
+        <a href="<?php echo WEB_NAME; ?>/index.php/AppType/addtype">添加类型</a>
+        <div style="margin:10px 0 0 0;float:right">
+            <form action="<?php echo WEB_NAME; ?>/index.php/AppType/index" method="post">
+            <input type="text" name="search" value="{$search}">
+            <input type="submit" name="msearch" value="查询">
+            </form>
+            {$error}
+        </div>
+        <div class="cptable" style="clear:both;">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <th>
+                    类型
+                </th>
+                <th>
+                    创建日期
+                </th>
+                <th>
+                    操作
+                </th>
+            </tr>
+            <foreach name="data" item="list">
+
+                <tr >
+                    <td> 
+                        
+                        <input type='test' name='{$list.type_id}' value='{$list.type_name}' class='tname' style='width:100px;'>
+                    </td>
+                    <td>{$list.type_time}</td>
+                    <td>
+                        <a onClick="return confirm('您确定要删除此内容？');"
+                           href="<?php echo WEB_NAME; ?>/index.php/AppType/deltype/nid/<?php echo $list['type_id']; ?>">删除</a>
+                       
+                      <!-- <a href="#" class='edit'  name='{$list.type_id}'>  修改</a> -->
+                    </td>
+                </tr>
+
+
+            </foreach>
+        </table>
+</div>
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer"/>
+</div>
+</body>
+</html>
+<script>
+var url = '<?php echo WEB_NAME; ?>/index.php/AppType/editype/';
+$('.tname').change(function(){
+    var id = $(this).closest(".tname").attr('name');
+    var tname = $(this).closest(".tname").val();
+     jQuery.ajax({
+                type: 'POST',
+                url: url,
+                data: "nid=" + id + "&tname="+tname,
+                dataType: 'json',
+                success: function(data) {
+                    window.location.href = '<?php echo WEB_NAME; ?>/index.php/AppType/index';
+                }
+            });
+})
+</script>

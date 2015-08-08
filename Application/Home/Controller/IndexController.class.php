@@ -73,7 +73,7 @@ class IndexController extends Controller
             $_SESSION["TYPE"] = $page;
         } else if ($type == 'html5') {
             session_destroy();
-            $page = 'html';
+            $page = 'html5';
             $lifetime = 3600;//保存1分钟
             session_start();
             setcookie(session_name(), session_id(), time() + $lifetime, "/");

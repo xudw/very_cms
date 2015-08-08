@@ -1,0 +1,36 @@
+﻿<include file="Public::header" />
+<link rel="stylesheet" type="text/css" href="<?php echo WEB_NAME; ?>/Public/jquery.custom/css/ui-lightness/jquery-ui-1.8.11.custom.css" />
+<script src="<?php echo WEB_NAME; ?>/Public/jquery.custom/js/jquery-ui-1.8.11.custom.min.js" /></script>
+<script src="<?php echo WEB_NAME; ?>/Public/jquery.custom/js/ui.datepicker-zh.js" /></script>
+  
+    </head>
+    <body>
+    <div id="main">
+    <div id="left">
+        <div id="menu_sty">
+            <div id="munu_sty_s">
+                <include file="Public::menu" />
+            </div>
+        </div>
+    </div>
+	
+    <div id="right" >
+	{$error}
+    <br/>
+	<form  method="post" action="<?php echo WEB_NAME;?>/index.php/AppType/addtype">  
+        <table>
+		<tr>
+			<td>类型名称</td>
+			<td><input type='text' name='typename' value='{$typename}'></td>
+		</tr>
+				<tr><td colspan='2'></td></tr>
+		<tr><td colspan='2'><input type='submit' name="subapp" value="提交"></td></tr>
+		</table>
+		</form>
+    </div>
+</div>
+<div id="footer">
+    <include file="Public::footer" />
+</div>
+    </body>
+</html> 

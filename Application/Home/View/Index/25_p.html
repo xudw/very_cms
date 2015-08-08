@@ -6,13 +6,49 @@
     <title>应用页</title>
     <meta name="description" content=""/>
     <link href="<?php echo WEB_NAME; ?>/Public/webcss/common.css" rel="stylesheet" type="text/css"/>
-    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/jquery-1.4.min.js"></script>
+    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/jquery-1.9.1.min.js"></script>
 
     <link href="<?php echo WEB_NAME; ?>/Public/webcss/comment.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo WEB_NAME; ?>/Public/webcss/down.css" rel="stylesheet" type="text/css"/>
     <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/public.js"></script>
-    <script language="javascript" src="<?php echo WEB_NAME; ?>/Publicjs/phone-r4.js"></script>
-    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/comment.js"></script>
+    <script language="javascript" src="<?php echo WEB_NAME; ?>/Public/js/phone-r4.js"></script>
+    <style>
+    .a-upload {
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    height: 30px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+    </style>
 
 </head>
 <body>
@@ -40,32 +76,32 @@
         <!--</form>-->
     </div>
     <script type="text/javascript">
-        void function () {
-            var def_val = '请输入查找信息';
-            var kw = document.getElementById('search_txt');
-            kw.value = def_val;
-            kw.onclick = function () {
-                this.value = this.value == def_val ? '' : this.value;
-            }
-            kw.onblur = function () {
-                this.value = this.value || def_val;
-                this.parentNode.style.cssText = ''
-            }
-            kw.focus = function () {/*if(this.value == def_val) this.value = '';*/
-                this.parentNode.style.cssText = '';
-            }
-            kw.onmouseover = function () {
-                this.focus()
-            };
-            kw.focus();
-            var sb = document.getElementById('search_btn');
-            sb.onclick = function () {
-                if (kw.value == '' || kw.value == def_val) {
-                    alert('请输入查找信息');
-                    return false;
-                }
-            }
-        }();
+        // void function () {
+        //     var def_val = '请输入查找信息';
+        //     var kw = document.getElementById('search_txt');
+        //     kw.value = def_val;
+        //     kw.onclick = function () {
+        //         this.value = this.value == def_val ? '' : this.value;
+        //     }
+        //     kw.onblur = function () {
+        //         this.value = this.value || def_val;
+        //         this.parentNode.style.cssText = ''
+        //     }
+        //     kw.focus = function () {if(this.value == def_val) this.value = '';
+        //         this.parentNode.style.cssText = '';
+        //     }
+        //     kw.onmouseover = function () {
+        //         this.focus()
+        //     };
+        //     kw.focus();
+        //     var sb = document.getElementById('search_btn');
+        //     sb.onclick = function () {
+        //         if (kw.value == '' || kw.value == def_val) {
+        //             alert('请输入查找信息');
+        //             return false;
+        //         }
+        //     }
+        // }();
     </script>
 </div>
 <!--MENU -->
@@ -78,7 +114,7 @@
     <div class="ios_d_r">
           <div class="genxing">
               <div class="gx_tit">版本更新</div>
-              <p>dsfasdfdasf</p>
+              <p>zhege haoshuo 						</p>
           </div>
        
 		            <!--排行榜 -->
@@ -97,24 +133,29 @@
                     <p class="phb_top_zi2">音乐</p>
                 </li> <li class="phb_top_one">
                     <div class="phb_top_bot1">3</div>
-                    <img src="/very_cms/appimage/20150731/20150731211420aa.jpg"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/22" target="_blank" class="hei333">苹果</a></div>
-                    <p class="phb_top_zi2">呀</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">4</div>
-                    <img src="/very_cms/appimage/20150731/20150731212337aa.jpg"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/23" target="_blank" class="hei333">标签游戏</a></div>
-                    <p class="phb_top_zi2">没有</p>
-                </li> <li class="phb_top_one">
-                    <div class="phb_top_bot1">5</div>
                     <img src="/very_cms/appimage/20150731/20150731212418aa.jpg"  />
                     <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/24" target="_blank" class="hei333">标签新闻1</a></div>
                     <p class="phb_top_zi2">阿萨德发</p>
                 </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">4</div>
+                    <img src="/very_cms/appimage/20150731/20150731211420aa.jpg"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/22" target="_blank" class="hei333">苹果</a></div>
+                    <p class="phb_top_zi2">呀</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">5</div>
+                    <img src="/very_cms/appimage/20150731/20150731212337aa.jpg"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/23" target="_blank" class="hei333">标签游戏</a></div>
+                    <p class="phb_top_zi2">没有</p>
+                </li> <li class="phb_top_one">
                     <div class="phb_top_bot1">6</div>
-                    <img src="/very_cms/appimage/20150801/20150801161311aa.jpg"  />
-                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/25" target="_blank" class="hei333">ning</a></div>
-                    <p class="phb_top_zi2">12qwe</p>
+                    <img src="/very_cms/appimage/20150808/20150808103312aa.jpg"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/25" target="_blank" class="hei333">这个是html</a></div>
+                    <p class="phb_top_zi2">这个吗</p>
+                </li> <li class="phb_top_one">
+                    <div class="phb_top_bot1">7</div>
+                    <img src="/very_cms/appimage/20150808/20150808135234aa.jpg"  />
+                    <div class="phb_top_zi"><a href="<?php echo WEB_NAME; ?>/index.php/Index/product/pid/26" target="_blank" class="hei333">地方</a></div>
+                    <p class="phb_top_zi2">士大夫</p>
                 </li>
 			            </ul>
           </div>
@@ -123,11 +164,11 @@
      </div>
      <!--游戏 -->
      <div class="cent1_left">
-         <div class="c1_img"><img src="/very_cms/appimage/20150801/20150801161311aa.jpg" /></div>
-         <h1>ning<span>qweqwe</span></h1>
+         <div class="c1_img"><img src="/very_cms/appimage/20150808/20150808103312aa.jpg" /></div>
+         <h1>这个是html<span>4.5</span></h1>
          <div class="star_5"></div>
-         <div class="c1_biaoqian"><span style="background-color:#cb1818;">工具</span><span>中文</span><span>否</span></div>
-         <div class="c1_biaoqian2"><span>上线: 2015-08-01 16:13:11</span></div>
+         <div class="c1_biaoqian"><span style="background-color:#cb1818;">单机</span><span>中文</span><span>否</span></div>
+         <div class="c1_biaoqian2"><span>上线: 2015-08-08 10:33:12</span></div>
          <div class="c1_bot"><a href="#k_down" class="down"></a><a href="" class="down1" target="_blank"></a></div>
      </div>
      <!--简介 -->
@@ -138,7 +179,7 @@
          <div class="jianjie_cent">
               <p>产品主要功能<br />
 
-            <p>adsfasdfadsfdsaffffffffffffffffffffffffffasdfasdf<img style="width: 437px; height: 296px;" alt="aa.jpg" src="/very_cms/ueditorimage/image/20150801/1438416763123010.jpg" title="1438416763123010.jpg" height="296" width="437"/></p>
+            <p>这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html这个是html<img alt="aa.jpg" src="/very_cms/ueditorimage/image/20150808/1439001186443743.jpg" title="1439001186443743.jpg"/></p>
         <br /></p>
          </div>
      </div>
@@ -148,9 +189,9 @@
              <p class="qie_left">客户端下载</p>
 
          </div>
-         <div class="k_down" id="k_down">
+         <div id="k_down">
                <ul>
-				<li><a href="qwewqe" title="" class="downL-btn ml10" id="down" >点击下载</a></li>
+				<li><input style="margin-top:20px;" class="a-upload" title="25" tag="www.baidu.com"  id="down"  value="点击这里进行下载"></li>
 
 		               </ul>
           </div>
@@ -240,4 +281,25 @@
 </body>
 </html>
 <script>
+
+$("#down").click(function(){
+
+    var id = $(this).attr('title');
+    var jump = $(this).attr('tag');
+    var webname = "<?php echo WEB_NAME; ?>";
+    jQuery.ajax({
+            type: 'POST',
+            url: webname + '/index.php/SomeAction/updown',
+            data: 'id=' + id,
+            dataType: 'json'
+            ,
+            success: function(data) {
+               window.location.href = jump;
+            }
+        });
+   
+    
+});
+
+
 </script>

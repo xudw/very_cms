@@ -77,17 +77,20 @@ class MakeHtmlModel extends Model
         /*福利新闻*/
         $wellone_html = "";
         $welltwo_html = "";
-        $get_well_sql = "select id,title from very_news where newtype='福利新闻' order by time desc limit 7";
+
+        $get_tag_well_sql = "select id,title from very_news where pagetag='首页头条' order by time desc limit 1";
+        $well_tag_list = $newtable->query($get_tag_well_sql);
+        foreach ($well_tag_list as $twell) {
+            $welltime = mb_substr($twell['title'], 0, 22);
+            $id = $twell['id'];
+            $wellone_html .= '<a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $id . '" title="' . $twell['title'] . '" class="red">' . $welltime . '</a>';
+        }
+        $get_well_sql = "select id,title from very_news where newtype='福利新闻' and pagetag!='二级页头条' order by time desc limit 6";
         $well_list = $newtable->query($get_well_sql);
         foreach ($well_list as $wellkey => $well) {
-            $welltime = mb_substr($well['title'], 0, 16);
+            $welltime = mb_substr($well['title'], 0, 22);
             $id = $well['id'];
-            if ($wellkey == '0') {
-                $wellone_html .= '<a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $id . '" title="' . $well['title'] . '" class="red">' . $welltime . '</a>';
-            } else {
-                $welltwo_html .= '<a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $id . '"  title="' . $well['title'] . '">' . $welltime . '/a>';
-            }
-
+            $welltwo_html .= '<a target="_blank" href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $id . '"  title="' . $well['title'] . '">' . $welltime . '</a>';
         }
         $str = str_replace("{wellone}", $wellone_html, $str);
         $str = str_replace("{welltwo}", $welltwo_html, $str);
@@ -383,7 +386,7 @@ class MakeHtmlModel extends Model
      </div>
      <!--左边内容 -->
      <div class="news_c" style="border-top:2px solid #81b103;">
-          <h1>'.$allist['title'].'</h1>
+          <h1>'.mb_substr($allist['title'],1,25).'</h1>
           <div class="h1div"><span>来源:'.$allist['come'].'</span><span>作者:'.$allist['author'].'</span><span>时间:'.$allist['time'].'</span></div>
 
 		          <div class="news_cent">
@@ -457,17 +460,23 @@ mso-font-kerning:0pt">
             $newsystem_type = strtolower($much_ty['appsystem']);
             $show_type = $much_ty['appsystem'];
             /*左侧新闻*/
-            $get_this_appnew_sql = "select * from very_news where newsystem='$newsystem_type' order by time desc limit 9";
+            $get_this_appnew_tag_sql = "select * from very_news where  newsystem='$newsystem_type' and pagetag='二级页头条' order by time desc limit 1";
+            $this_tag_appnew_list = $newtable->query($get_this_appnew_tag_sql);
+
+            $get_this_appnew_sql = "select * from very_news where newsystem='$newsystem_type' and pagetag!='二级页头条' order by time desc limit 8";
             $this_appnew_list = $newtable->query($get_this_appnew_sql);
 
             $left_new_one = "";
             $left_new_two = "";
             $left_new_three = "";
+            foreach($this_tag_appnew_list as $tagpnewl){
+                
+                    $left_new_one .= '<h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tagpnewl['id'] . '" title="">'.$tagpnewl['title'].'</a></h1>
+                        '.mb_substr($tagpnewl['content'],0,25).'..';
+                
+            }
             foreach($this_appnew_list as $tappnewkey=>$tappnewl){
-                if($tappnewkey=='0'){
-                    $left_new_one .= '<h1><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></h1>
-                        <p>'.mb_substr($tappnewl['content'],0,25).'..</p>';
-                }elseif($tappnewkey>'0' && $tappnewkey<='4'){
+                if($tappnewkey>='0' && $tappnewkey<='4'){
                     $left_new_two .= '<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></li>';
                 }elseif($tappnewkey>'4'){
                     $left_new_three .= '<li><a href="<?php echo WEB_NAME; ?>/index.php/Index/news/pid/' . $tappnewl['id'] . '" title="">'.$tappnewl['title'].'</a></li>';

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<html>
     <head>
 	
         <title><?php echo WEB_ADMIN_TITLE; ?></title>
@@ -21,6 +21,7 @@
     <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/index/">后台首页</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newShow/">资讯管理</a></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/Adv/index/">广告管理</a></li>
+    <li><a href="<?php echo WEB_NAME; ?>/index.php/AppType/index/">类型管理</a></li>
     <li></li>
     <li></li>
     <li><a href="<?php echo WEB_NAME; ?>/index.php/MakeHtml/index/">生成页面</a></li>
@@ -33,7 +34,15 @@
     </div>
     <div id="right">
         <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/makeJob">添加应用</a>
-        <div class="cptable">
+        
+        <div style="margin:10px 0 0 0;float:right">
+            <form action="<?php echo WEB_NAME; ?>/index.php/AppAdmins/index" method="post">
+            <input type="text" name="search" value="<?php echo ($search); ?>">
+            <input type="submit" name="msearch" value="查询">
+            </form>
+            <?php echo ($error); ?>
+        </div>
+        <div class="cptable" style="clear:both;">
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <th>

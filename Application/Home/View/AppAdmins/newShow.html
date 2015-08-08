@@ -12,7 +12,14 @@
     </div>
     <div id="right">
         <a href="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newIndex">添加资讯</a>
-        <div class="cptable">
+        <div style="margin:10px 0 0 0;float:right">
+            <form action="<?php echo WEB_NAME; ?>/index.php/AppAdmins/newShow" method="post">
+            <input type="text" name="search" value="{$search}">
+            <input type="submit" name="msearch" value="查询">
+            </form>
+            {$error}
+        </div>
+        <div class="cptable" style="clear:both;">
             <table width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <th>
@@ -31,6 +38,9 @@
                     新闻类型
                 </th>
                 <th>
+                    是否头条
+                </th>
+                <th>
                    系统
                 </th>
                 <th>
@@ -43,11 +53,14 @@
             <foreach name="new_list" item="list">
 
                 <tr>
-                    <td><?php  echo mb_substr($list['title'],0,10).'......'; ?></td>
+                    <td><?php  echo mb_substr($list['title'],0,10,'utf-8').'......'; ?></td>
                     <!--<td><?php  echo mb_substr($list['content'],0,20).'......'; ?></td>-->
                     <td>{$list.come}</td>
                     <td>{$list.author}</td>
                     <td>{$list.newtype}</td>
+                    <td>
+                        <?php if(!empty($list['pagetag'])){ echo $list['pagetag']; }else{ echo 'no'; }   ?>
+                    </td>
                     <td>{$list.newsystem}</td>
                     <td>{$list.time}</td>
                     <td>
